@@ -1,6 +1,6 @@
 # Site Info
 title: sunwoo Kim
-tagline: "sunwoo Kim's Computer Vision, Machine & Deep Learning"
+tagline: "Sunwoo Kim's Computer Vision, Machine & Deep Learning Blog"
 description: "sunwoo Kim's blog, powered by first jekyll theme, second YW & YY's ML blog"
 baseurl: ""
 url: https://sunshower76.github.io
@@ -25,7 +25,7 @@ version: 1.0.0
 # About/contact
 author:
   name: sunwoo Kim
-  description: <strong>Developer and Analyst</strong>, sunwoo Kim.
+  description: <strong>Name</strong>, sunwoo Kim.
   gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
   contact:
     # linkedin:  <hide>
