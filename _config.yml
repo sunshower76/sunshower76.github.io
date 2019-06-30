@@ -46,7 +46,7 @@ nav:
   About:
     - '/about/'
   Github Project:
-    - 'http://sunshower76.github.io/'
+    - 'https://github.com/sunshower76'
 
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'
