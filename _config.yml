@@ -25,7 +25,7 @@ version: 1.0.0
 # About/contact
 author:
   name: sunwoo Kim
-  description: <strong>Name</strong>: sunwoo Kim.
+  description: <strong>Name</strong>, sunwoo Kim.
   gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
   contact:
     # linkedin:  <hide>
