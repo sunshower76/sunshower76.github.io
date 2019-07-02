@@ -5,18 +5,22 @@ author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]
 ---
->이번 강의에서는 Elimination & Back substitution에 대해서 배우고,
+>이번 강의에서는 Elimination & Back substitution에 대해서 배우고, 
 **Row picture와 Clomun picture에서의 방정식, 벡터간의 연산을 어떻게 행렬안에서 표현하는지**,
 그리고 Augmented Matrix, Permutation Matrix에 대해서 배운다.
 ---
-##Elimination & Back substitution
+
+## Elimination & Back substitution
 복습할겸, 다음과 같은 관계를 Row picture와 Column picture로 표현해보자.
 <center><img src="/public/img/2019-07-02-linear algebra-lecture2/img1.gif" width="30%"></center>
 
 <center><img src="/public/img/2019-07-02-linear algebra-lecture2/img2.gif" width="50%"></center>
+
 <center>Row picture</center>
 
+
 <center><img src="/public/img/2019-07-02-linear algebra-lecture2/img3.gif" width="50%"></center>
+
 <center>Column picture</center>
 위와 같이 생각했다면, 정답이다.
 
@@ -28,7 +32,7 @@ tags: [Linear Algebra]
 이 과정을 모든 미지수를 알 때 까지 반복하였다.
 우리도 모르게 우리는 Elimination & Substitution을 하고 있었다.
 
-###Elimination
+### Elimination
 이 과정을 선형대수적 관점에서 살펴보자.
 위에서 우리가 계산했던 Row picture을 다시 가져오자.
 <center><img src="/public/img/2019-07-02-linear algebra-lecture2/img4.png" width="50%"></center>
@@ -58,21 +62,22 @@ tags: [Linear Algebra]
 다시 돌아와서, 위 과정까지 수행했다면 우리는, Elimination 과정을 완료한 것이다.
 이제 우리는 Back substitution을 수행해야 한다.
 
-###Back substitution
+### Back substitution
 이 과정은 간단하다. 마지막 피벗부터 살펴보면 된다.
 마지막 행을 본다면 5z=-10이라는 것을 알 수 있다. 그렇다면 z=-2 이다.
 이제 두 번째 행으로 가자. 밑에서 z=-2 이라는 것을 알았으므로, z를 대입하면, 미지수는 y하나만 남으므로 y의값을 알 수 있다. y=2이다.
 같은 방식으로 첫 번째 행으로 가서, 같은 연산을 수행하면 x=0 이 계산된다.
 이 과정이 back substitution이다.
 
-###Augmented Matrix
+### Augmented Matrix
 Aumgented Matrix(확장행렬)은 다음 그림 한 장으로 설명을 대신한다.
 <center><img src="/public/img/2019-07-02-linear algebra-lecture2/img8.png" width="70%"></center>
-U = Upper Matrix(상삼각행렬)
+<center>U = Upper Matrix(상삼각행렬)</center>
 ---
-##Row, Column operation
-###Row, Column operation
-<center><img src="/public/img/2019-07-02-linear algebra-lecture2/img9.gif" width="50%"></center>
+
+## Row, Column operation
+### Row, Column operation
+<center><img src="/public/img/2019-07-02-linear algebra-lecture2/img9.gif" width="70%"></center>
 위 그림에서 보여지는 두 가지 연산을 봐보자. 두 가지 연산 모두, Elimination과 관련된 연산은 어느것일까?
 바로 두 번째 연산이다.
 두 번째 연산이 어떻게 Elimination연산과 관련이 있을까? 바로 **단위 행렬**을 이용하면 알 수 있다.
@@ -90,11 +95,11 @@ U = Upper Matrix(상삼각행렬)
 **Elimination과 상관은 없지만 여기서는 행 끼리 연산을 나타냈다. 만약 열 끼리 연산을 표현하고 싶으면 어떻게 해야할까?
 단순하게 변환행렬을 왼쪽에 두는게 아니고, 오른쪽에 두면 된다.**
 
-###Permutation Matrix(치환행렬)
+### Permutation Matrix(치환행렬)
 위의 과정을 이해했다면, 치환행렬은 매우 이해하기 쉽다.
 치환 행렬은, 행 또는 열의 위치를 서로 바꿔주는 행렬을 의미한다.
 설명은 다음 그림 한장으로 대신한다.
-<center><img src="/public/img/2019-07-02-linear algebra-lecture2/img14.gif" width="50%"></center>
+<center><img src="/public/img/2019-07-02-linear algebra-lecture2/img14.gif" width="40%"></center>
 
 
 
