@@ -72,7 +72,7 @@ tags: [Linear Algebra]
 ### Augmented Matrix
 Aumgented Matrix(확장행렬)은 다음 그림 한 장으로 설명을 대신한다.
 <center><img src="/public/img/2019-07-02-linear algebra-lecture2/img8.png" width="70%"></center>
-U = Upper Matrix(상삼각행렬)
+<center>U = Upper Matrix(상삼각행렬)</center>
 ---
 
 ## Row, Column operation
