@@ -77,7 +77,7 @@ U = Upper Matrix(상삼각행렬)
 
 ## Row, Column operation
 ### Row, Column operation
-<center><img src="/public/img/2019-07-02-linear algebra-lecture2/img9.gif" width="100%"></center>
+<center><img src="/public/img/2019-07-02-linear algebra-lecture2/img9.gif" width="70%"></center>
 위 그림에서 보여지는 두 가지 연산을 봐보자. 두 가지 연산 모두, Elimination과 관련된 연산은 어느것일까?
 바로 두 번째 연산이다.
 두 번째 연산이 어떻게 Elimination연산과 관련이 있을까? 바로 **단위 행렬**을 이용하면 알 수 있다.
@@ -85,12 +85,12 @@ U = Upper Matrix(상삼각행렬)
 <center>단위행렬 연산</center>
 만약에 우리가 전에 수행했던 **row2 = -3xrow1 + row2**연산을 수행하려면 어떻게 해야할까?
 다음과 같이 바꿔주면 된다.
-<center><img src="/public/img/2019-07-02-linear algebra-lecture2/img11.gif" width="70%"></center>
+<center><img src="/public/img/2019-07-02-linear algebra-lecture2/img11.gif" width="50%"></center>
 이렇게 연산이 수행되는 이유는 제일 처음 보여줬던 연산의 의미를 잘 고민해보면 알 수 있다.(아니면 직접 계산을 해보자!)
 그 후, **row3 = -2xrow2 + row3**연산을 하려면 어떻게 해야할까? 결과는 다음과 같다.
-<center><img src="/public/img/2019-07-02-linear algebra-lecture2/img12.gif" width="70%"></center>
+<center><img src="/public/img/2019-07-02-linear algebra-lecture2/img12.gif" width="50%"></center>
 그렇다면 처음부터 지금 까지 연속적인 연산(선형변환)은 다음과 같이 쓸 수 있을 것이다.
-<center><img src="/public/img/2019-07-02-linear algebra-lecture2/img13.gif" width="70%"></center>
+<center><img src="/public/img/2019-07-02-linear algebra-lecture2/img13.gif" width="50%"></center>
 
 **Elimination과 상관은 없지만 여기서는 행 끼리 연산을 나타냈다. 만약 열 끼리 연산을 표현하고 싶으면 어떻게 해야할까?
 단순하게 변환행렬을 왼쪽에 두는게 아니고, 오른쪽에 두면 된다.**
