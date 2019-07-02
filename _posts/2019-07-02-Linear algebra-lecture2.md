@@ -5,8 +5,11 @@ author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]
 ---
->이번 강의에서는 Elimination & Back substitution에 대해서 배우고, **Row picture와 Clomun picture에서의 방정식, 벡터간의 연산을 어떻게 행렬안에서 표현하는지**,그리고 Augmented Matrix, Permutation Matrix에 대해서 배운다.
+>이번 강의에서는 Elimination & Back substitution에 대해서 배우고, 
+**Row picture와 Clomun picture에서의 방정식, 벡터간의 연산을 어떻게 행렬안에서 표현하는지**,
+그리고 Augmented Matrix, Permutation Matrix에 대해서 배운다.
 ---
+
 ## Elimination & Back substitution
 복습할겸, 다음과 같은 관계를 Row picture와 Column picture로 표현해보자.
 <center><img src="/public/img/2019-07-02-linear algebra-lecture2/img1.gif" width="30%"></center>
