@@ -19,12 +19,12 @@ Product of elimination matrices, A=LU(no row exchanges)
 1.$ AA^{-1}=A^{-1}A=I$ (역행렬의 정의)
 
 2.$ (AB)^{-1}=B^{-1}A^{-1}$
->proof
-$ABB^{-1}A^{-1}=I$
+proof
+>$ABB^{-1}A^{-1}=I$
 
 3.$ (A^T)^{-1}=(A^{-1})^T$
->proof
-$AA^{-1}=I$
+proof
+>$AA^{-1}=I$
 $(AA^{-1})^T = (A^{-1})^TA^T = I$
 $(A^{-1})^T=(A^T)^{-1}$
 
@@ -33,6 +33,7 @@ $(A^{-1})^T=(A^T)^{-1}$
 6. $L^{-1}=L$
 7. $U^{-1}=U$
 ---
+
 ## LU decomposition
 위의 성질들을 모두 알았다면, LU분해는 매우 간단하다.
 앞 장에서 우리는 가우스 소거법을 이용하여 A를 U형태로 변환시켰다.
