@@ -53,8 +53,8 @@ nxn의 permutation matrix는 몇 개가 존재할까?
 
 proof
 
->$(A^TA)^T = (A^T)(A^T)^T$
-$(A^T)(A^T)^T=(A^T)A$
+> $(A^TA)^T = (A^T)(A^T)^T$
+ $(A^T)(A^T)^T=(A^T)A$
 이므로 대칭행렬의 성질인 1번 성질을 만족.
 
 ---
