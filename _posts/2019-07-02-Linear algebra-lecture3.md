@@ -52,7 +52,7 @@ A의 역행렬(Inverse)는 A^{-1}로 표기한다.
 <center>$AA^{-1}=A^{-1}A=I$</center>
 역행렬이 존재하면, invertible 또는 non-singular라고 부른다.
 
-### 역행렬을 가지지 않을 조건(Conditions of singular case)**
+### 역행렬을 가지지 않을 조건(Conditions of singular case)
 1. 결정자(Determinant) =  0
 2. 마지막 Pivot = 0
 또한, 만약 A가 역행렬을 가지지 않을 경우, AX=0의 식에서 X는 해를 가지지 않는 것을 알 수 있다.
