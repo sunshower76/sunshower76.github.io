@@ -10,6 +10,7 @@ Product of elimination matrices, A=LU(no row exchanges)
 에 대해서 다루도록 하겠다.
 이번 장은 비교적 간단하게 넘어 가도록 하겠다.
 ---
+
 ## Some properties
 이번 장에서 세세한 증명은 없지만, 전치(Transpose)연산과
 역행렬(Inverse)연산에 대해서 간략하게 설명이 나온다.
