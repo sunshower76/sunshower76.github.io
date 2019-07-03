@@ -7,21 +7,21 @@ tags: [Linear Algebra]
 ---
 >이번 강의에서는 Matrix multiplication(4ways),
 Inverse of A, AB, $A^T$,
-Causs-Jordan/find $A^-1$에 대해서 학습한다.
+Causs-Jordan/find $A^{-1}$에 대해서 학습한다.
 ---
 
 ## Matrix multiplication(4ways & block multiplication)
 ### 1.Standard
 <center><img src="/public/img/2019-07-02-linear algebra-lecture3/img1.png" width="50%"></center>
-<center>C_{34}=(row3 of A) x (col4 of B)</center>
-<center>=a_{31}b_{14} + a_{32}b_{24} + ...</center>
-<center>=sum_{k=1}^n a_{3k}b_{k4}</center>
+<center>$C_{34}=(row3 of A) x (col4 of B)$</center>
+<center>=$a_{31}b_{14} + a_{32}b_{24} + ...$</center>
+<center>=$sum_{k=1}^n a_{3k}b_{k4}$</center>
 A의행, B의 열의 모든 조합에 대해서, 위와 같은 방식으로 C의 모든 원소를 구했다.
 
 ### 2.Column way(with Matrix)
 <center><img src="/public/img/2019-07-02-linear algebra-lecture3/img2.png" width="50%"></center>
 
-<center>Columns of C are combinations of **columns of A**</center>
+<center>Columns of C are combinations of columns of A</center>
 여기서 이해가 안가는게 Columns of B 이여야 할 것 같은데, Columns of A라고 말한 점이다.
 강의에서는 C의 열의 원소의 개수를 나타내는 m이 A로부터 왔으니까 columns of A라고 한 것 같다.
 수식 적으로는 뭔가 Columns of B가 맞는것 같지만 말이다.
@@ -50,7 +50,7 @@ block multiplication은 행렬 안에 있는 원소들을 일정 크기의 블�
 ## Inverses
 A의 역행렬(Inverse)는 A^{-1}로 표기한다.
 이 때, 역행렬은 다음과 같은 성질이 존재한다.
-<center>AA^{-1}=A^{-1}A=I</center>
+<center>$AA^{-1}=A^{-1}A=I$</center>
 역행렬이 존재하면, invertible 또는 non-singular라고 부른다.
 
 ### 역행렬을 가지지 않을 조건(Conditions of singular case)**
