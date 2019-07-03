@@ -9,13 +9,12 @@ tags: [Linear Algebra]
 Inverse of A, AB, $A^T$,
 Causs-Jordan/find $A^{-1}$에 대해서 학습한다.
 ---
-
 ## Matrix multiplication(4ways & block multiplication)
 ### 1.Standard
 <center><img src="/public/img/2019-07-02-linear algebra-lecture3/img1.png" width="50%"></center>
 <center>$C_{34}=(row3 of A) x (col4 of B)$</center>
 <center>=$a_{31}b_{14} + a_{32}b_{24} + ...$</center>
-<center>=$sum_{k=1}^n a_{3k}b_{k4}$</center>
+<center>=$\sum_{k=1}^n a_{3k}b_{k4}$</center>
 A의행, B의 열의 모든 조합에 대해서, 위와 같은 방식으로 C의 모든 원소를 구했다.
 
 ### 2.Column way(with Matrix)
