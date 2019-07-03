@@ -8,6 +8,7 @@ tags: [Linear Algebra]
 >이번 강의에서는 Matrix multiplication(4ways),
 Inverse of A, AB, $A^T$,
 Causs-Jordan/find $A^{-1}$에 대해서 학습한다.
+
 ---
 
 ## Matrix multiplication(4ways & block multiplication)
