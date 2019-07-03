@@ -9,6 +9,7 @@ tags: [Linear Algebra]
 Product of elimination matrices, A=LU(no row exchanges)
 에 대해서 다루도록 하겠다.
 이번 장은 비교적 간단하게 넘어 가도록 하겠다.
+
 ---
 
 ## Some properties
