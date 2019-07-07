@@ -6,15 +6,12 @@ categories: Mathematics
 tags: [Linear Algebra]
 ---
 >이번 강의에서는
-
--Column space of A : Solving Ax=b
-
--Nullspace of A
-
+- Column space of A : Solving Ax=b
+- Nullspace of A
 에 대해서 배운다.
 
 ---
-##Column space of A : Solving Ax=b
+## Column space of A : Solving Ax=b
 다음 예제에 대해서 생각해보자.
 <center><img src="/public/img/2019-07-07-linear algebra-lecture2/img1_.gif" width="50%"></center>
 위 예제의 Column space는 어떻게 표시되는가?
@@ -31,7 +28,9 @@ Column space of A=$C(A)$=All linear combnations of columns of A 이다.
 위 관계식 보았을 때, 어떤 b의 값들이 위 관계식의 해를 갖게 할까?
 
 답은 **b가 A의 Column들의 linear combination으로 이루어지는 것이다.**
+
 쉽게 말해서 b=$c_1Col_1(A) + c_2Col_2(A) + c_3Col_3(A)$로 표현되면 된다.
+
 그렇게 된다면, x_1=c_1, x_2=c_2, x_3=c_3가 될 것이다.
 
 <center><img src="/public/img/2019-07-07-linear algebra-lecture2/img3_.gif" width="70%"></center>
@@ -43,7 +42,7 @@ Column space of A=$C(A)$=All linear combnations of columns of A 이다.
 X는 공간을 만든다고 볼 수없고, 단지, 두 벡터로 이루어진 평면을 만들 뿐이다.
 
 ---
-##Nullspace of A
+## Nullspace of A
 **Nullspace(영공간)**이란 무엇일까?
 
 Nullspace of A는 $AX=0$를 만족시키는 모든 X의 선형결합이 만드는 공간이다.
