@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 5)
+title: Linear Algebra - Gilbert Strang (Lecture 05)
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]
@@ -21,7 +21,7 @@ PA는 즉, 행 교환이 일어난 A행렬을 의미한다. 이렇게 행을 바
 LU분해를 진행하여 나온 식이 **PA = LU**이다.
 
 ### The number of permuation matrix
-Permutation matrix는 [Linear algebra-Lecture 2](https://sunshower76.github.io/mathematics/2019/07/02/Linear-algebra-lecture2/)
+Permutation matrix는 [Linear algebra-Lecture 02](https://sunshower76.github.io/mathematics/2019/07/02/Linear-algebra-lecture02/)
 에서 언급했었다.
 Permutation matrix는 행 또는 열의 위치를 서로 바꿔주는 행렬을 의미한다.
 nxn의 permutation matrix는 몇 개가 존재할까?
@@ -29,7 +29,7 @@ nxn의 permutation matrix는 몇 개가 존재할까?
 정답은 바로 n!개 이다.(세 사람이 순서가 있는 세 자리에 앉는 경우의 수와 동일하다.)
 
 3x3행렬의 예제를 살펴보자.
-<center><img src="/public/img/2019-07-04-linear algebra-lecture5/img1.gif" width="50%"></center>
+<center><img src="/public/img/2019-07-04-linear algebra-lecture05/img1.gif" width="50%"></center>
 
 4x4행렬은 4! 이므로, 24개가 나올것이다. 시간이 있다면 직접 한 번 해보자.
 
@@ -110,7 +110,7 @@ $R^2$의 부분공간은 무엇이 있을까? 총 3가지가 있다.
 ---
 ### Column space & Row space
 다음 그림을 살펴보자.
-<center><img src="/public/img/2019-07-04-linear algebra-lecture5/img2.png" width="70%"></center>
+<center><img src="/public/img/2019-07-04-linear algebra-lecture05/img2.png" width="70%"></center>
 
 위 그림에서 A라는 행렬이 있을 때, A라는 행렬의 열에 있는 벡터가 만드는 공간을 열공간(Column space)라 하고,
 행에 있는 벡터가 만드는 공간을 행공간(Row space)라 한다.
