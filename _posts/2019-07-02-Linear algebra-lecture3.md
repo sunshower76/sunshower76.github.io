@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 3)
+title: Linear Algebra - Gilbert Strang (Lecture 03)
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]
@@ -13,14 +13,14 @@ Causs-Jordan/find $A^{-1}$에 대해서 학습한다.
 
 ## Matrix multiplication(4ways & block multiplication)
 ### 1.Standard
-<center><img src="/public/img/2019-07-02-linear algebra-lecture3/img1.png" width="50%"></center>
+<center><img src="/public/img/2019-07-02-linear algebra-lecture03/img1.png" width="50%"></center>
 <center>$C_{34}=(row3 of A) x (col4 of B)$</center>
 <center>=$a_{31}b_{14} + a_{32}b_{24} + ...$</center>
 <center>=$\sum_{k=1}^n a_{3k}b_{k4}$</center>
 A의행, B의 열의 모든 조합에 대해서, 위와 같은 방식으로 C의 모든 원소를 구했다.
 
 ### 2.Column way(with Matrix)
-<center><img src="/public/img/2019-07-02-linear algebra-lecture3/img2.png" width="50%"></center>
+<center><img src="/public/img/2019-07-02-linear algebra-lecture03/img2.png" width="50%"></center>
 
 <center>Columns of C are combinations of columns of A</center>
 여기서 이해가 안가는게 Columns of B 이여야 할 것 같은데, Columns of A라고 말한 점이다.
@@ -28,25 +28,25 @@ A의행, B의 열의 모든 조합에 대해서, 위와 같은 방식으로 C의
 수식 적으로는 뭔가 Columns of B가 맞는것 같지만 말이다.
 
 ### 3.Row way(with Matrix)
-<center><img src="/public/img/2019-07-02-linear algebra-lecture3/img3.png" width="50%"></center>
+<center><img src="/public/img/2019-07-02-linear algebra-lecture03/img3.png" width="50%"></center>
 <center>Rows of C are combinations of row of B</center>
 
 
 ### 4.Decomposition with Column & Row
-<center><img src="/public/img/2019-07-02-linear algebra-lecture3/img4.png" width="50%"></center>
+<center><img src="/public/img/2019-07-02-linear algebra-lecture03/img4.png" width="50%"></center>
 위 연산의 결과를 보면, 모든 행은 행끼리 같은 선상에 있고, 모든 열은 열끼리 같은 선상에 있는 것을 알 수 있다.
 
 그리고 위 연산을 식으로 더 아름답게 표현할 수 있다.
 <center>AB = sum of (columns of A)(Row of B)</center>
 더욱 일반화된 연산은 다음과 같다.
-<center><img src="/public/img/2019-07-02-linear algebra-lecture3/img5.gif" width="50%"></center>
+<center><img src="/public/img/2019-07-02-linear algebra-lecture03/img5.gif" width="50%"></center>
 
 
 ### Block multiplication
 block multiplication은 행렬 안에 있는 원소들을 일정 크기의 블록으로 묶은 다음, 그 블록을
 마치 행렬의 원소처첨 취급한다음, 행렬곱을 하여도, 기존의 결과와 같아진다는 원리를 나타낸것이다.
 다음 예시를 보고 이해해보자.
-<center><img src="/public/img/2019-07-02-linear algebra-lecture3/img6.png" width="50%"></center>
+<center><img src="/public/img/2019-07-02-linear algebra-lecture03/img6.png" width="50%"></center>
 ---
 ## Inverses
 A의 역행렬(Inverse)는 A^{-1}로 표기한다.
@@ -65,7 +65,7 @@ A의 역행렬(Inverse)는 A^{-1}로 표기한다.
 가우스-조르단 소거법은 2개의 식을 한번에 풀어낸다.
 다만 그 방정식의 bias가 단위행렬이고, 이 방법을 이용하여 역행렬을 구한다.
 다음 예시를 보고 이해해보자.
-<center><img src="/public/img/2019-07-02-linear algebra-lecture3/img7.png" width="50%"></center>
+<center><img src="/public/img/2019-07-02-linear algebra-lecture03/img7.png" width="50%"></center>
 가우스 조르단 소거법은 원래 A행렬을 단위행렬로 만들면 그 과정이 끝난다.
 
 위 식을 다음과 같이 이해하면 좋을것 같다.
