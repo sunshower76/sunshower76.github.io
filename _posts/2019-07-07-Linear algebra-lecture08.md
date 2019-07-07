@@ -32,7 +32,7 @@ ex)
 <center>3x_1 + 6x_2 + 8x_3 + 10x_4 = b_3</center>
 
 위 식을 Augmented matrix의 형태로 표현하면 다음과 같다.
-<center><img src="/public/img/2019-07-07-linear algebra-lecture08/img01.png" width="50%"></center>
+<center><img src="/public/img/2019-07-07-linear algebra-lecture08/img01.png" width="25%"></center>
 
 [Linear algebra-Lecture 06](https://sunshower76.github.io/mathematics/2019/07/07/Linear-algebra-lecture06/) 배웠던 내용을 생각해보자.
 Ax=b가 해를 갖기 위한 b의 조건은 무엇일까?
@@ -70,8 +70,8 @@ ex)
 
 #### 2. $x_{nullspace}$
 다시 한 번 Nullspace를 구하는 과정을 복습해보자.
-<center><img src="/public/img/2019-07-07-linear algebra-lecture08/img02.png" width="50%"></center>
-<center><img src="/public/img/2019-07-07-linear algebra-lecture08/img04.png" width="25%"></center>
+<center><img src="/public/img/2019-07-07-linear algebra-lecture08/img03.png" width="50%"></center>
+<center><img src="/public/img/2019-07-07-linear algebra-lecture08/img04.png" width="50%"></center>
 
 #### 3. Combine x_p with x_n
 최종적인 일반해는 다음과 같다.
@@ -101,7 +101,7 @@ $X=x_p$라고 할 수 있다. 이 때, x는 unique solution을 갖는다.
 **unique solution**은 해가 존재하지 않거나, 해가 1개만 존재하는 것을 의미한다.
 
 모르겠으면 다음 중간까지 풀이 과정을 보고 생각해보자.
-<center><img src="/public/img/2019-07-07-linear algebra-lecture08/img06.png" width="50%"></center>
+<center><img src="/public/img/2019-07-07-linear algebra-lecture08/img06.png" width="30%"></center>
 
 위 경우는, 중학교때 배운 방정식의 관점에서 생각해보면ㅡ 다음과 같은 경우이다.
 
@@ -119,7 +119,7 @@ $X=x_p$라고 할 수 있다. 이 때, x는 unique solution을 갖는다.
 이것을 선형대수적으로 바라보면 어떻게 해야할까? 우리가 배웠던 Nullspace를 구하는 방법을 이용하면 된다.
 
 예시를 하나 보자.
-<center><img src="/public/img/2019-07-07-linear algebra-lecture08/img07.png" width="50%"></center>
+<center><img src="/public/img/2019-07-07-linear algebra-lecture08/img07.png" width="30%"></center>
 
 위와 같이 Nullspace의 기저가 존재하게 되면, complete solution은 선, 면과 같은 모양의 공간을 형성하게 되
 므로, 무수히 많은 해를 지닌다고 볼 수 있다.
@@ -134,7 +134,7 @@ r=m=n인 경우, 정방행렬에서, full rank를 가지는 조건이다.
 A=2x2의 행렬인 경우, R=rref(A)=I가 된다. 그러므로 단 1개의 해만 존재한다.
 
 ### abstraction
-<center><img src="/public/img/2019-07-07-linear algebra-lecture08/img08.png" width="70%"></center>
+<center><img src="/public/img/2019-07-07-linear algebra-lecture08/img08.png" width="100%"></center>
 
 
 
