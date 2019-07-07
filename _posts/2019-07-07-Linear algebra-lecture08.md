@@ -119,7 +119,7 @@ $X=x_p$라고 할 수 있다. 이 때, x는 unique solution을 갖는다.
 이것을 선형대수적으로 바라보면 어떻게 해야할까? 우리가 배웠던 Nullspace를 구하는 방법을 이용하면 된다.
 
 예시를 하나 보자.
-<center><img src="/public/img/2019-07-07-linear algebra-lecture08/img07.png" width="30%"></center>
+<center><img src="/public/img/2019-07-07-linear algebra-lecture08/img07.png" width="40%"></center>
 
 위와 같이 Nullspace의 기저가 존재하게 되면, complete solution은 선, 면과 같은 모양의 공간을 형성하게 되
 므로, 무수히 많은 해를 지닌다고 볼 수 있다.
