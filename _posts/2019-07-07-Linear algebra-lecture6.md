@@ -5,10 +5,9 @@ author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]
 ---
->이번 강의에서는
+>이번 강의에서는 다음에 대해서 배운다.
 - Column space of A : Solving Ax=b
 - Nullspace of A
-에 대해서 배운다.
 
 ---
 ## Column space of A : Solving Ax=b
