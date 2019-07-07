@@ -53,7 +53,7 @@ Ax=b가 해를 갖기 위한 b의 조건은 무엇일까?
 
 이게 원리 전부이다.
 
-#### 1. **x_{particular}** : 모든 free varaible=0로 두고, Ax=b를 푼다.
+#### 1. $x_{particular}$ : 모든 free varaible=0로 두고, Ax=b를 푼다.
 
 (Pivot varaible에 대해서만 방정식을 푼다고 생각해도 되겠다.)
 
@@ -68,7 +68,7 @@ ex)
 
 <center><img src="/public/img/2019-07-07-linear algebra-lecture08/img02.png" width="25%"></center>
 
-#### 2. x_{nullspace}
+#### 2. $x_{nullspace}$
 다시 한 번 Nullspace를 구하는 과정을 복습해보자.
 <center><img src="/public/img/2019-07-07-linear algebra-lecture08/img02.png" width="50%"></center>
 <center><img src="/public/img/2019-07-07-linear algebra-lecture08/img04.png" width="25%"></center>
@@ -90,6 +90,7 @@ m by n 형태를 가진 행렬A가 rank가 r이라고 하자.
 3개의 방정식과, 5개의 미지수만 남은 상황이다. 이때는 당연히 비 밖에 나오지 않으므로 무수히
 많은 해를 지닐 수 밖에 없다. 아니면 완벽히, 미지수가 제거 되지 않아, 해가 없을 수도 있다.
 
+
 ### 2. r=n (n<m) : no free varaibles
 잘 생각해보면 r=n일 때, rank가 full이라는 것을 알 수 있다.
 
@@ -108,6 +109,7 @@ $X=x_p$라고 할 수 있다. 이 때, x는 unique solution을 갖는다.
 나머지 세 방정식은 서로에 대해서 모두 독립이다. 그럴 때에는, 해가 딱 1개만 있다.
 하지만, 1번 경우와 같이, 방정식 제거 도중, 미지수가 완전히 제거되지 않을 때, 해가 아예 없다
 
+
 ### 3. r=m (n<m) : n-r(n-m) free varaibles($0<=num(free)<=n-r$)
 
 우리가 중학교때 배웠던 방식대로 생각해보면 다음과 같다.
@@ -121,6 +123,7 @@ $X=x_p$라고 할 수 있다. 이 때, x는 unique solution을 갖는다.
 
 위와 같이 Nullspace의 기저가 존재하게 되면, complete solution은 선, 면과 같은 모양의 공간을 형성하게 되
 므로, 무수히 많은 해를 지닌다고 볼 수 있다.
+
 
 ### 4. r=m=n (m=n) 
 
