@@ -30,7 +30,7 @@ Column space of A=$C(A)$=All linear combnations of columns of A 이다.
 
 쉽게 말해서 b=$c_1Col_1(A) + c_2Col_2(A) + c_3Col_3(A)$로 표현되면 된다.
 
-그렇게 된다면, x_1=c_1, x_2=c_2, x_3=c_3가 될 것이다.
+그렇게 된다면, $x_1=c_1, x_2=c_2, x_3=c_3$가 될 것이다.
 
 <center><img src="/public/img/2019-07-07-linear algebra-lecture06/img3.gif" width="50%"></center>
 위 예시에서 해는 무엇을까? x=(1,1,0) or (0,0,1) or (2,2,-1) 등 무수히 많을 것이다.
