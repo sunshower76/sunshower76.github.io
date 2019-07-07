@@ -68,12 +68,12 @@ ex)
 
 <center><img src="/public/img/2019-07-07-linear algebra-lecture08/img02.png" width="25%"></center>
 
-#### 2. **x_{nullspace}**
+#### 2. x_{nullspace}
 다시 한 번 Nullspace를 구하는 과정을 복습해보자.
 <center><img src="/public/img/2019-07-07-linear algebra-lecture08/img02.png" width="50%"></center>
 <center><img src="/public/img/2019-07-07-linear algebra-lecture08/img04.png" width="25%"></center>
 
-#### 3. **Combine x_p with x_n
+#### 3. Combine x_p with x_n
 최종적인 일반해는 다음과 같다.
 <center><img src="/public/img/2019-07-07-linear algebra-lecture08/img05.png" width="50%"></center>
 
@@ -130,7 +130,7 @@ r=m=n인 경우, 정방행렬에서, full rank를 가지는 조건이다.
 
 A=2x2의 행렬인 경우, R=rref(A)=I가 된다. 그러므로 단 1개의 해만 존재한다.
 
-### 최종정리
+### abstraction
 <center><img src="/public/img/2019-07-07-linear algebra-lecture08/img08.png" width="70%"></center>
 
 
