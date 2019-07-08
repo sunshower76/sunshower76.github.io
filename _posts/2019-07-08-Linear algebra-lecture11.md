@@ -80,6 +80,11 @@ $dim(S+U) = dim(S) + dim(U) - dim(S \cap U)$
 
 그리고 모든 rank=1인 행렬은 $uv^T=(column vector)(rowv vector)$의 형태로 표현이 된다.
 
+**언급된 사항중 가장 중요한 게 다음 성질이다**
+<center><img src="/public/img/2019-07-07-linear algebra-lecture11/img03.png" width="50%"></center>
+즉, A의 rank가 r이라면, A는 rank가 1인 mxn행렬 r개의 선형결합으로 표현히 가능하다는 것이다.
+
+
 
 
 
