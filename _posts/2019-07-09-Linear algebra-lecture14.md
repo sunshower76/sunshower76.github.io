@@ -77,6 +77,9 @@ orthogonal to every vector in T
 우선 결론적으로, $N(A^TA)=N(A)$이다. 다음 예제를 살펴보자.
  <center><img src="/public/img/2019-07-09-linear algebra-lecture14/img05.png" width="30%"></center>
  
+ 위 예제를 보면, 두 행렬의 reduced row echelon form이 같은것을 볼 수 있다. 즉, 두 행렬의 영공간은 같은 기저로
+ 이루어졌으므로, 같은것을 알 수 있다.
+ 
  
  그리고, 두 영공간이 같으므로, 당연히 두 행렬의 랭크는 같을 것이다.
  (rank(A^TA)=n-r, rank(A)=n-r) 예제로 살펴보자.
