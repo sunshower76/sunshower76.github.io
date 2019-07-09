@@ -44,7 +44,7 @@ orthogonal to every vector in T
  모든 선형결합이 서로 직교한다는 뜻이다. ${s^Tt=0 |all s, t in S, T}$)
  
  가장 간단한예로 다음 그림을 보자.
- <center><img src="/public/img/2019-07-09-linear algebra-lecture14/img03.png" width="15%"></center>
+ <center><img src="/public/img/2019-07-09-linear algebra-lecture14/img03.png" width="30%"></center>
  
  원점을 지나는 z축과 평행한 직선형태의 부분공간 S와, xy평면 형태의 부분공간 T를 보면, 두 공간은 
  서로 직교한다는 것을 바로 볼 수 있다.
@@ -75,7 +75,7 @@ orthogonal to every vector in T
 우리는 전에 $A^TA = S$인 것을 배웠다. 그렇다면 대칭행렬의 영공간에 대해서 알아보자.
 
 우선 결론적으로, $N(A^TA)=N(A)$이다. 다음 예제를 살펴보자.
- <center><img src="/public/img/2019-07-09-linear algebra-lecture14/img05.png" width="50%"></center>
+ <center><img src="/public/img/2019-07-09-linear algebra-lecture14/img05.png" width="30%"></center>
  
  
  그리고, 두 영공간이 같으므로, 당연히 두 행렬의 랭크는 같을 것이다.
