@@ -22,7 +22,7 @@ tags: [Linear Algebra]
 벡터x와 벡터y가 직교한다고 할 때, x와 y를 orthogonal vectors라고 한다.
 
 이 때, 두 벡터를 그려보면 다음과 같이 그려볼 수 있을 것이다.
-<center><img src="/public/img/2019-07-09-linear algebra-lecture14/img02.png" width="40%"></center>
+<center><img src="/public/img/2019-07-09-linear algebra-lecture14/img02.png" width="30%"></center>
 
 두 벡터가 직교한다는 것을 한눈에 볼 수 있다.
 
@@ -44,7 +44,7 @@ orthogonal to every vector in T
  모든 선형결합이 서로 직교한다는 뜻이다. ${s^Tt=0 |all s, t in S, T}$)
  
  가장 간단한예로 다음 그림을 보자.
- <center><img src="/public/img/2019-07-09-linear algebra-lecture14/img03.png" width="50%"></center>
+ <center><img src="/public/img/2019-07-09-linear algebra-lecture14/img03.png" width="30%"></center>
  
  원점을 지나는 z축과 평행한 직선형태의 부분공간 S와, xy평면 형태의 부분공간 T를 보면, 두 공간은 
  서로 직교한다는 것을 바로 볼 수 있다.
@@ -58,7 +58,7 @@ orthogonal to every vector in T
  **A의 row space는 A의 null space랑 직교한다.**
  
  다음 그림을 살펴보자
- <center><img src="/public/img/2019-07-09-linear algebra-lecture14/img04.png" width="50%"></center>
+ <center><img src="/public/img/2019-07-09-linear algebra-lecture14/img04.png" width="30%"></center>
  
  우리가 배운 지식을 생각해 봤을때, row space는 R(reduced row echelon form)의 pivot rows를 
  basis로 하는 공간이었다. 즉, A의 rows는 basis로부터 생성된 벡터들이라고 볼 수 있다. 즉, 이 벡터들과 
