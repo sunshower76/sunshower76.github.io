@@ -11,7 +11,7 @@ tags: [Linear Algebra]
 - Least squares
 
 ---
-##Projections
+## Projections
 벡터를 projection 한다는 것은 벡터를 정사영(투영)한다고 말을 한다. 임의의 한 벡터에 대하여, 한 벡터, 한 평면 또는 임의의 
 공간에 정사영 할 수 있다. 여기서는 임의의 한 벡터를 다른 벡터에 대하여 정사영하는 과정을 배워보자.
 
@@ -36,19 +36,19 @@ $a^T(e)=0$
 $a^T(b-*x*a)=0 ...(1)$ 이다. 왜냐하면,  벡터a 와 벡터e 는 수직이기 때문이다.
 
 그리고 식(1)을 전개하면 다음과같다.
-$a^T(b-*x*a)=0$
+$a^T(b-{*x*}a)=0$
 
 $a^Tb-*x*a^Ta=0$
 
 $*x*a^Ta=a^Tb ...(2)$ 
 
-$*x*=\frac{a^Tb}{a^a}$ 이라는 사실을 알 수 있다.
+$*x*=\frac{a^Tb}{a^Ta}$ 이라는 사실을 알 수 있다.
 
 **2. 그림의 p=a*x*와, 위에서 계산한 *x*를 이용하여, p를 계산하자!**
 
-위의 그림에서 p=ax 였고, 1번 과정에서$*x*=\frac{a^Tb}{a^a}$을 계산했다.
+위의 그림에서 p=ax 였고, 1번 과정에서$*x*=\frac{a^Tb}{a^Ta}$을 계산했다.
 
-위의 두 식으로부터, $p=a\frac{a^Tb}{a^a}$ 을 도출해낼수 있다. $...(3)$
+위의 두 식으로부터, $p=a\frac{a^Tb}{a^Ta}$ 을 도출해낼수 있다. $...(3)$
 
 
 **3. Projection Matrix를 구하자!**
@@ -83,7 +83,7 @@ $P^T=P$라고 할 수 있다.
 3. $P^2=P$
 
 
-##Least squares(최소자승법)
+## Least squares(최소자승법)
 
 <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img05.png" width="80%"></center>
 <center> [그림출처 :] https://m.blog.naver.com/hlkim96/220777245464 </center>
@@ -97,7 +97,7 @@ $P^T=P$라고 할 수 있다.
 <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img06.png width="70%"></center>
 <center> [그림출처 :] https://twlab.tistory.com/34?category=668741 </center>
 
-<img src="/public/img/2019-07-30-linear algebra-lecture15/img07.png width="70%">
+<center><img src="/public/img/2019-07-30-linear algebra-lecture15/img07.png width="70%"></center>
 
   관측점 들의 값들이 모여 만들어진 벡터b 가, 행렬A로 표현되지 못하므로,
 $Ax=b$를 만족하는 $x$는 존재하지 않는다. 그러면 완벽히는 아니지만, 최대한 데이터의 분포를 잘 
@@ -109,7 +109,7 @@ $Ax=b$를 만족하는 $x$는 존재하지 않는다. 그러면 완벽히는 아
 
 그렇다면 이제 수식으로 살펴보자.
 
-###식1. A의 기저와 $e=b-A\hat{x}$ 는 수직
+1. A의 기저와 $e=b-A\hat{x}$ 는 수직
 즉, $p=A\hat{x}$와 행렬 A의 기저인 $a_1, a_2$가 각각 수직이라고 볼 수 있다. 왜냐하면, 평면에 수직인
  벡터는, 평면에 존재하는 모든 벡터와 수직이기 때문이다.
  
