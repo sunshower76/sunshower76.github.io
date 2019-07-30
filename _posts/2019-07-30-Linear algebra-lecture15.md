@@ -111,7 +111,8 @@ $Ax=b$를 만족하는 $x$는 존재하지 않는다. 그러면 완벽히는 아
 
 그렇다면 이제 수식으로 살펴보자.
 
-1. A의 기저와 $e=b-A\hat{x}$ 는 수직
+**A의 기저와 $e=b-A\hat{x}$ 는 수직!**
+
 즉, $p=A\hat{x}$와 행렬 A의 기저인 $a_1, a_2$가 각각 수직이라고 볼 수 있다. 왜냐하면, 평면에 수직인
  벡터는, 평면에 존재하는 모든 벡터와 수직이기 때문이다.
  
@@ -136,9 +137,9 @@ $Ax=b$를 만족하는 $x$는 존재하지 않는다. 그러면 완벽히는 아
  ---
  ### 풀이 예제
  
- <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img09.png width="60%"></center>
+ <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img09.png" width="50%"></center>
   
- <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img10.png width="60%"></center>
+ <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img10.png width="50%"></center>
  
  
  
