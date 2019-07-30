@@ -36,13 +36,13 @@ $a^T(e)=0$
 $a^T(b-*x*a)=0 ...(1)$ 이다. 왜냐하면,  벡터a 와 벡터e 는 수직이기 때문이다.
 
 그리고 식(1)을 전개하면 다음과같다.
-$a^T(b-{*x*}a)=0$
+$a^T(b-xa)=0$
 
-$a^Tb-*x*a^Ta=0$
+$a^Tb-xa^Ta=0$
 
-$*x*a^Ta=a^Tb ...(2)$ 
+$xa^Ta=a^Tb ...(2)$ 
 
-$*x*=\frac{a^Tb}{a^Ta}$ 이라는 사실을 알 수 있다.
+$x=\frac{a^Tb}{a^Ta}$ 이라는 사실을 알 수 있다.
 
 **2. 그림의 p=a*x*와, 위에서 계산한 *x*를 이용하여, p를 계산하자!**
 
@@ -57,9 +57,9 @@ $*x*=\frac{a^Tb}{a^Ta}$ 이라는 사실을 알 수 있다.
 
 그러면, $p = Pb$라고 할 수 있다. 그런데 이미 식(3)에서 정사영 행렬이 나와있다.
 
-$p=a\frac{a^Tb}{a^a}$ 식을,  $p=\frac{aa^T}{a^a}b$라고 할 수 있다.
+$p=a\frac{a^Tb}{a^a}$ 식을,  $p=\frac{aa^T}{a^Ta}b$라고 할 수 있다.
 
-그렇게 되면, 정사영 행렬(Projection matrix)는 $P=\frac{aa^T}{a^a}$이라고 쓸 수 있다.
+그렇게 되면, 정사영 행렬(Projection matrix)는 $P=\frac{aa^T}{a^Ta}$이라고 쓸 수 있다.
 
 그렇다면, 정사영행렬은 어떻게 생겼을까? 미리 말하면 졍사영행렬은 벡터a를 기저로 하는 행렬이다.
 
@@ -86,7 +86,7 @@ $P^T=P$라고 할 수 있다.
 ## Least squares(최소자승법)
 
 <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img05.png" width="80%"></center>
-<center> [그림출처 :] https://m.blog.naver.com/hlkim96/220777245464 </center>
+<center> [그림출처 :] (https://m.blog.naver.com/hlkim96/220777245464) </center>
 
 위 그림을 보면 간략히 최소 자승법에 대한 설명이 나와있다.
 
@@ -95,7 +95,7 @@ $P^T=P$라고 할 수 있다.
 그렇다면, 선형대수학에서는 최소자승법을 어떤식으로 나타낼 수 있는지 살펴보자.
 
 <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img06.png width="70%"></center>
-<center> [그림출처 :] https://twlab.tistory.com/34?category=668741 </center>
+<center> [그림출처 :] (https://twlab.tistory.com/34?category=668741) </center>
 
 <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img07.png width="70%"></center>
 
