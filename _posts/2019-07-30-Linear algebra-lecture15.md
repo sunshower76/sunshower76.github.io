@@ -121,7 +121,7 @@ $Ax=b$를 만족하는 $x$는 존재하지 않는다. 그러면 완벽히는 아
  
  그리고 위 식은 다음과 같이 표현이 가능하다.
  
- <img src="/public/img/2019-07-30-linear algebra-lecture15/img08.png width="70%">
+<center><img src="/public/img/2019-07-30-linear algebra-lecture15/img08.png" width="30%"></center>
  
  또한 $A^T(b-A\hat{x})=0$식을 보면,  $A$의 left null space는 $(b-A\hat{x})$라는 것을 알 수 있다.
  즉, **$(b-A\hat{x})$는 A의 열공간과 수직인 공간**이라고 볼 수 있다.
