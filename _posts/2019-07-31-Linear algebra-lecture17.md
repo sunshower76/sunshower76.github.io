@@ -94,7 +94,7 @@ $\vec{e_{c1}}$를 $\vec{q_2}$에 투영하여 나온 벡터$\vec{p_{c1}}$은 그
 
 위 과정의 계산 과정은 다음과 같다.
 
-<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img05.png" width="70%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img05.png" width="50%"></center>
 
 최종적인 결과는 다음과 같이 요약된다.
 <center><img src="/public/img/2019-07-31-linear algebra-lecture17/img06.png" width="40%"></center>
