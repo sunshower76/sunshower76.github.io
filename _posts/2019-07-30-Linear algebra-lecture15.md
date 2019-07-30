@@ -87,7 +87,7 @@ $P^T=P$라고 할 수 있다.
 
 <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img05.png" width="80%"></center>
 
-<center> [그림출처 :](https://m.blog.naver.com/hlkim96/220777245464) </center>
+<center>[그림출처 :]https://m.blog.naver.com/hlkim96/220777245464</center>
 
 위 그림을 보면 간략히 최소 자승법에 대한 설명이 나와있다.
 
@@ -97,9 +97,9 @@ $P^T=P$라고 할 수 있다.
 
 <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img06.png" width="80%"></center>
 
-<center> [그림출처 :](https://twlab.tistory.com/34?category=668741) </center>
+<center>[그림출처 :] https://twlab.tistory.com/34?category=668741</center>
 
-<center><img src="/public/img/2019-07-30-linear algebra-lecture15/img07.png" width="80%"></center>
+<center><img src="/public/img/2019-07-30-linear algebra-lecture15/img07.png" width="25%"></center>
 
   관측점 들의 값들이 모여 만들어진 벡터b 가, 행렬A로 표현되지 못하므로,
 $Ax=b$를 만족하는 $x$는 존재하지 않는다. 그러면 완벽히는 아니지만, 최대한 데이터의 분포를 잘 
