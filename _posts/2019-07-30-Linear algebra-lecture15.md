@@ -136,9 +136,9 @@ $Ax=b$를 만족하는 $x$는 존재하지 않는다. 그러면 완벽히는 아
  
  ### 풀이 예제
  
- <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img09.png" width="50%"></center>
+ <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img09.png" width="80%"></center>
   
- <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img10.png" width="50%"></center>
+ <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img10.png" width="80%"></center>
  
  
  
