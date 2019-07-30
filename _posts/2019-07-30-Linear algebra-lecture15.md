@@ -110,7 +110,7 @@ $Ax=b$를 만족하는 $x$는 존재하지 않는다. 그러면 완벽히는 아
 
 그렇다면 이제 수식으로 살펴보자.
 
-**A의 기저와 $e=b-A\hat{x}$ 는 수직!**
+**첫번째, A의 기저 & $e=b-A\hat{x}$ 는 서로 수직이라는 점을 이용하자**
 
 즉, $p=A\hat{x}$와 행렬 A의 기저인 $a_1, a_2$가 각각 수직이라고 볼 수 있다. 왜냐하면, 평면에 수직인
  벡터는, 평면에 존재하는 모든 벡터와 수직이기 때문이다.
@@ -120,6 +120,7 @@ $Ax=b$를 만족하는 $x$는 존재하지 않는다. 그러면 완벽히는 아
  $a_1^T(b-A\hat{x})=0 , a_2^T(b-A\hat{x})=0$
  
  그리고 위 식은 다음과 같이 표현이 가능하다.
+ 
  <img src="/public/img/2019-07-30-linear algebra-lecture15/img08.png width="70%">
  
  또한 $A^T(b-A\hat{x})=0$식을 보면,  $A$의 left null space는 $(b-A\hat{x})$라는 것을 알 수 있다.
@@ -129,12 +130,14 @@ $Ax=b$를 만족하는 $x$는 존재하지 않는다. 그러면 완벽히는 아
  
  $\hat{x} = (A^TA)^{-1}A^Tb$ 이며,
  
- 투영벡터p = $\vec{p}=A\hat{x}=A(A^TA)^{-1}A^Tb$이고,
+ $Pro_{\vec{p}}$ = $\vec{p}=A\hat{x}=A(A^TA)^{-1}A^Tb$이고,
  
- 투영행렬P = $A(A^TA)^{-1}A^T$이다.
+ $Pro_{Mat(P)}$ = $A(A^TA)^{-1}A^T$이다.
  
  
-예제.
+ 
+ 
+**예제**
  
  <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img09.png" width="80%"></center>
  
