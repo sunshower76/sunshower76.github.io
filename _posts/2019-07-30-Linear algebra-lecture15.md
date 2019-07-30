@@ -26,9 +26,8 @@ tags: [Linear Algebra]
 
 그렇다면, 위 과정을 어떻게 수식으로 표현할지 살펴보자. 앞 으로의 수식 설명에 다음 그림을 참고하자.
 <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img04.png" width="50%"></center>
-
-가장먼저, 다음의 사실을 알 수 있다.
-
+  
+  
 **1. 벡터a와 벡터e는 수직, *x*를 계산하자!**
 
 $a^T(e)=0$
