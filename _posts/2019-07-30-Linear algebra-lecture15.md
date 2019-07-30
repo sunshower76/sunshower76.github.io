@@ -49,15 +49,15 @@ $x=\frac{a^Tb}{a^Ta}$ 이라는 사실을 알 수 있다.
 위의 그림에서 p=ax 였고, 1번 과정에서$*x*=\frac{a^Tb}{a^Ta}$을 계산했다.
 
 위의 두 식으로부터, $p=a\frac{a^Tb}{a^Ta}$ 을 도출해낼수 있다. $...(3)$
-
-
+  
+  
 **3. Projection Matrix를 구하자!**
 
 벡터b 를 벡터a에 대해서 정사영시키는 행렬을 **P**라고 하자. 그리고 정사영된 벡터를 p라고 하자.
 
 그러면, $p = Pb$라고 할 수 있다. 그런데 이미 식(3)에서 정사영 행렬이 나와있다.
 
-$p=a\frac{a^Tb}{a^a}$ 식을,  $p=\frac{aa^T}{a^Ta}b$라고 할 수 있다.
+$p=a\frac{a^Tb}{a^Ta}$ 식을,  $p=\frac{aa^T}{a^Ta}b$라고 할 수 있다.
 
 그렇게 되면, 정사영 행렬(Projection matrix)는 $P=\frac{aa^T}{a^Ta}$이라고 쓸 수 있다.
 
@@ -73,7 +73,8 @@ $p=a\frac{a^Tb}{a^a}$ 식을,  $p=\frac{aa^T}{a^Ta}b$라고 할 수 있다.
 $P^T=P$라고 할 수 있다.
 
 또한, 한번 투영후 다시 똑같은 벡터에 투영하면 변화는 없을 것이므로, $P^2=P$라고 할 수 있을 것이다.
-
+  
+  
 **정사영행렬 성질 정리**
 
 1. $Rank(P) = 1$, **Column space = linear combinations of matrix A**
@@ -81,7 +82,7 @@ $P^T=P$라고 할 수 있다.
 2. $P^T=P$
 
 3. $P^2=P$
-
+  
 ---
 ## Least squares(최소자승법)
 
@@ -130,7 +131,7 @@ $Ax=b$를 만족하는 $x$는 존재하지 않는다. 그러면 완벽히는 아
  
  $\hat{x} = (A^TA)^{-1}A^Tb$ 이며,
  
- $Pro_{\vec{p}}$ = $\vec{p}=A\hat{x}=A(A^TA)^{-1}A^Tb$이고,
+ $Pro_{\vec{b}}$ = $\vec{p}=A\hat{x}=A(A^TA)^{-1}A^Tb$이고,
  
  $Pro_{Mat(P)}$ = $A(A^TA)^{-1}A^T$이다.
  
