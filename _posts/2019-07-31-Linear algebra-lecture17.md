@@ -55,7 +55,7 @@ $\vec{q_i}$와 $\vec{q_j}$를 직교벡터라고 한다. 이 때, $\vec{q_i}$와
 
 이제 이 과정을 자세히 살펴보자.
 
-<center><img src="/public/img/2019-07-30-linear algebra-lecture17/img01.png" width="70%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img01.png" width="70%"></center>
 
 위 그림을 살펴보면, 전에 설명했던 과정을 상상해볼 수 있을 것이다. 이제 수식의 관점에서 살펴보자.
 
@@ -75,7 +75,7 @@ $\vec{q_2} = \vec{b} - \frac{\vec{a}\vec{a}^T}{\vec{a}^T\vec{a}}\vec{b}$
 
 $\vec{e_{c1}} = \vec{c} - \frac{\vec{a}\vec{a}^T}{\vec{a}^T\vec{a}}\vec{c}$ 의 결과가 나올것이다.
 
-<center><img src="/public/img/2019-07-30-linear algebra-lecture17/img02.png" width="70%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img02.png" width="70%"></center>
 
 그러면 위 그림과 같은 형태가 나올 것이다. 여기서 봐야할 점은, $\vec{q_2}$와 $\vec{e_{c1}}$가 모두
 
@@ -86,7 +86,7 @@ $\vec{e_{c1}}$를 $\vec{q_2}$에 투영하여 나온 벡터$\vec{p_{c1}}$은 그
 
 그리고 최종적으로, $\vec{e_{c1}}$를 황색 점선벡터에 투영하면 그림은 다음과 같이 나온다.
 
-<center><img src="/public/img/2019-07-30-linear algebra-lecture17/img04.png" width="70%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img04.png" width="70%"></center>
 
 이렇게 되면 최종적으로 수직인 세 벡터가 나오게 된다. 이때, $\vec{q_3}$와$\vec{q_1}$이 직교하는 이유는 위에 굵은글씨
 로 언급했던 것 처럼 $\vec{q_3}$는  $\vec{q_2}$와 $\vec{e_{c1}}$를 기저로 하여 만들어진 평면상에 존재하는 벡터이기 때
@@ -94,10 +94,10 @@ $\vec{e_{c1}}$를 $\vec{q_2}$에 투영하여 나온 벡터$\vec{p_{c1}}$은 그
 
 위 과정의 계산 과정은 다음과 같다.
 
-<center><img src="/public/img/2019-07-30-linear algebra-lecture17/img05.png" width="70%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img05.png" width="70%"></center>
 
 최종적인 결과는 다음과 같이 요약된다.
-<center><img src="/public/img/2019-07-30-linear algebra-lecture17/img06.png" width="40%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img06.png" width="40%"></center>
 
 그리고 각 벡터의 크기로 각각 나누어 orthonormal vectors로 만들면 그람-슈미트 과정이 종료된다.
 
