@@ -71,13 +71,13 @@ $u_{k+1}=Au_k , initial value = $u_0$라고 쓸 수 있다.
 <center>$F_{k+2}=F_{k+1}+F{k}$</center>
 
 그렇다면 위 점화식을 다음과 같은 벡터로 나타내보자.
-<center><img src="/public/img/2019-07-31-linear algebra-lecture22/img08.png" width="30%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture22/img08.png" width="25%"></center>
 
 다음에는 위 관계식을 선형방정식으로 표현해보자.
-<center><img src="/public/img/2019-07-31-linear algebra-lecture22/img09.png" width="30%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture22/img09.png" width="25%"></center>
 
 위 방정식에 대해서, 행렬A의 고유값을 구하면 다음과 같다.
-<center><img src="/public/img/2019-07-31-linear algebra-lecture22/img10.png" width="50%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture22/img10.png" width="40%"></center>
 
 그리고 고유벡터를 다음과 같이 구할 수 있다.
 <center><img src="/public/img/2019-07-31-linear algebra-lecture22/img11.png" width="50%"></center>
