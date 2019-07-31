@@ -57,4 +57,6 @@ tags: [Linear Algebra]
 제외한 **나머지 부분 즉 2x2영역의 행렬식을 cofactor라고 한다.**
 
 
+출처 : https://twlab.tistory.com/41?category=668741
+
 
