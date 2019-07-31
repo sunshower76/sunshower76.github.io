@@ -31,7 +31,7 @@ tags: [Linear Algebra]
 어떤 한 원소에 대해서, 그 원소를 포함한 행과 열을 보았을때, 그 원소를 제외한 모든 원소의 값이 0이 존재하면 
 **그 항은 determinant가 존재한다.** 말로만 해서 모르니 그림을 살펴보자.
 
-<center><img src="/public/img/2019-07-31-linear algebra-lecture19/img03.png" width="50%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture19/img04.png" width="50%"></center>
 
 위 그림에서 연두색으로 칠해진 부분이 아까 설명했던 부분이다. 연두색으로 칠해진 것과 같은 부분이 존재하면 해당
  부분의 행렬식은 0이 되지않는데 그 이유는, R.E(Row Exchange)를 통하여 모든 원소를 대각에 위치시키면, 그 원소들
@@ -44,6 +44,17 @@ tags: [Linear Algebra]
 
 ### Big formula
 
+<center><img src="/public/img/2019-07-31-linear algebra-lecture19/img05.png" width="50%"></center>
+위 그림을 보면, 한 행에 대해서 행렬식 분해를 한 것을 볼 수 있다. 그렇게 되면 한 행을 기준으로 행렬식 분해를 
+실시하고 모든 행렬식값을 더하면 최종적인 행렬식이 나온다.
+
+그런데 이것을 보다 더 간단하게 만든 방법이 있다.
+
+### Cofactor(여인수)
+<center><img src="/public/img/2019-07-31-linear algebra-lecture19/img06.png" width="50%"></center>
+
+사실 위의 big formula와 별 차이가 없다. 공통된 부분을 묶어 인수분해를 한 것이 전부다. 여기서 연두색 부분을
+제외한 **나머지 부분 즉 2x2영역의 행렬식을 cofactor라고 한다.**
 
 
 
