@@ -48,7 +48,7 @@ $u_k=M^ku_0$
 먼저, 마코브 행렬의 고유값부터 살펴보자.
 
 다음의 마코브 행렬을 정의하자.
-<center><img src="/public/img/2019-07-31-linear algebra-lecture24/img03.png" width="30%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture24/img03.png" width="40%"></center>
 
 이때 다음으로 넘어가기 전에 한 가지 짚고 넘어갈게 있다. 전에 고유값과 고유벡터에 대해서 배울때, 고유값이 존재할 
 조건이 무엇이었는지 기억해볼 필요가 있다. 그 조건은 특성방정식의 해가 존재해야 한다는 것이었다. 식으로 표현하면 
@@ -57,7 +57,7 @@ $u_k=M^ku_0$
 $det(A-\lambdaI)=0$ 을 만족하면 되는것이다. 이는 곧 $A-\lambdaI$라는 행렬이 **특이 행렬**이라는 것이다.
 
 **이때 마코브 행렬의 고유값 중 1이 있다고 가정해보자.**  그때 $A-\lambdaI$는 다음과 같다.
-<center><img src="/public/img/2019-07-31-linear algebra-lecture24/img04.png" width="50%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture24/img04.png" width="40%"></center>
 
 그리고 위 행렬의 랭크를 구해보면 **Rank = 2**인 것을 알 수 있다. 즉, **특이행렬**이라는 것이다. 이는, 
 마코브 행렬의 각 열의 원소끼리의 합이 1이기 때문에 있는 성질이다. 어쨋든, 그렇다면 특성방정식의 해는 존재할 
@@ -69,7 +69,7 @@ $det(A-\lambdaI)=0$ 을 만족하면 되는것이다. 이는 곧 $A-\lambdaI$라
 곱해나갔다. 그렇다면 그것이 대각화와 계차방정식과 연관이 잇다는 것을 알 수 있을것이다.
 
 즉, 일반해가 다음과 같이 표현된다는 것이다.
-<center><img src="/public/img/2019-07-31-linear algebra-lecture24/img05.png" width="30%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture24/img05.png" width="40%"></center>
 
 이 때, 위 일반해가 존재하려면, $|\lambda| > 1$인 $\lambda$가 존재하면, 해당 일반해는 발산하게 되므로, 
 해가 존재하지 않게 된다. 그렇다면 특정해가 존재하는 상태(**정상상태(steady state)**)가 되게하려면, 
