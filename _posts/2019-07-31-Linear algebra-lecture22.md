@@ -54,7 +54,7 @@ $u_{k+1}=Au_k , initial value = $u_0$라고 쓸 수 있다.
 그렇다면 우리는 이 계차방정식을 어떻게 풀어야할까?
 
 먼저 $u_0$를 다음과 같이 정의하자.
-<center><img src="/public/img/2019-07-31-linear algebra-lecture22/img04.png" width="50%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture22/img04.png" width="35%"></center>
 
 그리고 다음과 같은 행렬의 꼴을 잘 봐두자.
 <center><img src="/public/img/2019-07-31-linear algebra-lecture22/img05.png" width="50%"></center>
