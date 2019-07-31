@@ -88,7 +88,7 @@ $u_{k+1}=Au_k , initial value = $u_0$라고 쓸 수 있다.
 그런데 위에서 고유벡터를 구했으므로, $c_1,c_2$만 모두 구하면, 이 선형방정식을 표현할 수 있게된다.
 
 다음 과정을 통해서 최종적으로 $c_1,c_2$를 구하자.
-<center><img src="/public/img/2019-07-31-linear algebra-lecture22/img13.png" width="50%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture22/img13.png" width="40%"></center>
 
 이제 해당 방정식을 표현하기 위한 항들을 모두 알게 되었다.
 
