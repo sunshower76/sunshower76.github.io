@@ -28,6 +28,15 @@ tags: [Linear Algebra]
 위의 두 공식이 성립하고, 위 두 공식으로 부터, A의 역행렬 공식이 도출되었음을 알 수 있다.
 
 ## Cramer's Rule (크레머 공식)
+크레머 공식은 Ax=b 라는 식이 있을때, 해당 식의 해를 행렬식을 이용하여 표현하는 방법이다.
+
+다음 그림을 보면서 과정을 이해해보자
+
+<center><img src="/public/img/2019-07-31-linear algebra-lecture20/img05.png" width="50%"></center>
+
+<center><img src="/public/img/2019-07-31-linear algebra-lecture20/img06.png" width="50%"></center>
+
+<center><img src="/public/img/2019-07-31-linear algebra-lecture20/img07.png" width="50%"></center>
 
 
 
