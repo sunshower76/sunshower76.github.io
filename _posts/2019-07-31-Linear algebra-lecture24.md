@@ -54,7 +54,7 @@ $u_k=M^ku_0$
 조건이 무엇이었는지 기억해볼 필요가 있다. 그 조건은 특성방정식의 해가 존재해야 한다는 것이었다. 식으로 표현하면 
 다음과 같다.
 
-$det(A-\lambda I)=0$ 을 만족하면 되는것이다. 이는 곧 $A-\lambdaI$라는 행렬이 **특이 행렬**이라는 것이다.
+$det(A-\lambda I)=0$ 을 만족하면 되는것이다. 이는 곧 $A-\lambda I$라는 행렬이 **특이 행렬**이라는 것이다.
 
 **이때 마코브 행렬의 고유값 중 1이 있다고 가정해보자.**  그때 $A-\lambda I$는 다음과 같다.
 <center><img src="/public/img/2019-07-31-linear algebra-lecture24/img04.png" width="40%"></center>
