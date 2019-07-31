@@ -114,7 +114,7 @@ $A=QR$은, **A가 정방행렬일때, $Q^T=Q^{-1}$이므로** $Q^TA=R$로 표현
 
 (**Q가 정방행렬이 아니라면, $Q^{-1}대신, Q^†=(Q^TQ)^{-1}Q^T을 곱해준다.$**)
 
-<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img08.png" width="50%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img08.png" width="80%"></center>
 
 여기서, R이 상삼각행렬인 이유는 다음 그림을 보면서 생각해보자
 
