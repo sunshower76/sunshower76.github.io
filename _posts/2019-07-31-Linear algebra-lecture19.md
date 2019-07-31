@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 17)
+title: Linear Algebra - Gilbert Strang (Lecture 19)
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]
