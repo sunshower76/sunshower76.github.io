@@ -47,15 +47,15 @@ $\vec{q_i}$와 $\vec{q_j}$를 직교벡터라고 한다. 이 때, $\vec{q_i}$와
 
 과정1. $\vec{a}$ = $\vec{q_1}$ 이라 정의한다.
 
-과정2. $\vec{q_2} = \vec{b}를 \vec{q_1}과 수직인 벡터에 투영(projection)시켜 벡터$
+과정2. $\vec{q_2} = \vec{b}를 \vec{q_1}$과 수직인 벡터에 투영(projection)시켜 벡터
 
-과정3. $\vec{q_3} = \vec{c}를 \vec{q_1}과 \vec{q_2}모두에 수직인 벡터에 투영시킨 벡터이다. $
+과정3. $\vec{q_3} = \vec{c}를 \vec{q_1}과 \vec{q_2}$모두에 수직인 벡터에 투영시킨 벡터이다.
 
 이렇게 세 과정을 모두 반복하여 $\vec{q_1}$, $\vec{q_2}$, $\vec{q_3}$를 모두 구하면 그람-슈미트과정 종료다.
 
 이제 이 과정을 자세히 살펴보자.
 
-<center><img src="/public/img/2019-07-30-linear algebra-lecture17/img01.png" width="70%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img01.png" width="70%"></center>
 
 위 그림을 살펴보면, 전에 설명했던 과정을 상상해볼 수 있을 것이다. 이제 수식의 관점에서 살펴보자.
 
@@ -75,7 +75,7 @@ $\vec{q_2} = \vec{b} - \frac{\vec{a}\vec{a}^T}{\vec{a}^T\vec{a}}\vec{b}$
 
 $\vec{e_{c1}} = \vec{c} - \frac{\vec{a}\vec{a}^T}{\vec{a}^T\vec{a}}\vec{c}$ 의 결과가 나올것이다.
 
-<center><img src="/public/img/2019-07-30-linear algebra-lecture17/img02.png" width="70%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img02.png" width="70%"></center>
 
 그러면 위 그림과 같은 형태가 나올 것이다. 여기서 봐야할 점은, $\vec{q_2}$와 $\vec{e_{c1}}$가 모두
 
@@ -86,7 +86,7 @@ $\vec{e_{c1}}$를 $\vec{q_2}$에 투영하여 나온 벡터$\vec{p_{c1}}$은 그
 
 그리고 최종적으로, $\vec{e_{c1}}$를 황색 점선벡터에 투영하면 그림은 다음과 같이 나온다.
 
-<center><img src="/public/img/2019-07-30-linear algebra-lecture17/img04.png" width="70%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img04.png" width="70%"></center>
 
 이렇게 되면 최종적으로 수직인 세 벡터가 나오게 된다. 이때, $\vec{q_3}$와$\vec{q_1}$이 직교하는 이유는 위에 굵은글씨
 로 언급했던 것 처럼 $\vec{q_3}$는  $\vec{q_2}$와 $\vec{e_{c1}}$를 기저로 하여 만들어진 평면상에 존재하는 벡터이기 때
@@ -94,14 +94,42 @@ $\vec{e_{c1}}$를 $\vec{q_2}$에 투영하여 나온 벡터$\vec{p_{c1}}$은 그
 
 위 과정의 계산 과정은 다음과 같다.
 
-<center><img src="/public/img/2019-07-30-linear algebra-lecture17/img05.png" width="70%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img05.png" width="50%"></center>
 
 최종적인 결과는 다음과 같이 요약된다.
-<center><img src="/public/img/2019-07-30-linear algebra-lecture17/img06.png" width="40%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img06.png" width="40%"></center>
 
 그리고 각 벡터의 크기로 각각 나누어 orthonormal vectors로 만들면 그람-슈미트 과정이 종료된다.
 
 결과를 보면, 패턴이 보이기 때문에, 일일히 구하는게 아니고, 공식을 외워서 사용하면 된다.
+
+### QR분해(QR decomposition, factorization)
+QR분해란 A=QR의 형태로 나타내는 것이다. 여기서 Q는 직교행렬, R은 상삼각행렬을 나타낸다.
+
+Q는 그람슈미트 과정을 이용하여 정규직교벡터로 이루어진 직교행렬을 의미한다.
+
+R은 다음 과정을 통해서 구할 수 있다.
+
+$A=QR$은, **A가 정방행렬일때, $Q^T=Q^{-1}$이므로** $Q^TA=R$로 표현할 수 있다.
+
+(**Q가 정방행렬이 아니라면, $Q^{-1}대신, Q^†=(Q^TQ)^{-1}Q^T을 곱해준다.$**)
+
+<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img08.png" width="50%"></center>
+
+여기서, R이 상삼각행렬인 이유는 다음 그림을 보면서 생각해보자
+
+<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img07.png" width="70%"></center>
+
+그림에서, $\vec{b}$는 $\vec{q_1}$과 $\vec{q_2}$의 선형 결합으로 만들어 질 수 있다. 즉, 같은 평면에 존재한다. 그런데, $\vec{q_3}$는 $\vec{q_1}$과 $\vec{q_2}$에 모두 수직하므로, 해당 평면에 수직하다고 볼 수 있으며, 그렇게 된다면, $\vec{q_3}$는 해당평면에 존재하는 모든 벡터와 수직하므로, $\vec{b}$와도 수직하다.
+
+**이런 식의 원리를 모두 적용시키면, $\vec{q_i}$는 $\vec{a_j}$에 대해서, i>j인 경우, $$\vec{q_i}$\vec{a_j}=0$이 된다.** 이러한 원리로 R은 상삼각행렬이 성립된다.
+
+QR분해는 총 세가지 방법이 있다고한다. Gram-Schmidt 방법, Givens rotation 방법, householder reflection 방법이 있다.
+
+자세한 방법은 다음에 다루도록 하겠다.
+
+
+
 
 
 
