@@ -63,7 +63,7 @@ $u_{k+1}=Au_k , initial value = $u_0$라고 쓸 수 있다.
 <center><img src="/public/img/2019-07-31-linear algebra-lecture22/img06.png" width="50%"></center>
 
 위 연산을 계속해서 반복해 나간다면 다음과같이 일반화 될 수 있을 것이다.
-<center><img src="/public/img/2019-07-31-linear algebra-lecture22/img07.png" width="70%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture22/img07.png" width="60%"></center>
 
 ### 피보나치 수열(Fibonacci number)
 피보나치 수열은 다음과 같은 점화식으로 표현되는 것을 모두 알고 있을 것이다.
