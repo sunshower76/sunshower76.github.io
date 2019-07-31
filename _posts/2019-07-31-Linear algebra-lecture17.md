@@ -106,7 +106,27 @@ $\vec{e_{c1}}$를 $\vec{q_2}$에 투영하여 나온 벡터$\vec{p_{c1}}$은 그
 ### QR분해(QR decomposition, factorization)
 QR분해란 A=QR의 형태로 나타내는 것이다. 여기서 Q는 직교행렬, R은 상삼각행렬을 나타낸다.
 
+Q는 그람슈미트 과정을 이용하여 정규직교벡터로 이루어진 직교행렬을 의미한다.
+
+R은 다음 과정을 통해서 구할 수 있다.
+
 $A=QR$은, **A가 정방행렬일때, $Q^T=Q^{-1}$이므로** $Q^TA=R$로 표현할 수 있다.
+
+(**Q가 정방행렬이 아니라면, $Q^{-1}대신, Q^†=(Q^TQ)^{-1}Q^T을 곱해준다.$**)
+
+<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img08.png" width="50%"></center>
+
+여기서, R이 상삼각행렬인 이유는 다음 그림을 보면서 생각해보자
+
+<center><img src="/public/img/2019-07-31-linear algebra-lecture17/img07.png" width="70%"></center>
+
+그림에서, $\vec{b}$는 $\vec{q_1}$과 $\vec{q_2}$의 선형 결합으로 만들어 질 수 있다. 즉, 같은 평면에 존재한다. 그런데, $\vec{q_3}$는 $\vec{q_1}$과 $\vec{q_2}$에 모두 수직하므로, 해당 평면에 수직하다고 볼 수 있으며, 그렇게 된다면, $\vec{q_3}$는 해당평면에 존재하는 모든 벡터와 수직하므로, $\vec{b}$와도 수직하다.
+
+**이런 식의 원리를 모두 적용시키면, $\vec{q_i}$는 $\vec{a_j}$에 대해서, i>j인 경우, $$\vec{q_i}$\vec{a_j}=0$이 된다.** 이러한 원리로 R은 상삼각행렬이 성립된다.
+
+QR분해는 총 세가지 방법이 있다고한다. Gram-Schmidt 방법, Givens rotation 방법, householder reflection 방법이 있다.
+
+자세한 방법은 다음에 다루도록 하겠다.
 
 
 
