@@ -5,6 +5,7 @@ author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]
 ---
+
 ## Determinant(행렬식)
 
 행렬식(Determinant)는 $det A$ 혹은 $|A|$라고 표기된다. 이번 장에서는 행렬식의 성질에 대해서 배우도록 하겠다.
