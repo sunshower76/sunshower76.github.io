@@ -93,4 +93,4 @@ $u_{k+1}=Au_k , initial value = $u_0$라고 쓸 수 있다.
 이제 해당 방정식을 표현하기 위한 항들을 모두 알게 되었다.
 
 
-
+출처 : https://twlab.tistory.com/49?category=668741
