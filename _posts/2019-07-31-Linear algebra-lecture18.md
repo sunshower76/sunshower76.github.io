@@ -5,9 +5,9 @@ author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]
 ---
-## Determinant(행렬식)
 
-행렬식(Determinant)는 $det A$ 혹은 $|A|$라고 표기된다. 이번 장에서는 행렬식의 성질에 대해서 배우도록 하겠다.
+## Determinant(행렬식)
+  행렬식(Determinant)는 $det A$ 혹은 $|A|$라고 표기된다. 이번 장에서는 행렬식의 성질에 대해서 배우도록 하겠다.
 
 ### Property 1
 $det I = 1$
@@ -21,10 +21,10 @@ $det I = 1$
 
 ### Property 4
 하나의 행이나 열에서 공통인수를 밖으로 끌어낼 수 있다.
-<center><img src="/public/img/2019-07-31-linear algebra-lecture18/img01.png" width="70%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture18/img01.png" width="40%"></center>
 
 ### Property 5
-<center><img src="/public/img/2019-07-31-linear algebra-lecture18/img01.png" width="70%"></center>
+<center><img src="/public/img/2019-07-31-linear algebra-lecture18/img02.png" width="40%"></center>
 
 ### Property 6
 nxn행렬 A에 대하여 Rank(A)<n 이면 det(A)=0 이다.
