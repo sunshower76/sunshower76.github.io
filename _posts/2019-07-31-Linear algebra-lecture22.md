@@ -10,15 +10,15 @@ tags: [Linear Algebra]
 대각화는 다음과 같은 과정으로 이루어진다.
 <center><img src="/public/img/2019-07-31-linear algebra-lecture22/img01.png" width="70%"></center>
 
-$A=S\LambdaS^{-1}$의 형태로 대각화가 이루어 질 수 있다.
+$A=S\Lambda S^{-1}$의 형태로 대각화가 이루어 질 수 있다.
 
 이때 이렇게 행렬A를 대각화 하면 유용한 성질이 하나 발견된다.
 
-$A=S\LambdaS^{-1}$
+$A=S\Lambda S^{-1}$
 
-$A^2=S\LambdaS^{-1} S\LambdaS^{-1}$
+$A^2=S\Lambda S^{-1}S\LambdaS^{-1}$
 
-$A^2=S\Lambda^2 S^{-1}$
+$A^2=S\Lambda^2S^{-1}$
 
 의 형태로 나타낼 수 있다.
 
