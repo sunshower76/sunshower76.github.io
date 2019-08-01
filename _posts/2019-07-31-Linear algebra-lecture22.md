@@ -16,7 +16,7 @@ $A=S\Lambda S^{-1}$의 형태로 대각화가 이루어 질 수 있다.
 
 $A=S\Lambda S^{-1}$
 
-$A^2=S\Lambda S^{-1}S\LambdaS^{-1}$
+$A^2=S\Lambda S^{-1}S\Lambda S^{-1}$
 
 $A^2=S\Lambda^2S^{-1}$
 
