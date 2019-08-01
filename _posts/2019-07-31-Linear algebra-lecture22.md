@@ -16,9 +16,9 @@ $A=S\LambdaS^{-1}$의 형태로 대각화가 이루어 질 수 있다.
 
 $A=S\LambdaS^{-1}$
 
-$A^2=S\LambdaS^{-1}S\LambdaS^{-1}$
+$A^2=S\LambdaS^{-1} S\LambdaS^{-1}$
 
-$A^2=S\Lambda^2S^{-1}$
+$A^2=S\Lambda^2 S^{-1}$
 
 의 형태로 나타낼 수 있다.
 
