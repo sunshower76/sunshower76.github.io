@@ -54,7 +54,15 @@ $u_{k+1}=Au_k , initial value = $u_0$라고 쓸 수 있다.
 그렇다면 우리는 이 계차방정식을 어떻게 풀어야할까?
 
 먼저 $u_0$를 다음과 같이 정의하자.
+
+다음 꼴을 보면, $u_0$가 A의 고유벡터의 선형결합으로 표현 된다는 것을 알 수 있다.
 <center><img src="/public/img/2019-07-31-linear algebra-lecture22/img04.png" width="35%"></center>
+
+A의 고유벡터의 선형결합으로 표시한 이유는, 대각화를 이용하여, k step이후의 상태를 알기 위해서이다.
+
+다만, $\vec{u_0}$가 A의 고유벡터의 선형결합으로 정의되기 위해서는, A가 nxn행렬이고 n개의 독립인 고유벡터가 존재해야한다.
+
+(즉, 고유벡터의 조합으로 n차원의 모든 공간을 표현할 수 있다는 뜻.)
 
 그리고 다음과 같은 행렬의 꼴을 잘 봐두자.
 <center><img src="/public/img/2019-07-31-linear algebra-lecture22/img05.png" width="50%"></center>
