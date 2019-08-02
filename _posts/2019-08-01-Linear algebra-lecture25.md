@@ -79,6 +79,33 @@ A라는 대칭행렬이 있을때, A를 대각화 시키면, 다음과 같은 �
 
 즉, 벡터v를 대칭행렬A의 고유벡터에 투영시킨 벡터와 그 고유벡터에 대응하는 고유값을 곱한 항들의 합이 벡터v를 대칭행렬A로 선형변환 시킨 결과이다.
 
+
+## 정치행렬[정부호행렬](Definite matrix)
+이어서, 마지막으로 정치행렬(Definite matrix)에 대해서 살펴보자.
+
+정치행렬은 에르미트 행렬(Hermitian matrix)의 일종(에리미트 행렬의 일종이므로, **대치행렬**이다.)으로, 양정치행렬(Psotive definite matrix) 과 음정치행렬(Negative definite matrix)가 존재한다.
+
+양정치 행렬은 $x^TAx$라는 식이 있을 때, $x^TAx > 0$을 만족시키는 행렬A 를 양정치행렬 이라고 한다.
+
+반대로 음정치 행렬은  $x^TAx$라는 식이 있을 때, $x^TAx < 0$을 만족시키는 행렬A 를 양정치행렬 이라고 한다.
+
+그런데 만약에,  $x^TAx = 0$ 이라면, n차방정식($x^TAx$)에 대해서 안장점(saddle point)을 갖는다.
+
+<center><img src="/public/img/2019-08-01-linear algebra-lecture25/img05.png" width="80%"></center>
+
+### 양정치행렬의 조건
+음정치 행렬은 양정치행렬의 조건과 부호만 반대가 되기 때문에, 양정치 행렬만 알아보겠다.
+
+1. 0이 아닌 모든 실수인 벡터x에 대해서 $x^TAx > 0$을 만족한다.
+
+2. 행렬 A의 모든 고유값은 0 보다 크다
+
+3. 행렬 A의 모든 sub-matrices는 행렬식(determinant)가 0보다 크다.
+
+4. 행렬 A의 모든 pivots은 0보다 크다.
+
+**다음 조건 중 하나라도 만족한다면, 행렬A는 양정치 행렬이다.**
+
 출처 : https://twlab.tistory.com/54?category=668741
 
 
