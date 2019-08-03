@@ -35,7 +35,7 @@ $AV= U\Sigma$
 **그리고, $AA^T$와 $A^TA$의 고유값은 동일하므로, \Sigma 는 동일하다.**
 
 이제 예제를 하나 살펴보자.
-<img src="/public/img/2019-08-03-linear algebra-lecture29/img05.png" width="10%">
+<img src="/public/img/2019-08-03-linear algebra-lecture29/img05.png" width="25%">
 
 그리고 위 행렬 A는 다음과 같이 표현될 수 있다.
 <center><img src="/public/img/2019-08-03-linear algebra-lecture29/img01.png" width="70%"></center>
