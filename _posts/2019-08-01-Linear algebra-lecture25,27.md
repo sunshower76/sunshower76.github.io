@@ -104,7 +104,46 @@ A라는 대칭행렬이 있을때, A를 대각화 시키면, 다음과 같은 �
 
 4. 행렬 A의 모든 pivots은 0보다 크다.
 
+5. $ac-b^2 > 0$ (양정치(a>0), 음정치(a<0) 해당조건 동일, $ac-b^2<0$이면 안장점.)
+
 **다음 조건 중 하나라도 만족한다면, 행렬A는 양정치 행렬이다.**
+
+
+### Graph of $x^TAx = ax^2 + 2bxy + cy^2$
+
+그렇다면, $f(x,y) = ax^2 + 2bxy + cy^2$의 그래프는 어떻게 생겼을까?
+
+$a=2, b=6, c=20$이라고 했을때, 그래프는 다음과 같이 생겼다.
+
+<center><img src="/public/img/2019-08-01-linear algebra-lecture25/img06.png" width="70%"></center>
+<center> **위에서 본 모습** </center>
+
+<center><img src="/public/img/2019-08-01-linear algebra-lecture25/img07.png" width="70%"></center>
+<center> **옆에서 본 모습** </center>
+
+즉 그래프는 0보다 크며, 아래로 볼록한 모습을 볼 수 있다.
+
+마치 우리가 2차원 공간에서 모든 함수값이 0 이상인 이차함수를 3차원으로 늘려놓은것 같이 생겼다.
+
+이차 함수 : $f(x)=ax^2+b$가 있었을때, 우리가 이 함수가 아래로 볼록인 함수인지 확인을 하려고 했었으면,
+어떤 지점에서 1차 미분값=0이 있는지점이 있는지를 확인하고, 이계도함수가 >0 인지 확인을 했었다.
+
+**선형대수에서는 이와 같은 방식을, 단순 2x2 matrix 개념에서 nxn matrix까지 확장 시킬수 있다.**
+(뭐 단순히 식을 간단히 쓰는 거라고 생각할 수도 있다.)
+
+조건은 다음과 같다.
+<center><img src="/public/img/2019-08-01-linear algebra-lecture25/img08.png" width="50%"></center>
+
+그리고 또 한가지 흥미로운 사실이 존재한다.
+
+위에서 주어진 그래프 $f(x,y) = 2x^2 + 12xy + 20y^2$를 Completing the Square 과정을 거친 후의 식을 보자.
+
+Completing the square 과정을 거치면 식은 다음과 같다.
+<center><img src="/public/img/2019-08-01-linear algebra-lecture25/img09.png" width="50%"></center>
+
+그런데 우리는 이 식을 더 쉽게 이끌어 낼 수 있다. 바로 Elimination을통한 과정이다. 과정은 다음과 같다.
+<center><img src="/public/img/2019-08-01-linear algebra-lecture25/img10.png" width="50%"></center>
+
 
 출처 : https://twlab.tistory.com/54?category=668741
 
