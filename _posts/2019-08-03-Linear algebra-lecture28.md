@@ -38,7 +38,7 @@ $Ax=\lambda x$
 그렇다면 역으로 생각해서, 고유치가 서로 모두 같다면 그 두 행렬은 닮은행렬일까?
 
 **답은 아니다!** 다음을 살펴보자.
-<center><img src="/public/img/2019-08-03-linear algebra-lecture28/img01.png" width="70%"></center>
+<center><img src="/public/img/2019-08-03-linear algebra-lecture28/img01.png" width="50%"></center>
 
 위와 같은 경우를 보면, A와 B의 고유값은 같은것을 알 수 있다. 그러나, 행렬A의 닮은꼴은 자기 자신 밖에 없으므로, 
 B는 A와 닮은 행렬이 될 수 업다.
@@ -58,10 +58,10 @@ B는 A와 닮은 행렬이 될 수 업다.
 
 만약에 5x5행렬 A에 대하여, 고유값이 1,3,3,3,3이 나왔다고 가정해보자. 그렇다면 고유값은 총 2개인데, 
 고유값 1에 대응하는 고유벡터가 1개, 고유값 3에 대응하는 고유벡터가 1개라고 하면 조르단 행렬은 다음과 같다.
-<center><img src="/public/img/2019-08-03-linear algebra-lecture28/img02.png" width="70%"></center>
+<center><img src="/public/img/2019-08-03-linear algebra-lecture28/img02.png" width="50%"></center>
 
 만약에 3에 대응하는 고유벡터가 2개 였으면 조르단 행렬은 다음과 같았을 것이다.
-<center><img src="/public/img/2019-08-03-linear algebra-lecture28/img03.png" width="70%"></center>
+<center><img src="/public/img/2019-08-03-linear algebra-lecture28/img03.png" width="50%"></center>
 
 즉 조르단 블록의 대각행렬은 행렬A의 고유값으로 이루어 진다. 또한, **조르단 블록은 해당 고유값에 해당하는 고유벡터의** 
 **개수와 동일하다.**
