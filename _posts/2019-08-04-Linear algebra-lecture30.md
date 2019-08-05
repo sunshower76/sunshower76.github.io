@@ -23,7 +23,7 @@ $Pv=v_{pro}$연산을 통해서 투영하였었다.
 그 외에도, 벡터를 회전시켜주는 회전행렬, x, y축에 대칭시키는 대칭행렬등 선형변환을 일으키는 행렬을 무수히 많이 만들 수 있다.
 
 그 예로 회전 행렬을 살펴보자. 회전행렬은 다음과 같이 생겼다.
-<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img01.png" width="70%"></center>
+<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img01.png" width="45%"></center>
 
 그러면 예시로 하나의 벡터를 회전시켜보자.
 <center><img src="/public/img/2019-08-04-linear algebra-lecture30/img02.png" width="70%"></center>
@@ -104,7 +104,7 @@ $Pv=v_{pro}$연산을 통해서 투영하였었다.
 <center><img src="/public/img/2019-08-04-linear algebra-lecture30/img09.png" width="70%"></center>
 
 조금 더 정리해서 보면 다음과 같다.
-<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img10ng" width="70%"></center>
+<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img10.png" width="70%"></center>
 
 **ps. 이번 장에서 강의의 내용에 대해서 다 이해하지 못해서, 제가 이해한대로 적었으니, 틀린 부분이 있으면 말해주세요!**
 
