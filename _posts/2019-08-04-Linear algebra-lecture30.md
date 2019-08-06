@@ -23,10 +23,10 @@ $Pv=v_{pro}$연산을 통해서 투영하였었다.
 그 외에도, 벡터를 회전시켜주는 회전행렬, x, y축에 대칭시키는 대칭행렬등 선형변환을 일으키는 행렬을 무수히 많이 만들 수 있다.
 
 그 예로 회전 행렬을 살펴보자. 회전행렬은 다음과 같이 생겼다.
-<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img01.png" width="70%"></center>
+<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img01.png" width="60%"></center>
 
 그러면 예시로 하나의 벡터를 회전시켜보자.
-<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img02.png" width="70%"></center>
+<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img02.png" width="50%"></center>
 
 그리고, 선형변환의 성질에 의하여, 다음 벡터를 상수배 하거나, 다른 벡터를 더한다음 선형변환을 할 경우, 분리해서 진행 할 수 있다는 것을 명심하자.
 
@@ -36,13 +36,13 @@ $Pv=v_{pro}$연산을 통해서 투영하였었다.
 
 ### 기저(basis)
 선형변환에 대해서 더 배우기 전에 알고 넘어 가야할게 있다. 바로 **기저(basis)**에 관한 것이다.
-<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img03.png" width="70%"></center>
+<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img03.png" width="80%"></center>
 
 위 그림을보자. 위 좌표계는 우리가 흔히 알던 직교좌표계이다. 그리고 기저는 우리가 모두 알듯이 기저는(0,1), (1,0)인 직교기저이다. 이것을 보통 
 **표준직교기저**라고 부른다. 하지만, 기저가 꼭 (0,1), (1,0)일 필요는 없다. 기저가(1, -1), (0,1)이어도 이차원상의 모든 공간을 표현할 수 있기 때문에 기저가 될 수 있다. 하지만 이렇게 되면 불편하기 때문에 우리는 직교 기저를 사용하는 것이다.
 
 다음 그림을 보고 이해해보자.
-<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img04.png" width="70%"></center>
+<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img04.png" width="80%"></center>
 
 하지만 우리가 배웠던 것 처럼, 다른 좌표계로 나타내서 더 유용할때도 있었다. 그 중 하나가 우리가 미적분학 시간에 배웠었던 극좌표계이다.
 
@@ -56,7 +56,7 @@ $Pv=v_{pro}$연산을 통해서 투영하였었다.
 기저는 변환시키지 않고, 직교좌표계를 유지하는 상태로 진행한다.
 
 우리가 배웠던 선형변환의 성질을 가지고서 다음과 같은 식을 유도해 낼 수 있다.
-<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img05.png" width="70%"></center>
+<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img05.png" width="90%"></center>
 
 **위 그림에서 회전을 시킨것은, 회전행렬로 회전을 시킨게 아니고, 우리가 배웠던 삼각비를 통해서 얻어낸 좌표라고 생각하자.**
 
@@ -77,7 +77,7 @@ $Pv=v_{pro}$연산을 통해서 투영하였었다.
 먼저, 위에서 배웠던 변환행렬을 구하는 방법으로, 기저가 변하지 않았을때의 변환 행렬을 구한다.
 
 **과정2.**
-<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img07.png" width="70%"></center>
+<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img07.png" width="80%"></center>
 
 위 그림을 보자. 위 그림은 선형변환의 성질을 나타낸다.
 
@@ -101,10 +101,10 @@ $Pv=v_{pro}$연산을 통해서 투영하였었다.
 그런데, **표현행렬**은 어떤 역할을 할까? 표현행렬은 선형변환을 할때, 나오는 결과값이 **변환동 공간의 기저로 표현한 좌표값**으로 변환시켜주는 역할을 한다.
 
 이렇게 말로만 들으면 모르니 예제를 보자.
-<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img09.png" width="70%"></center>
+<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img09.png" width="85%"></center>
 
 조금 더 정리해서 보면 다음과 같다.
-<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img10ng" width="70%"></center>
+<center><img src="/public/img/2019-08-04-linear algebra-lecture30/img10.png" width="70%"></center>
 
 **ps. 이번 장에서 강의의 내용에 대해서 다 이해하지 못해서, 제가 이해한대로 적었으니, 틀린 부분이 있으면 말해주세요!**
 
