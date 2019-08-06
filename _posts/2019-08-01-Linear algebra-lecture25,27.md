@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 25)
+title: Linear Algebra - Gilbert Strang (Lecture 25,27)
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]
@@ -80,7 +80,7 @@ A라는 대칭행렬이 있을때, A를 대각화 시키면, 다음과 같은 �
 즉, 벡터v를 대칭행렬A의 고유벡터에 투영시킨 벡터와 그 고유벡터에 대응하는 고유값을 곱한 항들의 합이 벡터v를 대칭행렬A로 선형변환 시킨 결과이다.
 
 
-## 정치행렬[정부호행렬](Definite matrix)
+## 정치행렬(정부호행렬, Definite matrix)
 이어서, 마지막으로 정치행렬(Definite matrix)에 대해서 살펴보자.
 
 정치행렬은 에르미트 행렬(Hermitian matrix)의 일종(에리미트 행렬의 일종이므로, **대치행렬**이다.)으로, 양정치행렬(Psotive definite matrix) 과 음정치행렬(Negative definite matrix)가 존재한다.
