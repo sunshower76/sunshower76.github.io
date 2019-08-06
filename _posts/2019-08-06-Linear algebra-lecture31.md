@@ -61,7 +61,7 @@ Psedo inverse(유사 역행렬)은 행렬이 **full rank가 아닐 때**에도 �
 
 그런데 위의 경우에서, 투영행렬을 full rank인 경우에서만 구했다. 그러면 full rank가 아닌경우에서 투영행렬을 구할 수는 없을까? 라는 생각이 들텐데, 이런 말을 갑자기 꺼낸거 보면 구할 수 있다는 것을 알아챘을것이다. 바로 이 유사역행렬을 이용하면 구할 수 있다.
 
-<center><img src="/public/img/2019-08-06-linear algebra-lecture33/img03.png" width="30%"></center>
+<center><img src="/public/img/2019-08-06-linear algebra-lecture33/img03.png" width="50%"></center>
 <center><img src="/public/img/2019-08-06-linear algebra-lecture33/img04.png" width="100%"></center>
 <center><img src="/public/img/2019-08-06-linear algebra-lecture33/img05.png" width="100%"></center>
 
