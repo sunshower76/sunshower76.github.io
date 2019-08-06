@@ -50,6 +50,14 @@ row space와 column space가 하나의 벡터로 구성되있기 때문에, 위 
 <center><img src="/public/img/2019-08-03-linear algebra-lecture29/img04.png" width="70%"></center>
 
 
+**SVD 과정 예시**
+<center><img src="/public/img/2019-08-03-linear algebra-lecture29/img06.png" width="100%"></center>
+<center><img src="/public/img/2019-08-03-linear algebra-lecture29/img07.png" width="100%"></center>
+<center><img src="/public/img/2019-08-03-linear algebra-lecture29/img08.png" width="100%"></center>
+<center><img src="/public/img/2019-08-03-linear algebra-lecture29/img09.png" width="100%"></center>
+
+
+
 
 
 
