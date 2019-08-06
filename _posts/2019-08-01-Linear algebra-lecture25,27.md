@@ -132,7 +132,7 @@ $a=2, b=6, c=20$이라고 했을때, 그래프는 다음과 같이 생겼다.
 (뭐 단순히 식을 간단히 쓰는 거라고 생각할 수도 있다.)
 
 조건은 다음과 같다.
-<center><img src="/public/img/2019-08-01-linear algebra-lecture25/img08.png" width="50%"></center>
+<center><img src="/public/img/2019-08-01-linear algebra-lecture25/img08.png" width="70%"></center>
 
 그리고 또 한가지 흥미로운 사실이 존재한다.
 
@@ -142,7 +142,7 @@ Completing the square 과정을 거치면 식은 다음과 같다.
 <center><img src="/public/img/2019-08-01-linear algebra-lecture25/img09.png" width="50%"></center>
 
 그런데 우리는 이 식을 더 쉽게 이끌어 낼 수 있다. 바로 Elimination을통한 과정이다. 과정은 다음과 같다.
-<center><img src="/public/img/2019-08-01-linear algebra-lecture25/img10.png" width="50%"></center>
+<center><img src="/public/img/2019-08-01-linear algebra-lecture25/img10.png" width="90%"></center>
 
 
 출처 : https://twlab.tistory.com/54?category=668741
