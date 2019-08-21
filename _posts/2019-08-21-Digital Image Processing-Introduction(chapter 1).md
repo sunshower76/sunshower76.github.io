@@ -18,7 +18,7 @@ Chapter1(Introduction)에서 디지털 영상처리의 여러 역사가 나오�
 곳에서 우리가 빛을 통해서 사물을 눈으로 본다는 것을 배운적이 있을 것이다.
 
 사람은 흔히 가시광선 대역의 빛을 인지할 수 있다고 한다. 그렇다면 가시광선이란 무엇일까?
-<center><img src="/public/img/2019-08-21-Digital Image Processing-Chapter1/img01.png" width="40%"></center>
+<center><img src="/public/img/2019-08-21-Digital Image Processing-Chapter1/img01.png" width="60%"></center>
 
 바로 위 그림에 해당하는 영역(380nm<=주파수<=750)의 빛을 가시광선 이라고 한다.
 
