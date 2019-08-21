@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Digital Image Processing - Introduction, (Rafael C. Gonzales)
+title: Digital Image Processing - Introduction(chapter1), (Rafael C. Gonzales)
 author: Sunwoo Kim
 categories: Computer Vision
 tags: [Digital Image Processing]
