@@ -27,12 +27,13 @@ tags: [Linear Algebra]
 
 <center> $Ax=b$의 해는 1개 또는 존재하지 않는다. </center>
 
-<center> $(A^TA)^{-1}A^TA=I$ 이때, $A^{-1}_{left} =(A^TA)^{-1}A^T$ </center>
+<center> $(A^TA)^{-1}A^TA=I$ 이때, $A_{left}^{-1} =(A^TA)^{-1}A^T$ </center>
 
-row space에 존재하는 벡터x에 대하여, $Ax$는 column space에 존재하고, $A^{-1}_{left} Ax$ 는 column space에 존재하는 $Ax$를 원래의 $x$로 되돌려 놓는다. ($Ax=b$라는 연산이 있을 때, b는 무조건 A의 column space에 존재해야 하므로, Ax는 b와 같으므로, Ax가 A의 column space에 존재한다는 말은 당연한 말.)
+row space에 존재하는 벡터x에 대하여, $Ax$는 column space에 존재하고, $A_{left}^{-1}Ax$ 는 column space에 존재하는 $Ax$를 원래의 $x$로 되돌려 놓는다. ($Ax=b$라는 연산이 있을 때, b는 무조건 A의 column space에 존재해야 하므로, Ax는 b와 같으므로, Ax가 A의 column space에 존재한다는 말은 당연한 말.)
 
-또한, $A^{-1}_{left} =(A^TA)^{-1}A^T$은 **투영행렬(Projection matrix, P)**이다.
+또한, $A_{left}^{-1} =(A^TA)^{-1}A^T$은 **투영행렬(Projection matrix, P)**이다.
 다음 그림을 보면 금방 이해가 갈것이다 [Lecture15-16](https://sunshower76.github.io/mathematics/2019/07/30/Linear-algebra-lecture15-16/)에서도 언급 됬었는데, 다시 한번 살펴보자.
+
 <center><img src="/public/img/2019-08-06-linear algebra-lecture33/img01.png" width="100%"></center>
 
 ### Right inverse
@@ -46,7 +47,8 @@ row space에 존재하는 벡터x에 대하여, $Ax$는 column space에 존재�
 
 <center> $AA^T(AA^T)^{-1}=I$ 이때, $A^{-1}_{right} =A^T(AA^T)^{-1}$ </center>
 
-column space에 존재하는 벡터x에 대하여, $x^TA$는 row space에 존재하고, $x^TAA^{-1}_{right}$ 는 row space에 존재하는 $x^TA$를 원래의 $x$로 되돌려 놓는다. ($x^TA=b$라는 연산이 있을 때, b는 무조건 A의 row space에 존재해야한다., b는 x_1A_{row1}+x_2A_{row2}+...+x_nA_{row_n}으로 표현되기 때문이다.)
+  
+column space에 존재하는 벡터x에 대하여, $x^TA$는 row space에 존재하고, $x^TA A_{right}^{-1}$ 는 row space에 존재하는 $x^TA$를 원래의 $x$로 되돌려 놓는다. ($x^TA=b$라는 연산이 있을 때, b는 무조건 A의 row space에 존재해야한다., b는 x_1A_{row1}+x_2A_{row2}+...+x_nA_{row_n}으로 표현되기 때문이다.)
 
 또한, 위에서 left inverse matrix는 column space로 투영시키는 행렬이라고 했다. 똑같은 과정을 거치면, right inverse matrix는 row space로 투영시키는 행렬이라는 것을 알 수 있다.
 
@@ -57,7 +59,7 @@ Psedo inverse(유사 역행렬)은 행렬이 **full rank가 아닐 때**에도 �
 
 <center><img src="/public/img/2019-08-06-linear algebra-lecture33/img02.png" width="70%"></center>
 
-형태를 보면 단순히 고유값이 역수가 취해져있는 형태이다. **여기서 주의할 점은, 원래의 행렬A는 full rank가 아니였으므로, $AA^T or A^TA$도 full rank가 아니므로, 값이 0인 고유값이 존재하므로, 그 값은 제외해서 시그마 행렬을 구성하여준다. 그렇게되면 대각원소는 rank만큼의 개수만 포함된다. 그러므로, $\Sigma^{\dagger} \Sigma or \Sigma \Sigma^{\dagger} $는 단위행렬(I)가 될 수 없다는점을 명심하자! 이러한 이유에서 $\A^{\dagger} \A or \A \A^{\dagger} $도 절대 단위행렬이 될 수 없다.**
+형태를 보면 단순히 고유값이 역수가 취해져있는 형태이다. **여기서 주의할 점은, 원래의 행렬A는 full rank가 아니였으므로, $AA^T or A^TA$도 full rank가 아니므로, 값이 0인 고유값이 존재하므로, 그 값은 제외해서 시그마 행렬을 구성하여준다. 그렇게되면 대각원소는 rank만큼의 개수만 포함된다. 그러므로, $\Sigma^{\dagger} \Sigma or \Sigma \Sigma^{\dagger} $는 단위행렬(I)가 될 수 없다는점을 명심하자! 이러한 이유에서 $\A ^{\dagger} \A or \AA ^{\dagger} $도 절대 단위행렬이 될 수 없다.**
 
 그런데 위의 경우에서, 투영행렬을 full rank인 경우에서만 구했다. 그러면 full rank가 아닌경우에서 투영행렬을 구할 수는 없을까? 라는 생각이 들텐데, 이런 말을 갑자기 꺼낸거 보면 구할 수 있다는 것을 알아챘을것이다. 바로 이 유사역행렬을 이용하면 구할 수 있다.
 

@@ -29,7 +29,7 @@ $Ax=\lambda x$
 
 ->$(M^{-1}AM)M{-1} = \lambda M^{-1}x$
 
-->$BM^{-1}x=\lambdaM^{-1}x$ 이때, $M^{-1}x는 임의의 벡터v와 같은 형태이므로$
+->$BM^{-1}x=\lambda M^{-1}x$ 이때, $M^{-1}x는 임의의 벡터v와 같은 형태이므로$
 
 ->$Bv=\lambda v$이다.
 
