@@ -18,7 +18,7 @@ Chapter1(Introduction)에서 디지털 영상처리의 여러 역사가 나오�
 곳에서 우리가 빛을 통해서 사물을 눈으로 본다는 것을 배운적이 있을 것이다.
 
 사람은 흔히 가시광선 대역의 빛을 인지할 수 있다고 한다. 그렇다면 가시광선이란 무엇일까?
-<center><img src="/public/img/22019-08-21-Digital Image Processing-Chapter1/img01.png" width="40%"></center>
+<center><img src="/public/img/2019-08-21-Digital Image Processing-Chapter1/img01.png" width="40%"></center>
 
 바로 위 그림에 해당하는 영역(380nm<=주파수<=750)의 빛을 가시광선 이라고 한다.
 
@@ -69,7 +69,7 @@ X-ray영상을 얻기 위해서는, 우리 몸을 투과해야 하므로, 투과
 성질에 따라서 사용하는 빛의 주파수 영역대와 관측 방식이 달라진다는 것을 알아두자.
 
 ## 범용 영상 처리 시스템의 구성요소(Components of a general-purpose image processing system)
-<center><img src="/public/img/22019-08-21-Digital Image Processing-Chapter1/img01.png" width="80%"></center>
+<center><img src="/public/img/2019-08-21-Digital Image Processing-Chapter1/img01.png" width="80%"></center>
 
 위 그림은 위 책에 실려있는 그림이다. 영상처리 시스템은 위와 같이 일반적으로 구성되어 있다고 설명되어있다. 영상 센서를 통해서, 빛을 받아들이고, 
 양상 처리 하드웨어로, 받아들인 빛을 디지털 신호로 전환하며, 영상 처리 소프트웨어를 통해서 우리가 원하는 목적에 맞게 영상을 변환시키고, 기타 장치에 
