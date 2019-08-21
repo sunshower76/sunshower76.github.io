@@ -7,7 +7,7 @@ tags: [Digital Image Processing]
 ---
 
 ## 시각적 인지의 요소(Elements of visual perception)
-<center><img src="/public/img/Digital Image Processing-Chapter2/img01.png" width="60%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter2/img01.png" width="40%"></center>
 
 우리 눈의 구조는 위와 같이 생겼다. 위 그림에서 사물을 인지 하는데 있어서 중요한 역할을 하는 조직들이 있다.
 
