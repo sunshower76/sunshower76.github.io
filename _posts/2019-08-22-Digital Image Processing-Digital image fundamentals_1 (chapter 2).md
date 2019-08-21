@@ -2,7 +2,7 @@
 layout: post
 title: Digital Image Processing - Digital image fundamental_1 (chapter2), (Rafael C. Gonzales)
 author: Sunwoo Kim
-categories: Computer Vision
+categories: CV(Computer_Vsion)
 tags: [Digital Image Processing]
 ---
 
