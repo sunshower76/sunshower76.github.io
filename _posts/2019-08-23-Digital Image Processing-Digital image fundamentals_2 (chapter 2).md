@@ -66,7 +66,7 @@ r(x,y)가 0인 경우는 완전 흡수, 1인 경우는 완전 반사를 의미�
 
 ### 2.4.2 Representing digital images
 
-<center><img src="/public/img/Digital Image Processing-Chapter2/img16.png" width="50%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter2/img16.png" width="60%"></center>
 
 위 그림처럼 영상은 컴퓨터에서 2차원 평면으로 기록될 수 있다. 이러한 실수평면을 공간 도메인(Spatial domain)이라 하며, 
 xy좌표들을 공간좌표(spatial variables or spatial coordinates)라고 한다. **위 그림에서 컴퓨터에서 공간도메인의 원점이 왼쪽**
