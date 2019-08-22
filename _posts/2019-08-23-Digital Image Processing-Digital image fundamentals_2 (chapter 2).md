@@ -56,7 +56,7 @@ r(x,y)가 0인 경우는 완전 흡수, 1인 경우는 완전 반사를 의미�
 샘플링이란 **좌표 값**을 디지털화 하는것, 양자화란 **진폭 값**들을 디지털화 하는 것을 의미한다.
 
 
-<center><img src="/public/img/Digital Image Processing-Chapter2/img15.png" width="50%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter2/img15.png" width="70%"></center>
 
 위 그림을 보면 이미지를 샘플링하고 양자화 시키는 과정을 볼 수 있다.
 
@@ -75,7 +75,7 @@ xy좌표들을 공간좌표(spatial variables or spatial coordinates)라고 한�
 
 <center><img src="/public/img/Digital Image Processing-Chapter2/img17.png" width="50%"></center>
 
-<center><img src="/public/img/Digital Image Processing-Chapter2/img18.png" width="50%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter2/img18.png" width="60%"></center>
 위 그림은 영상표현을 하기위한 비트수를 나타내는 그림이다.
 
 ### 2.4.3 Spatial and Intensity resolution
@@ -85,14 +85,14 @@ xy좌표들을 공간좌표(spatial variables or spatial coordinates)라고 한�
 이 그림을 보면, 점이 적을 때는 어떤 물체인지 구별이 잘 안가지만, 점이 많아질 수록 어떤 물체인지 구별이 되기 시작하며, 더욱 선명하게 보이기 
 시작한다. 컴퓨터의 영상도 이 원리와 같다.
 
-<center><img src="/public/img/Digital Image Processing-Chapter2/img20.png" width="40%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter2/img20.png" width="60%"></center>
 위 그림을 보고 어떤 이미지가 해상도가 높고 어떤 이미지가 해상도가 낮은지 생각해보자.
 
 또한, 그레이 레벨 이미지에서, 비트수는 얼마나 명암을 자세하게 표현할 것인지를 나타낸다. 비트수가 커질수록 검정색과 흰색 사이를 아주 
 정밀하게 나타내며, 비트수가 1비트라면, 오직 검정색과 흰색만을 표시할 수 있게된다. 만약 1비트로 영상을 표현하게 된다면, 그레이 레벨 
 구간이 [0, 255]일 때, [0, 127]=검정, [128, 255]=흰색 으로 표시될 것이다. 다음 그림은 그레이 레벨을 표현하는 비트수를 차례차례 낮췄을 
 때 나타난 그림들이다.
-<center><img src="/public/img/Digital Image Processing-Chapter2/img19.png" width="50%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter2/img19.png" width="60%"></center>
 
 
 
