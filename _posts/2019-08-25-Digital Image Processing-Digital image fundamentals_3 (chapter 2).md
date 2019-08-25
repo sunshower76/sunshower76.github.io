@@ -57,7 +57,7 @@ tags: [Digital Image Processing]
 여집합$(R_u)^c$를 **배경(background)**라고 한다.
 
 ### 경계(Boundary)
-<center><img src="/public/img/Digital Image Processing-Chapter2/img23.png" width="80%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter2/img24.png" width="80%"></center>
 위 그림에서 그림d를 봐보자. 그림d에거 각각의 영역은 8-adjacency를 사용하였을때, 연결된다. 이럴때, 두 영역은 인접한다고 말한다.
 
 그림e를 보자. 그림e를 화소값이1인 영역, 화소값이 0인 영역으로 나누어보자. 이 때, 화소값이 1인 영역에서 가운데 점선원에 있는 1을 제외하고는 
