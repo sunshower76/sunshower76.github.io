@@ -25,10 +25,10 @@ $g(x,y) = f(x,y) + \eta(x,y)$라 하자. 이 때, f(x,y) : 노이즈가 없는 �
 당연히, 노이즈가 낀 영상들은, 원본영상을 중심으로 노이즈만큼 차이가 날테니까, 노이즈가낀 영상들의 분산은 노이즈들의 분산들과 같다는 것을 
 알 수 있다. 이렇게, 노이즈가낀 영상들 수십, 수백개를 평균내어서, 노이즈가 없는 원본영상을 찾으려고 하는 과정을 **영상 평균화(image averaging)** 
 이라 한다. 다음 그림은 영상평균화의 예시를 나타낸다.
-<center><img src="/public/img/Digital Image Processing-Chapter2/img28.png" width="50%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter2/img28.png" width="70%"></center>
 
 #### 뺄셈(Substraction)
-<center><img src="/public/img/Digital Image Processing-Chapter2/img29.png" width="50%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter2/img29.png" width="70%"></center>
 
 먼저 위 그림을 살펴보자. 위 그림은 의학분야에서 혈관을 관측하기위한 예시이다. 우리가 만약에 혈관들을 보고 싶을때 어떻게 영상을 얻을까? 
 먼저, 혈액에 들어가면 특수한 파장을 내뱉는 액체를 집어넣는다. 그렇게 그 액체게 우리몸의 혈관에 들어가게 되고 그 후 영상기기로 영상을 얻어내면, 
@@ -39,7 +39,7 @@ $g(x,y) = f(x,y) + \eta(x,y)$라 하자. 이 때, f(x,y) : 노이즈가 없는 �
 영상이다.
 
 #### 곱셈, 나눗셈(Multiplication, Division)
-<center><img src="/public/img/Digital Image Processing-Chapter2/img30.png" width="50%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter2/img30.png" width="70%"></center>
 
 위 그림을 살펴보자. 위 그림에서 영상a=영상bx영상c를 통하여 얻어진 영상이다. 영상b는 원본영상이고, 영상c는 음영패턴영상이다. 만약에 우리가 
 이러한 음영해턴을 사전에 알고있다고 하면, 원본영상에 음영패턴을 첨가하는것도 가능하고 반대로, 음영진영상을 음영패턴으로 나누어 원본영상을 
@@ -49,7 +49,7 @@ $g(x,y) = f(x,y) + \eta(x,y)$라 하자. 이 때, f(x,y) : 노이즈가 없는 �
 다음 절로 넘어 가기전에 한 가지 알고 가야할 것이 있다. 바로 연산 후 영상의 화소값의 스케일링이다. 만약 화소값의 범위가 0-255인 두 영상 
 f, g가 있다고 하자. 그렇다면, f+g연산후 화소값의 범위는 $-510<= f+g <=510$이 될것이다. 그렇게 되면, 기본 영상의 화소값 표현 범위인 
 0-255를 벗어나기 때문에, 표현이 불가능하다. 이때 필요한 것이 화소값을 스케일링 하는 과정이다. 스케일링 하는 과정은 다음과 같다.
-<center><img src="/public/img/Digital Image Processing-Chapter2/img31.png" width="50%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter2/img31.png" width="70%"></center>
 
 또한 추가적으로, **나눗셈 연산을 할 때에는, 0인 화소값으로 나누는일이 없도록 주의해야한다.**
 
