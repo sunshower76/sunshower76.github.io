@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Digital Image Processing - PRML-Introduction(Chapter1)-1
+title: PRML-Introduction(Chapter1)-1
 author: Sunwoo Kim
 categories: MachineLearning
 tags: [PRML]
