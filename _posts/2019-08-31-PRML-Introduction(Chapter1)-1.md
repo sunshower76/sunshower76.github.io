@@ -35,7 +35,7 @@ $E_x[f(x)|z]$와 같이 적었다. 비슷하게 분산 : $var[f(x)]$이라 적�
 N개의 관찰값 $x$로 이루어진 훈련 집합 x=$(x_1,...,x_N)^T$와 그에 해당하는 표적값 t=$(t_1,...,t_N)^T$가 주어졌다고 해보자.
 10개의 관측값이 주어졌다고 했을 때 아래의 그림을 살펴보자.
 
-<center><img src="/public/img/PRML-Chapter1/img1.png" width="60%"></center>
+<center><img src="/public/img/PRML-Chapter1/img1.png" width="40%"></center>
 
 우리는 **목표**는 이러한 주어진 훈련 집합들을 사용하여 어떤 새로운 입력값 $\hat{x}$가 주어졌을 때, 타깃 변수 $\hat{t}$를 예측하는 것이다.
 
