@@ -35,7 +35,7 @@ $E_x[f(x)|z]$와 같이 적었다. 비슷하게 분산 : $var[f(x)]$이라 적�
 N개의 관찰값 $x$로 이루어진 훈련 집합 x=$(x_1,...,x_N)^T$와 그에 해당하는 표적값 t=$(t_1,...,t_N)^T$가 주어졌다고 해보자.
 10개의 관측값이 주어졌다고 했을 때 아래의 그림을 살펴보자.
 
-<center><img src="/public/img/PRML-Chapter1/img1.png" width="80%"></center>
+<center><img src="/public/img/PRML-Chapter1/img1.png" width="60%"></center>
 
 우리는 **목표**는 이러한 주어진 훈련 집합들을 사용하여 어떤 새로운 입력값 $\hat{x}$가 주어졌을 때, 타깃 변수 $\hat{t}$를 예측하는 것이다.
 
@@ -61,7 +61,7 @@ N개의 관찰값 $x$로 이루어진 훈련 집합 x=$(x_1,...,x_N)^T$와 그�
 
 이 때, 다항식의 차수 M을 결정하는 문제가 여전히 남아 있다. 이 문제를 모델 비교(model comparison) 또는 모델 결정(model selection)이라 한다.
 
-<center><img src="/public/img/PRML-Chapter1/img02.png" width="80%"></center>
+<center><img src="/public/img/PRML-Chapter1/img02.png" width="60%"></center>
 
 위 그림을 보면 M이 3일때 제일 근사하다고 볼 수 있다. M=9인 경우, 훈련 집합의 데이터를 모두 지나가서 손실함수의 값은 0이 되겠지만,
 실제 함수에 대해서는 맞지 않는 모습을 보여준다 이를 과적합(Overfitting)되었다고 한다.
@@ -81,7 +81,7 @@ ps. 뒤에서 배울 베이지안 모델을 사용하게 되면, 베이지안 �
 어쨋든, 지금 배우는 관점에서 이러한 과적합(Over fitting)문제를 해결하기 위해서, 어떤 기법이 존재할까? 
 바로 정규화(Normalization)이라는 기법이다. 아래 식을 살펴보자.
 
-<center><img src="/public/img/PRML-Chapter1/img05.png" width="80%"></center>
+<center><img src="/public/img/PRML-Chapter1/img05.png" width="60%"></center>
 
 위 식에 점선박스가 처진 부분이 바로 규제항이다. 즉, 아까 봤듯이, 데이터포인트에 비해서 차수가 컷을때 파라미터의 값이 진동하는(엄청 커지거나 
 작아지는 것)을 방지하기 위해서 다음과 같은 규제항을 추가해준 것이다. 이때, **w_0는 정규화항에서 제외한다** 왜냐하면, w_0를 포함시키면 타깃 
