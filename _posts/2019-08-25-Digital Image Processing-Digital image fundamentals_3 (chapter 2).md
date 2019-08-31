@@ -12,14 +12,14 @@ tags: [Digital Image Processing]
 화소 간에는 몇 가지 중요한 관계들이 있다. **영상은 f(x,y)**로 표현된다. 특정좌표를 가리킬때는 p나 q라는 소문자를 이용한다.
 픽셀p가 (x,y)에 위치할때, 주변픽셀들간에 관계를 표현할 수 있다.
 
-<center><img src="/public/img/Digital Image Processing-Chapter2/img21.png" width="50%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter2/img21.png" width="80%"></center>
 
 위 그림을 보자. 그림을 보면, 4-neighbors가 뭔지, 8-neighbors가 뭔지 확 감이 올 것이다. 픽셀P를 기준으로 상하좌우 위치에있는 4개의 
 픽셀을 픽셀P의 4-neighbors라 한다. 또한, 픽셀P를 기준으로 4-neighbors의 픽셀들을 포함하여 대각의 위치에 존재하는 픽셀들을  
 픽셀P의 8-neighbors라 한다.
 
 ### 인접성(Adjacency)
-<center><img src="/public/img/Digital Image Processing-Chapter2/img22.png" width="50%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter2/img22.png" width="80%"></center>
 
 바로 **인접성(adjacency)**이다. 인접성을 판별할 때 우리는 **픽셀의 위치**뿐 아니라, **픽셀의 화소값**까지 고려할 것이다. 
 영상을 구성하는데 필요한 화소값의 집합을 **V**라 하자. 이때 예를들어 V는 다음과 같은 집합이 될 수 있다. 
@@ -44,7 +44,7 @@ tags: [Digital Image Processing]
 그 다음, 새롭게 **영역(Region)**이라는 개념이 나온다. 영역이라는 개념을 알기 전에 또 **연결성(Connectivity)**이라는 것에 대해서 짚고 
 넘어가야한다. 다음 그림을 살펴보자.
 
-<center><img src="/public/img/Digital Image Processing-Chapter2/img23.png" width="50%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter2/img23.png" width="80%"></center>
 
 사람 모양그림이 있는 영상이 있다. 그 중, 일부 영역, 부분집합 S, 를 가져와서 생각해보자. 그 때, 한 부분집합은 사람의 팔 만, 다른 부분집합은 
 사람의 팔 다리의 일부분 을 같이 가져왔다. 그랬을 때, 각 부분집합에는 검은색으로 인접한 픽셀들이 존재한다. 이렇게 인접한 픽셀들을 모아서 
@@ -57,7 +57,7 @@ tags: [Digital Image Processing]
 여집합$(R_u)^c$를 **배경(background)**라고 한다.
 
 ### 경계(Boundary)
-<center><img src="/public/img/Digital Image Processing-Chapter2/img23.png" width="50%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter2/img24.png" width="80%"></center>
 위 그림에서 그림d를 봐보자. 그림d에거 각각의 영역은 8-adjacency를 사용하였을때, 연결된다. 이럴때, 두 영역은 인접한다고 말한다.
 
 그림e를 보자. 그림e를 화소값이1인 영역, 화소값이 0인 영역으로 나누어보자. 이 때, 화소값이 1인 영역에서 가운데 점선원에 있는 1을 제외하고는 
@@ -99,7 +99,7 @@ $D_8$거리 라고 하면 확 감이 올지 모르겠다, 즉 픽셀p에 대하�
 
 위 세가지 방식을 그림으로 표현하면 다음과 같다.
 
-<center><img src="/public/img/Digital Image Processing-Chapter2/img25.png" width="50%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter2/img25.png" width="90%"></center>
 
 
 
