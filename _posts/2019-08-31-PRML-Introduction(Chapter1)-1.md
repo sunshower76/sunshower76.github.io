@@ -35,7 +35,7 @@ $E_x[f(x)|z]$와 같이 적었다. 비슷하게 분산 : $var[f(x)]$이라 적�
 N개의 관찰값 $x$로 이루어진 훈련 집합 x=$(x_1,...,x_N)^T$와 그에 해당하는 표적값 t=$(t_1,...,t_N)^T$가 주어졌다고 해보자.
 10개의 관측값이 주어졌다고 했을 때 아래의 그림을 살펴보자.
 
-<center><img src="/public/img/PRML-Chapter1/img01.png" width="50%"></center>
+<center><img src="/public/img/PRML-Chapter1/img1.png" width="40%"></center>
 
 우리는 **목표**는 이러한 주어진 훈련 집합들을 사용하여 어떤 새로운 입력값 $\hat{x}$가 주어졌을 때, 타깃 변수 $\hat{t}$를 예측하는 것이다.
 
@@ -48,30 +48,30 @@ N개의 관찰값 $x$로 이루어진 훈련 집합 x=$(x_1,...,x_N)^T$와 그�
 그리고, 훈련 집합의 표적값들의 함숫값 $y(x,$**w**)와의 오차를 측정한느 오차함수를 정의하자. 그렇게 되면 **오차함수를 최소화**하는 방향으로 
 피팅을 진행하면 될 것이다.
 
-<center>E(**w**) = $\frac{1}{2}\sum_{n=1}^{N}{y(x_n,$**w**)$-t_n}^2$</center>
+<center>E(w) = $\frac{1}{2}\sum_{n=1}^{N}{y(x_n,w)-t_n}^2$</center>
 
 최소화 하는 방향으로 손실함수를 최적화시키면 되는데, 앞에 상수 1/2는 상관이 없을 것이다. 앞에 상수 1/2는 미분을 했을때, 앞에 상수가 없기 
 위해서 미리 1/2를 곱해놓은 것이다.
 
-즉, 함수 y($x$,**w**)가 정확히 데이터 포인트를 지날때, 그 포인트에서 손실함수 값이 0이 된다는 것을 알아두자.
+즉, 함수 y($x$,w)가 정확히 데이터 포인트를 지날때, 그 포인트에서 손실함수 값이 0이 된다는 것을 알아두자.
 
-우리의 목적은 E(**w**)를 최소화 하는 **w**를 고르는 것이다.
+우리의 목적은 E(w)를 최소화 하는 w를 고르는 것이다.
 
-이때, 이 오차함수를 최소화 하는 유일한 **w**를 w$^★$ 로 표기하자.
+이때, 이 오차함수를 최소화 하는 유일한 w를 $w^★$ 로 표기하자.
 
 이 때, 다항식의 차수 M을 결정하는 문제가 여전히 남아 있다. 이 문제를 모델 비교(model comparison) 또는 모델 결정(model selection)이라 한다.
 
-<center><img src="/public/img/PRML-Chapter1/img02.png" width="50%"></center>
+<center><img src="/public/img/PRML-Chapter1/img02.png" width="60%"></center>
 
 위 그림을 보면 M이 3일때 제일 근사하다고 볼 수 있다. M=9인 경우, 훈련 집합의 데이터를 모두 지나가서 손실함수의 값은 0이 되겠지만,
 실제 함수에 대해서는 맞지 않는 모습을 보여준다 이를 과적합(Overfitting)되었다고 한다.
 
-<center><img src="/public/img/PRML-Chapter1/img03.png" width="50%"></center>
+<center><img src="/public/img/PRML-Chapter1/img03.png" width="80%"></center>
 위 그림을 보면, 차수가 증가했을때 (M=9)일 때, 가중치의 값이 양과 음의값을 번갈아 나타내며 매우 큰 값을 가지는것을 볼 수 있다. 이는, 
 훈련 집합의 데이터에 과도하게 맞추기 위한 모습으로 볼 수 있다.
 
 하지만 이 상태에서, 주어진 데이터의 수가 달라진다면 어떻게 될까? 아래 그림을 보자.
-<center><img src="/public/img/PRML-Chapter1/img04.png" width="50%"></center>
+<center><img src="/public/img/PRML-Chapter1/img04.png" width="80%"></center>
 
 즉, 똑같이 M=9인 경우, 데이터 수가 많아짐에 따라서, 근사를 더 잘 시키는 모습을 볼 수 있다.
 
@@ -81,7 +81,7 @@ ps. 뒤에서 배울 베이지안 모델을 사용하게 되면, 베이지안 �
 어쨋든, 지금 배우는 관점에서 이러한 과적합(Over fitting)문제를 해결하기 위해서, 어떤 기법이 존재할까? 
 바로 정규화(Normalization)이라는 기법이다. 아래 식을 살펴보자.
 
-<center><img src="/public/img/PRML-Chapter1/img05.png" width="50%"></center>
+<center><img src="/public/img/PRML-Chapter1/img05.png" width="60%"></center>
 
 위 식에 점선박스가 처진 부분이 바로 규제항이다. 즉, 아까 봤듯이, 데이터포인트에 비해서 차수가 컷을때 파라미터의 값이 진동하는(엄청 커지거나 
 작아지는 것)을 방지하기 위해서 다음과 같은 규제항을 추가해준 것이다. 이때, **w_0는 정규화항에서 제외한다** 왜냐하면, w_0를 포함시키면 타깃 
@@ -89,13 +89,13 @@ ps. 뒤에서 배울 베이지안 모델을 사용하게 되면, 베이지안 �
 (quadratic)형태의 정규화가 들어간 회귀 식을 리지회귀(ridge regression)이라고 한다. 이런 형태는 오차함수가 미분되어서 역전파 될 때, 미분 되었을 
 때 업데이트에 가장 크게 반영하는 $w_1^2, w_2^2, ..., w_M^M$의 항들을 규제함으로써 얻어지는 효과이다.
 
-<center><img src="/public/img/PRML-Chapter1/img06.png" width="50%"></center>
+<center><img src="/public/img/PRML-Chapter1/img06.png" width="80%"></center>
 위 그림은 정규화상수 $\lambda$를 몇 으로 설정했느냐에 따른 피팅 곡선의 그림들이다. 상수를 너무 작게 설정하면, 규제를 하는 의미가 없을 것이고, 
 상수를 너무 크게 설정한다면 위 그림의 오른쪽 그래프 처럼, 훈련 집합의 데이터가 반영이 안되는 현상이 발생할 것이다. 즉 적당한 상수를 선택해야 
 왼쪽의 그림처럼 규제의 효과를 볼 수 있을 것이다.
 
 아래 그림은 M=9 였을 때, 정규화 상수에 따른 가중치의 값이다.
-<center><img src="/public/img/PRML-Chapter1/img07.png" width="50%"></center>
+<center><img src="/public/img/PRML-Chapter1/img07.png" width="80%"></center>
 
 
 
