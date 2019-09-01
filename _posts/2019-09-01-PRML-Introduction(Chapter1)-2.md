@@ -23,7 +23,7 @@ tags: [PRML]
 
 그럴 때 우리는, 오렌지를 고를 전반적인 확률은?, 파란색 상자를 골랐을 때 사과를 고를 확률은? 같은 것을 알고 싶을 것이다. 이럴때 아래 그림을
 보자.
-<center><img src="/public/img/PRML-Chapter1/img09.png" width="60%"></center>
+<center><img src="/public/img/PRML-Chapter1/img09.png" width="80%"></center>
 
 확률변수X는 $x_i(i=1,...,M)$로 구성되어있고, 확률변수Y는 $y_j(j=1,...,N)$으로 구성되있다고 하자. 이때, X랑 Y를 상자와 과일에 해당하는 확률 
 변수라고 생각해보자. 그럴 때, 위 그림에 있는 $n_{ij}$는 B상자에서 F과일을 고를 확률을 나타낸다. 즉, P(B,F)이다. 위 그림 보다 아래 그림을 
