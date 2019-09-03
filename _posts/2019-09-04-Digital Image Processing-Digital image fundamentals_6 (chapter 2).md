@@ -28,7 +28,7 @@ k번째 밝기 값이며, $n_k$는 영상에서 밝기가 $r_k$인 화소의 개
 표현하면, $p(r_k)=n_k/MN$이다.
 
 그러면, 본론으로 돌아와서 다음 그림을 봐보자.
-<center><img src="/public/img/Digital Image Processing-Chapter3/img17.png" width="80%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter3/img17.png" width="60%"></center>
 
 위 그림을 보면, 히스토그램이 어떤 영역에 편향되있는 영상은, 물체끼리 구분은 어느정도 괜찮으나, 너무 어둡거나 밝다. 또, 중간영역에 히스토그램이 
 몰려있는 영상은, 물체끼리 구별이 잘 되지않아, 콘트라스트(contrast)가 낮다고 할 수 있다. 그렇다면 영상을 잘 보이게 하기 위해서 할 수 있는 
@@ -71,10 +71,10 @@ k번째 밝기 값이며, $n_k$는 영상에서 밝기가 $r_k$인 화소의 개
 
 그렇다면 이때, 히스토그램 평활화에 의해서 변환된 화소값의 계산은 다음과 같이 이루어진다.
 <center><img src="/public/img/Digital Image Processing-Chapter3/img26.png" width="60%"></center>
-<center><img src="/public/img/Digital Image Processing-Chapter3/img27.png" width="60%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter3/img27.png" width="50%"></center>
 
 위와 같은 방식으로 $s_7$까지 구하면 다음과 같은 결과가 나온다. 제일 오른쪽 그림c가 변환된 결과이다.
-<center><img src="/public/img/Digital Image Processing-Chapter3/img28.png" width="60%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter3/img28.png" width="90%"></center>
 
 전체적으로 낮은 화소에 몰려있던 히스토그램이 상대적으로 균일하게 분포하게된 모습을 볼 수 있다. 앞에서 봤었던 것처럼 uniform하게 분포하지 않는
 이유는 화소의 범위가 연속적이지 않기 때문이다.
