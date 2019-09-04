@@ -83,7 +83,7 @@ k번째 밝기 값이며, $n_k$는 영상에서 밝기가 $r_k$인 화소의 개
 히스토그램 지정(Histogram matching)은 히스토그램 평활화의 연장선이라고 보면된다. 히스토그램 평활화를 생각해보면, 히스토그램을 단순히 
 평활화 시키기만 하였다. 아래 그림을 보자.
 
-<center><img src="/public/img/Digital Image Processing-Chapter3/img29.png" width="60%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter3/img29.png" width="90%"></center>
 
 단순히 평활화만 시키게된다면 위 그림과 같은 문제점이 발생하게 된다. 원래 이미지의 히스토그램이 0에 거의 밀집해 있기 때문에, 히스토그램 평활화를
 하게되면, 거의 밝은 영역에 몰려있게 된다. 그 이유는 히스토그램 평활화의 알고리즘을 이해하고 있으면 바로 알 수 있다. 왜냐하면, 누적분포함수가 빠르게 
@@ -107,13 +107,13 @@ k번째 밝기 값이며, $n_k$는 영상에서 밝기가 $r_k$인 화소의 개
 그런데 이렇게 써놔도 어떤 말인지 감이 잘 안온다. 예시를 보면 금방 감이 올 것이다.
 
 먼저 아래와 같이 원본 영상의 이산확률분포함수가 있고, 히스토그램 평활화를 진행하였다.
-<center><img src="/public/img/Digital Image Processing-Chapter3/img32.png" width="60%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter3/img32.png" width="90%"></center>
 
 그리고 아래와 같이 우리가 맵핑 시키려는 분포함수가 있고, 똑같이 히스토그램 평활화를 진행하였다.
-<center><img src="/public/img/Digital Image Processing-Chapter3/img33.png" width="60%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter3/img33.png" width="90%"></center>
 
 그 후, 아래와 같이 s에 대하여 G를 통한 역변환을 통해 z값을 맵핑시킨다.
-<center><img src="/public/img/Digital Image Processing-Chapter3/img34.png" width="60%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter3/img34.png" width="90%"></center>
 
 그러면 최종적으로, 입력영상의 분포는 다음과 같이 바뀐다.
 <center><img src="/public/img/Digital Image Processing-Chapter3/img35.png" width="60%"></center>
