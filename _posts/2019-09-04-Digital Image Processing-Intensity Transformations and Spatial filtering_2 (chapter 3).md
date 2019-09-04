@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Digital Image Processing - Digital image fundamental_6 (chapter2)
+title: Digital Image Processing - DIntensity Transformations and Spatial filtering_2 (chapter3)
 author: Sunwoo Kim
 categories: CV(Computer_Vsion)
 tags: [Digital Image Processing]
