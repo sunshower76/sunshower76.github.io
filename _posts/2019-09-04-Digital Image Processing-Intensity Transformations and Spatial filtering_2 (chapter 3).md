@@ -122,7 +122,7 @@ k번째 밝기 값이며, $n_k$는 영상에서 밝기가 $r_k$인 화소의 개
 통하여 진행된다고 할 수 있다.
 
 이러한 히스토그램 지정 알고리즘을 통하여 문제가 되었던 달 사진을 복원하면, 훨씬 그럴싸한 영상이 복원되는 것을 볼 수 있다.
-<center><img src="/public/img/Digital Image Processing-Chapter3/img35.png" width="70%"></center>
+<center><img src="/public/img/Digital Image Processing-Chapter3/img36.png" width="70%"></center>
 
 
 
