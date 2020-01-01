@@ -7,39 +7,45 @@ tags: [Signals and Systems]
 ---
 
 ## 1. 테일러 급수(Taylor Series)
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/01.png" width="50%"></center>
+
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/01.png" width="90%"></center>
 
 ## 2. 매클로린 급수(Maclaurin's series)
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/02.png" width="50%"></center>
+
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/02.png" width="90%"></center>
 
 ## 3. 오일러 함수(Euler Function)
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/02.png" width="50%"></center>
+
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/02.png" width="90%"></center>
 
 ### 3.1 오일러 함수 증명
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/03.png" width="50%"></center>
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/04.png" width="50%"></center>
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/05.png" width="50%"></center>
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/06.png" width="50%"></center>
+
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/03.png" width="90%"></center>
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/04.png" width="90%"></center>
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/05.png" width="90%"></center>
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/06.png" width="90%"></center>
 
 ### 3.2 복소평면에서 오일러 함수
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/07.png" width="50%"></center>
+
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/07.png" width="90%"></center>
 
 ### 3.3 왜 오일러 함수인가?
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/08.png" width="50%"></center>
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/09.png" width="50%"></center>
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/10.png" width="50%"></center>
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/11.png" width="50%"></center>
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/12.png" width="50%"></center>
+
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/08.png" width="90%"></center>
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/09.png" width="90%"></center>
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/10.png" width="90%"></center>
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/11.png" width="90%"></center>
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/12.png" width="90%"></center>
 
 
 ## 4.LTI system(Linear Time Invariant system)
 
 ### 4.1 Linearity
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/13.png" width="50%"></center>
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/13.png" width="90%"></center>
 
 ### 4.2 Time Invariativity
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/14.png" width="50%"></center>
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/15.png" width="50%"></center>
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/14.png" width="90%"></center>
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/15.png" width="90%"></center>
 
 ### 4.3 왜 LTI system인가?
-<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/16.png" width="50%"></center>
+<center><img src="/public/img/Signals and Systems-Taylor series, Euler Function and LTI system/16.png" width="90%"></center>
