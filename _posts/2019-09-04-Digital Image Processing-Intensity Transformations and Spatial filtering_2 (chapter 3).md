@@ -121,8 +121,9 @@ k번째 밝기 값이며, $n_k$는 영상에서 밝기가 $r_k$인 화소의 개
 기존영상에서 화소값이 $r_k$인 픽셀이 $s_k$로 맵핑 되고, $s$픽셀들이 해당되는 $z_k$에 픽셀로 바뀐다. 즉, 히스토그램 지정 알고리즘은 두 번의 변환을
 통하여 진행된다고 할 수 있다.
 
-이러한 히스토그램 지정 알고리즘을 통하여 문제가 되었던 달 사진을 복원하면, 훨씬 그럴싸한 영상이 복원되는 것을 볼 수 있다.
-<center><img src="/public/img/Digital Image Processing-Chapter3/img35.png" width="70%"></center>
+이러한 히스토그램 지정 알고리즘을 통하여 문제가 되었던 달 사진을 복원하면, 히스토그램이 더 균일하게 분포 되면서 훨씬 그럴싸한 영상이 복원되는
+것을 볼 수 있다.
+<center><img src="/public/img/Digital Image Processing-Chapter3/img36.png" width="70%"></center>
 
 
 
