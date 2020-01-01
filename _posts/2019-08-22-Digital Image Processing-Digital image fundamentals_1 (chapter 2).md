@@ -2,7 +2,7 @@
 layout: post
 title: Digital Image Processing - Digital image fundamental_1 (chapter2)
 author: Sunwoo Kim
-categories: CV(Computer_Vsion)
+categories: CV(ComputerVision)
 tags: [Digital Image Processing]
 ---
 
