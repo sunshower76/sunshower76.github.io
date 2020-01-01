@@ -2,7 +2,7 @@
 layout: post
 title: Digital Image Processing - Introduction(chapter1)
 author: Sunwoo Kim
-categories: CV(Computer_Vsion)
+categories: CV(ComputerVision)
 tags: [Digital Image Processing]
 ---
 대학원 진학전 목표중 하나인 곤잘레스가 주 저자인 유명한 디지털 영상처리 책을 살펴보면서 정리해보려고한다.
