@@ -2,7 +2,7 @@
 layout: post
 title: Digital Image Processing - DIntensity Transformations and Spatial filtering_2 (chapter3)
 author: Sunwoo Kim
-categories: CV(Computer_Vsion)
+categories: CV(ComputerVision)
 tags: [Digital Image Processing]
 ---
 ## 3.3 Histogram processing
