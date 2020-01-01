@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Signals and Systems
+title: Signals and Systems-Taylor series, Euler Function and LTI system
 author: Sunwoo Kim
-categories: CV(Computer_Vsion)
+categories: Signals&Systems
 tags: [Signals and Systems]
 ---
 
