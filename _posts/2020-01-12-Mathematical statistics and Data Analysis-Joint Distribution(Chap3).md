@@ -16,15 +16,15 @@ tags: [Statistics]
 <center><img src="/public/img/MSDA-Chapter3/img01.png" width="40%"></center>
 
 그리고 구간 사이에 해당하는 확률에 대해서는 아래 식과 같이 접근하여 구할 수 있다.
-<center><img src="/public/img/MSDA-Chapter3/img02.png" width="40%"></center>
-<center><img src="/public/img/MSDA-Chapter3/img03.png" width="40%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img02.png" width="80%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img03.png" width="70%"></center>
 
 위의 경우와 같이 변수가 2개뿐인 이변수 결합분포와 같이 다변수 결합분포일 떄는 다음과 같이 식을 쓸 수 있다.
 <center><img src="/public/img/MSDA-Chapter3/img04.png" width="40%"></center>
 
 ## 3.1 이산확률변수(Discrete Random Variables)
 이산확률변수에 대한 결합분포는 다음과 같이 정의된다. 역시 연속확률변수와 다르게 점추정(특정 지점에 대한 확률)을 구하는 것이 가능하다는 것을 볼 수 있다.
-<center><img src="/public/img/MSDA-Chapter3/img05.png" width="40%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img05.png" width="60%"></center>
 
 동전을 세번 던지는 시행을 하여서 아래와 같은 표본공간이 나왔다고 하자. 여기서 h=head, t=tail으로써 각각 
 앞면, 뒷면을 의미한다.
@@ -41,7 +41,7 @@ p(thh)의 경우는, $p(x,y)=p(0,2)$ 라고 쓸 수 있다. 그리고 그 값은
 ### 주변확률분포(Marginal Distribution)
 
 주변확률분포는 결합확률분포에서 하나의 확률변수만 고려해주는 분포이다. 마치 우리가 미적분학에서 배웠던 편미분과 같은 원리라고 생각하면 좋을것 같다. 즉, 위의 예제로 생각해보면 확률변수X,Y 모두 고려했을 때 확률을 구하는 것이 아니고, X에대한 주변확률븐포라고 하면, X=0인 경우에 대해서 표본공간에 있는 모든 Y에 대한 확률 값을 더한 것을 같다. 다음 예제와 식을 보고 이해해보자.
-<center><img src="/public/img/MSDA-Chapter3/img09.png" width="40%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img09.png" width="30%"></center>
 <center><img src="/public/img/MSDA-Chapter3/img10.png" width="40%"></center>
 위 식을 보면, 입력변수x 는 고정되고, 발생할수 있는 모든 Y에대한 결합확률을 모두 더해주는 모습을 볼 수 있다.
 **이때 중요하게 봐야할 것이 있는데, 확률P 밑에 있는 x는 대문자X이고 괄호안에 들어간 x는 소문자x라는 점이다.** 즉, 대문자X는 확률변수를 의미하고, 소문자x는 확률변수X가 가질 수 있는 원소값을 의미한다.
@@ -70,7 +70,7 @@ p(thh)의 경우는, $p(x,y)=p(0,2)$ 라고 쓸 수 있다. 그리고 그 값은
 <center><img src="/public/img/MSDA-Chapter3/img17.png" width="40%"></center>
 
 여기서 예시를 하나 살펴보자.
-<center><img src="/public/img/MSDA-Chapter3/img18.png" width="40%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img18.png" width="80%"></center>
 
 ### 주변확률분포(Marginal Distribution)
 연속확률변수에 대한 주변확률분포도 이산확률변수와 똑같다. 이를 연속한 형태의 변수로 확장시킨 개념일 뿐이다.
@@ -79,16 +79,16 @@ p(thh)의 경우는, $p(x,y)=p(0,2)$ 라고 쓸 수 있다. 그리고 그 값은
 <center><img src="/public/img/MSDA-Chapter3/img20.png" width="40%"></center>
 
 예시를 통하여 살펴보자.
-<center><img src="/public/img/MSDA-Chapter3/img21.png" width="40%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img21.png" width="80%"></center>
 
 ## 독립확률변수(Independent Random Variables)
 독립확률변수에 대한 정의는 아래와 같다.
-<center><img src="/public/img/MSDA-Chapter3/img22.png" width="40%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img22.png" width="80%"></center>
 
 우리가 집합을 배웠을 때 독립에 대한 개념이 똑같이 확률변수로 옮겨온 것을 알 수 있다. 위 식의 뜻은 확률변수$X_1, X_2, X_3 ,.. X_n$이 서로에 대해서 모두 완벽하게 독립이라면, 종속적인 확률을 고려할 필요 없으므로 따로 확률을 구해서 곱해주면 된다는 뜻이다. 이러한 성질을 만족한다면, 각 확률변수는 서로 독립한다고 말을 할 수 있다고 하는게 위 정의의 뜻이다. 조금더 풀어쓰면 아래와 같이 쓸 수 있을 것이다.
-<center><img src="/public/img/MSDA-Chapter3/img23.png" width="40%"></center>
-<center><img src="/public/img/MSDA-Chapter3/img24.png" width="40%"></center>
-<center><img src="/public/img/MSDA-Chapter3/img25.png" width="40%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img23.png" width="70%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img24.png" width="70%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img25.png" width="70%"></center>
 
 
 ## 조건부확률분포(Conditional Distributions)
@@ -99,16 +99,16 @@ p(thh)의 경우는, $p(x,y)=p(0,2)$ 라고 쓸 수 있다. 그리고 그 값은
 <center><img src="/public/img/MSDA-Chapter3/img26.png" width="40%"></center>
 
 바로 예시를 통해서 살펴보자.
-<center><img src="/public/img/MSDA-Chapter3/img27.png" width="40%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img27.png" width="80%"></center>
 
 조건부확률분포의 정의를 좌변 우변을 조금 바꿔보면 결합확률을 다음과 같이 쓸 수 있음을 알수 있다.
 <center><img src="/public/img/MSDA-Chapter3/img28.png" width="40%"></center>
 
 그리고 주변확률분포는 아래와 같이 쓸 수 있음을 알 수 있다.
 <center><img src="/public/img/MSDA-Chapter3/img29.png" width="40%"></center>
-이 부분에 대해서는 2장에서도 설명이 된 부분이다. 위의 예시에서는 p(x=0)을 구하기 위해서 x=0에 속하는 가로변의 확률을 모두 더한 것이 되겠다. 다른 예시를 살펴보자면, 간단하게 이렇게 생각해보자.
+이 부분에 대해서는 2장에서도 설명이 된 부분이다. 위의 예시에서는 $p(x=0)$을 구하기 위해서 $x=0$에 속하는 가로변의 확률을 모두 더한 것이 되겠다. 다른 예시를 살펴보자면, 간단하게 이렇게 생각해보자.
 
-P(당뇨) = P(당뇨|사탕 먹기)P(사탕 먹기) + P(당뇨|초콜렛 먹기)P(초콜렛 먹기) 라고 단순하게 생각해볼 수 있다. 이는 당뇨와 단 것을 먹는것 간에 상관관계가 있기 때문에 이런 예제를 생각해본 것이다. 그리고 종속관계가 있기 때문에 이렇게 생각해볼 수 있다. 우선 사탕을 먹어야 되니까, 사탕을 먹을 확률을 구해야 하고, 그럴 때 사탕은 먹은게 되니까, 사탕을 먹었을 때 당뇨에 걸릴확률은 얼마나 될까? 이렇게 생각하는 것이다. 이렇게하면 식을 외우지 않고도 바로바로 생각해 볼 수 있을 것이다.
+$P(당뇨) = P(당뇨|사탕 먹기)P(사탕 먹기) + P(당뇨|초콜렛 먹기)P(초콜렛 먹기)$라고 단순하게 생각해볼 수 있다. 이는 당뇨와 단 것을 먹는것 간에 상관관계가 있기 때문에 이런 예제를 생각해본 것이다. 그리고 종속관계가 있기 때문에 이렇게 생각해볼 수 있다. 우선 사탕을 먹어야 되니까, 사탕을 먹을 확률을 구해야 하고, 그럴 때 사탕은 먹은게 되니까, 사탕을 먹었을 때 당뇨에 걸릴확률은 얼마나 될까? 이렇게 생각하는 것이다. 이렇게하면 식을 외우지 않고도 바로바로 생각해 볼 수 있을 것이다.
 
 ### 연속확률변수(Continuous Random Variables)
 연속확률변수에 대한 정의도 여태까지 해왔던 것처럼 접근해서 생각해보면된다. 연속확률변수에 대한 조건부확률분포는 다음과 같이 정의된다.
@@ -119,7 +119,7 @@ P(당뇨) = P(당뇨|사탕 먹기)P(사탕 먹기) + P(당뇨|초콜렛 먹기)
 <center><img src="/public/img/MSDA-Chapter3/img32.png" width="40%"></center>
 
 ## 베이지안 추론(Bayesian Inference)
-베이지안 추론은 아주 중요한 부분중 하나이다. 이 떄 **가정(Hypothesis)와 증거(Evidence)**라는 게 아주 중요하다. 보통 우리가 가정과 증거라고 생각을 하면, 가정은 어떤 일이나 사건이 발생했다고 가상으로 전제를 해두는 것을 의미한다. 그리고 증거는 실제 어떤 일이 발생했을 때 그것을 뒷받침해줄 어떤 것이라고 생각을 할 것이다. 하지만, 여기서는 그러한 관점에 대해서 바꿔서 생각해볼 필요가 있다.
+베이지안 추론은 아주 중요한 부분중 하나이다. 이 떄 **가정(Hypothesis)와 증거(Evidence)** 라는 게 아주 중요하다. 보통 우리가 가정과 증거라고 생각을 하면, 가정은 어떤 일이나 사건이 발생했다고 가상으로 전제를 해두는 것을 의미한다. 그리고 증거는 실제 어떤 일이 발생했을 때 그것을 뒷받침해줄 어떤 것이라고 생각을 할 것이다. 하지만, 여기서는 그러한 관점에 대해서 바꿔서 생각해볼 필요가 있다.
 
   증거(Evidence)는 우리가 실제로 관측할 수 있는것, 가정을 뒷밤침 할 수 있는 것이라고 생각하자. 그리고 가정(Hypothesis)는 우리가 실제로 알고자하는 것 이라고 생각하자. 이를 예시를 통해서 살펴보자.
 
