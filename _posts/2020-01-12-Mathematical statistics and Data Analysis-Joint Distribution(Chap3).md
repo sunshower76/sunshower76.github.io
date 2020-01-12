@@ -20,15 +20,15 @@ tags: [Statistics]
 <center><img src="/public/img/MSDA-Chapter3/img03.png" width="70%"></center>
 
 위의 경우와 같이 변수가 2개뿐인 이변수 결합분포와 같이 다변수 결합분포일 떄는 다음과 같이 식을 쓸 수 있다.
-<center><img src="/public/img/MSDA-Chapter3/img04.png" width="40%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img04.png" width="70%"></center>
 
 ## 3.1 이산확률변수(Discrete Random Variables)
 이산확률변수에 대한 결합분포는 다음과 같이 정의된다. 역시 연속확률변수와 다르게 점추정(특정 지점에 대한 확률)을 구하는 것이 가능하다는 것을 볼 수 있다.
-<center><img src="/public/img/MSDA-Chapter3/img05.png" width="60%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img05.png" width="50%"></center>
 
 동전을 세번 던지는 시행을 하여서 아래와 같은 표본공간이 나왔다고 하자. 여기서 h=head, t=tail으로써 각각 
 앞면, 뒷면을 의미한다.
-<center><img src="/public/img/MSDA-Chapter3/img06.png" width="40%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img06.png" width="50%"></center>
 
 이 때, 확률변수X는 세번 동전을 던지는 시행 중, 첫 번째 시행에 앞면이 나오는 횟수를 의미하고, 
 확률변수Y는 세번의 모든 시행에서 앞면이 나온 횟수를 의미한다. 그럴 때, 확률표를 아래와 같이 작성된다.
@@ -54,7 +54,7 @@ p(thh)의 경우는, $p(x,y)=p(0,2)$ 라고 쓸 수 있다. 그리고 그 값은
 
 ### 다항분포(Multinomial Distribution)
 2장에서 N개의 set을 하부 n개의 셋으로 나누는 가지수에 대해서 배운적이 있다. 이를 확률적으로 보아서, 가지수가 아닌 n개의 셋으로 나눠질 수 있는 확률을 계산하는 것으로 바꿔서 생각해보면 된다. 식은 아래와 같다.
-<center><img src="/public/img/MSDA-Chapter3/img13.png" width="40%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img13.png" width="50%"></center>
 
 다항분포의 주변확률분포는 아래의 식과같이 구할 수 있다. 확률변수$N_i$를 제외하고 나머지 확률변수는 확률변수$N_i$입장에서는 자기와는 다른 확률변수라는 카테고리로 묶을수 있다. 그러므로 확률변수$N_i$에 대한 주변확률분포는 다음과 같이 쓸 수 있다.
 <center><img src="/public/img/MSDA-Chapter3/img14.png" width="40%"></center>
@@ -86,9 +86,9 @@ p(thh)의 경우는, $p(x,y)=p(0,2)$ 라고 쓸 수 있다. 그리고 그 값은
 <center><img src="/public/img/MSDA-Chapter3/img22.png" width="80%"></center>
 
 우리가 집합을 배웠을 때 독립에 대한 개념이 똑같이 확률변수로 옮겨온 것을 알 수 있다. 위 식의 뜻은 확률변수$X_1, X_2, X_3 ,.. X_n$이 서로에 대해서 모두 완벽하게 독립이라면, 종속적인 확률을 고려할 필요 없으므로 따로 확률을 구해서 곱해주면 된다는 뜻이다. 이러한 성질을 만족한다면, 각 확률변수는 서로 독립한다고 말을 할 수 있다고 하는게 위 정의의 뜻이다. 조금더 풀어쓰면 아래와 같이 쓸 수 있을 것이다.
-<center><img src="/public/img/MSDA-Chapter3/img23.png" width="70%"></center>
-<center><img src="/public/img/MSDA-Chapter3/img24.png" width="70%"></center>
-<center><img src="/public/img/MSDA-Chapter3/img25.png" width="70%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img23.png" width="60%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img24.png" width="60%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img25.png" width="60%"></center>
 
 
 ## 조건부확률분포(Conditional Distributions)
@@ -96,7 +96,7 @@ p(thh)의 경우는, $p(x,y)=p(0,2)$ 라고 쓸 수 있다. 그리고 그 값은
 
 ### 이산확률변수(Discrete Random Variables)
 이산확률변수의 조건부확률분포는 아래와 같이 정의된다.
-<center><img src="/public/img/MSDA-Chapter3/img26.png" width="40%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img26.png" width="50%"></center>
 
 바로 예시를 통해서 살펴보자.
 <center><img src="/public/img/MSDA-Chapter3/img27.png" width="80%"></center>
@@ -108,11 +108,11 @@ p(thh)의 경우는, $p(x,y)=p(0,2)$ 라고 쓸 수 있다. 그리고 그 값은
 <center><img src="/public/img/MSDA-Chapter3/img29.png" width="40%"></center>
 이 부분에 대해서는 2장에서도 설명이 된 부분이다. 위의 예시에서는 $p(x=0)$을 구하기 위해서 $x=0$에 속하는 가로변의 확률을 모두 더한 것이 되겠다. 다른 예시를 살펴보자면, 간단하게 이렇게 생각해보자.
 
-$P(당뇨) = P(당뇨|사탕 먹기)P(사탕 먹기) + P(당뇨|초콜렛 먹기)P(초콜렛 먹기)$라고 단순하게 생각해볼 수 있다. 이는 당뇨와 단 것을 먹는것 간에 상관관계가 있기 때문에 이런 예제를 생각해본 것이다. 그리고 종속관계가 있기 때문에 이렇게 생각해볼 수 있다. 우선 사탕을 먹어야 되니까, 사탕을 먹을 확률을 구해야 하고, 그럴 때 사탕은 먹은게 되니까, 사탕을 먹었을 때 당뇨에 걸릴확률은 얼마나 될까? 이렇게 생각하는 것이다. 이렇게하면 식을 외우지 않고도 바로바로 생각해 볼 수 있을 것이다.
+$P(당뇨) = P(당뇨\\|사탕 먹기)P(사탕 먹기) + P(당뇨\\|초콜렛 먹기)P(초콜렛 먹기)$라고 단순하게 생각해볼 수 있다. 이는 당뇨와 단 것을 먹는것 간에 상관관계가 있기 때문에 이런 예제를 생각해본 것이다. 그리고 종속관계가 있기 때문에 이렇게 생각해볼 수 있다. 우선 사탕을 먹어야 되니까, 사탕을 먹을 확률을 구해야 하고, 그럴 때 사탕은 먹은게 되니까, 사탕을 먹었을 때 당뇨에 걸릴확률은 얼마나 될까? 이렇게 생각하는 것이다. 이렇게하면 식을 외우지 않고도 바로바로 생각해 볼 수 있을 것이다.
 
 ### 연속확률변수(Continuous Random Variables)
 연속확률변수에 대한 정의도 여태까지 해왔던 것처럼 접근해서 생각해보면된다. 연속확률변수에 대한 조건부확률분포는 다음과 같이 정의된다.
-<center><img src="/public/img/MSDA-Chapter3/img30.png" width="40%"></center>
+<center><img src="/public/img/MSDA-Chapter3/img30.png" width="350%"></center>
 <center><img src="/public/img/MSDA-Chapter3/img31.png" width="40%"></center>
 
 조건부확률분포를 이용하여 주변확률분포를 다음과같이 쓸 수 있다.
