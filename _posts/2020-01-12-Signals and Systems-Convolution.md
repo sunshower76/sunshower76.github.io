@@ -21,7 +21,7 @@ tags: [Signals and Systems]
 <center><img src="/public/img/Signals and Systems-Convolution/img_8.png" width="90%"></center>
 <center><img src="/public/img/Signals and Systems-Convolution/img_9.png" width="90%"></center>
 
-## 컨볼루션(Convolution)
+## 컨볼루션(Convolution)( $y(t)=f(x(t), h(t)=x(t)*h(t)$ ) 
 
 ### 이산영역(Discrete Domain)
 <center><img src="/public/img/Signals and Systems-Convolution/img_10.png" width="90%"></center>
@@ -31,4 +31,11 @@ tags: [Signals and Systems]
 <center><img src="/public/img/Signals and Systems-Convolution/img_14.png" width="90%"></center>
 <center><img src="/public/img/Signals and Systems-Convolution/img_15.png" width="90%"></center>
 
-### 연속영억(Continuous Domain)
+### 연속영역(Continuous Domain)
+<center><img src="/public/img/Signals and Systems-Convolution/img_16.png" width="90%"></center>
+<center><img src="/public/img/Signals and Systems-Convolution/img_17.png" width="90%"></center>
+<center><img src="/public/img/Signals and Systems-Convolution/img_18.png" width="90%"></center>
+<center><img src="/public/img/Signals and Systems-Convolution/img_19.png" width="90%"></center>
+<center><img src="/public/img/Signals and Systems-Convolution/img_20.png" width="90%"></center>
+<center><img src="/public/img/Signals and Systems-Convolution/img_21.png" width="90%"></center>
+<center><img src="/public/img/Signals and Systems-Convolution/img_22.png" width="90%"></center>
