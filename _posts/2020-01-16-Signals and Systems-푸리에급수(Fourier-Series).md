@@ -15,20 +15,23 @@ tags: [Signals and Systems]
 <center> 복잡한 신호 = 단순한 신호1 + 단순한신호2 + ... + 단순한 신호n</center>
 그렇다면 여기서 말하는 단순한 신호는 무엇일까? 우리가 [1장에서 배웠던 삼각함수로 구성된 오일러함수(Euler Function)]([https://sunshower76.github.io/signals&systems/2020/01/01/Signals-and-Systems-Taylor-series,-Euler-Function-and-LTI-system-%EB%B3%B5%EC%82%AC%EB%B3%B8/](https://sunshower76.github.io/signals&systems/2020/01/01/Signals-and-Systems-Taylor-series,-Euler-Function-and-LTI-system-복사본/)) 이다. 즉 복소평면까지 다룬 **삼각함수의 합**이라고 생각하면 된다.
 
-<center>입력 신호(S$_in$) = $ ... + c_{-2}e^{j(-2\omega_0)t} + c_{-1}e^{j(-1\omega_0)t} + c_0 + c_{1}e^{j(1\omega_0)t} + c_{2}e^{j(2\omega_0)t} + ... + c_{k}e^{j(k\omega_0)t}$</center>
+<center font-size:150%>입력 신호(S$_in$) = $ ... + c_{-2}e^{j(-2\omega_0)t} + c_{-1}e^{j(-1\omega_0)t} + c_0 + c_{1}e^{j(1\omega_0)t} + c_{2}e^{j(2\omega_0)t} + ... + c_{k}e^{j(k\omega_0)t}$</center>
+
 여기서 다시 한 번 오일러 함수를 복습해보자.
 
 <center><img src="/public/img/Signals and Systems-푸리에급수(Fourier-Series)/img_1.png" width="50%"></center>
 위 오일러 함수는 크기가 A인 오일러 함수이다. 그 때, 
 
-<center>$A(f_e) = Ae^{j\theta} = A(cos(\theta) + jsin(\theta))$ 로 표현된다.</center>
+<center font-size:150%>$A(f_e) = Ae^{j\theta} = A(cos(\theta) + jsin(\theta))$ 로 표현된다.</center>
+
 이 때 봐야할게 두 가지가 있다. 첫 번째는 바로 **$\omega_0 $다.** $\omega_0 = 2\pi f$라고 해보자. 여기서 $\pi$는 원주율을 의미하고, $f$는 주파수(frequency)를 의미한다. 그럴 때 오일러 함수를 다시 생각해보자. $f=1hz$라고 하면,  $\omega_0 = 2\pi$가 된다. 이 뜻은 **오일러 함수의 주기가 $2\pi/sec$ 라는 것이다. 왜냐하면 $t=1sec$일 때, $\theta=2\pi$가 됨으로, 한 바퀴를 돌았다는 뜻이 되기 때문이다. 그렇다면 $f=2hz$일 때에는 어떻게 될까?  $\omega_0 = 4\pi$ 그리고 $t=0.5sec$  일 때, $\theta=2\pi$ 가 됨으로 0.5초에 한 바퀴를 돌았다는 뜻이 된다. 즉 주기가 $2\pi/0.5sec$ 로 두 배 빨라졌다. 
 
 두 번째로, $k$ 를 집중해서 봐보자. $k$를 보았을 때, 어떤 공통점이 있을까? 우선  **정수(Integer)**라는 것이다. 그리고 차수가 **입력함수의 주기의 배수(입력:$2\pi$, 더해지는 함수들의 주기: $(1/2n) \pi$,  $(k=2n\pi)$   )**로 이루어 져야 한다. 이런 항의 합으로 이루어진 급수를 하모닉스(harmonics)라고  한다. 그렇다면 하필 실수가 아닌 정수만의 합으로 표현이 될까? 사실 실수여도 아무 상관이 없다. 하지만 그럴 필요가 없기 때문이다. 무한개의 개수의 항으로 표현된다고 한다면, 정수만으로 표현을 하여도 충분히 근사시킬수 있기 때문에, 실수와 정수를 동시에 사용하여 복잡하게 표현할 필요도 없고 불필요하게 계산량을 늘릴 필요도 없기 때문이다.
 
 그런데 여기서 또 하나 의문이 드는 점이 생긴다. 오일러 함수는 복소함수이다 즉, 실수와 허수값이 모두 존재하는데 실제로 이런 신호는 존재하지 않는다. 실수항만 남겨서 신호를 표현해야 하는데 그러면 이 신호를 어떻게 표현해야 할까? 그것은 바로 간단하게 덧셈을 이용하면 된다.
 
-<center>$e^{j\theta} + e^{-j\theta} = cos(\theta) + jsin(\theta)+ cos(\theta) - jsin(\theta) = 2cos(\theta)$  </center>
+<center font-size:150%>$e^{j\theta} + e^{-j\theta} = cos(\theta) + jsin(\theta)+ cos(\theta) - jsin(\theta) = 2cos(\theta)$  </center>
+
 ### 벡터공간(Vector space)
 
 갑자기 웬 벡터? 라는 생각이 들 것이다. 관련이 있으니 다음 내용을 같이 살펴보자. 우선 벡터공간(Vector space)란 무엇일까? 바로 아래의 8가지 공리를 만족시킨다면 무엇이든지 벡터공간이라고 할 수 있다.
