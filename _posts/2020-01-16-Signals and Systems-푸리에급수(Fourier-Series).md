@@ -15,14 +15,14 @@ tags: [Signals and Systems]
 <center> 복잡한 신호 = 단순한 신호1 + 단순한신호2 + ... + 단순한 신호n</center>
 그렇다면 여기서 말하는 단순한 신호는 무엇일까? 우리가 [1장에서 배웠던 삼각함수로 구성된 오일러함수(Euler Function)]([https://sunshower76.github.io/signals&systems/2020/01/01/Signals-and-Systems-Taylor-series,-Euler-Function-and-LTI-system-%EB%B3%B5%EC%82%AC%EB%B3%B8/](https://sunshower76.github.io/signals&systems/2020/01/01/Signals-and-Systems-Taylor-series,-Euler-Function-and-LTI-system-복사본/)) 이다. 즉 복소평면까지 다룬 **삼각함수의 합**이라고 생각하면 된다.
 
-<center font-size:150%>입력 신호(S$_in$) = $ ... + c_{-2}e^{j(-2\omega_0)t} + c_{-1}e^{j(-1\omega_0)t} + c_0 + c_{1}e^{j(1\omega_0)t} + c_{2}e^{j(2\omega_0)t} + ... + c_{k}e^{j(k\omega_0)t}$</center>
+<center> font-size:150%><b>입력 신호(S$_in$) = $ ... + c_{-2}e^{j(-2\omega_0)t} + c_{-1}e^{j(-1\omega_0)t} + c_0 + c_{1}e^{j(1\omega_0)t} + c_{2}e^{j(2\omega_0)t} + ... + c_{k}e^{j(k\omega_0)t}$</b></center>
 
 여기서 다시 한 번 오일러 함수를 복습해보자.
 
 <center><img src="/public/img/Signals and Systems-푸리에급수(Fourier-Series)/img_1.png" width="50%"></center>
 위 오일러 함수는 크기가 A인 오일러 함수이다. 그 때, 
 
-<center font-size:150%>$A(f_e) = Ae^{j\theta} = A(cos(\theta) + jsin(\theta))$ 로 표현된다.</center>
+<center font-size:150%><b>$A(f_e) = Ae^{j\theta} = A(cos(\theta) + jsin(\theta))$ 로 표현된다.</b></center>
 
 이 때 봐야할게 두 가지가 있다. 첫 번째는 바로 **$\omega_0 $다.** $\omega_0 = 2\pi f$라고 해보자. 여기서 $\pi$는 원주율을 의미하고, $f$는 주파수(frequency)를 의미한다. 그럴 때 오일러 함수를 다시 생각해보자. $f=1hz$라고 하면,  $\omega_0 = 2\pi$가 된다. 이 뜻은 **오일러 함수의 주기가 $2\pi/sec$ 라는 것이다. 왜냐하면 $t=1sec$일 때, $\theta=2\pi$가 됨으로, 한 바퀴를 돌았다는 뜻이 되기 때문이다. 그렇다면 $f=2hz$일 때에는 어떻게 될까?  $\omega_0 = 4\pi$ 그리고 $t=0.5sec$  일 때, $\theta=2\pi$ 가 됨으로 0.5초에 한 바퀴를 돌았다는 뜻이 된다. 즉 주기가 $2\pi/0.5sec$ 로 두 배 빨라졌다. 
 
@@ -30,7 +30,7 @@ tags: [Signals and Systems]
 
 그런데 여기서 또 하나 의문이 드는 점이 생긴다. 오일러 함수는 복소함수이다 즉, 실수와 허수값이 모두 존재하는데 실제로 이런 신호는 존재하지 않는다. 실수항만 남겨서 신호를 표현해야 하는데 그러면 이 신호를 어떻게 표현해야 할까? 그것은 바로 간단하게 덧셈을 이용하면 된다.
 
-<center font-size:150%>$e^{j\theta} + e^{-j\theta} = cos(\theta) + jsin(\theta)+ cos(\theta) - jsin(\theta) = 2cos(\theta)$  </center>
+<center font-size:150%><b>$e^{j\theta} + e^{-j\theta} = cos(\theta) + jsin(\theta)+ cos(\theta) - jsin(\theta) = 2cos(\theta)$</b></center>
 
 ### 벡터공간(Vector space)
 
@@ -45,52 +45,65 @@ tags: [Signals and Systems]
 
 위에서 벡터인것을 파악은 했는데 이번에는 내적? 왜 내적이 나왔을까? 결론부터 말하자면 주파수가 다른 서로다른 두 신호는 수직관계를 이룬다는 점이다. 선형대수에서도 배웠겠지만, 수직인 벡터의 내적은 0이 나오는 것을 알고있을 것이다. **실수 영역의 두 벡터 a,b에 대해서 내적은 다음과 같이 정의된다.**
 
- <center> $<a,b> = a^T b$ </center>
+<center font-size:150%><b>$<a,b> = a^T b$</b></center>
+
 방금 **실수 영역** 이라고 했다. 우리가 다루는 오일러함수는 복소평면에서의 벡터라는 것을 위에서 알았다. 복소평면에 존재하는 벡터의 내적은 실수 영역에 존재하는 벡터의 내적과 약간 다르다. 두 복소벡터 a,b가 있을 때, 두 벡터의 내적은 다음으로 정의된다.
 
-<center>$<a,b> = a^T b^{\dagger}$ 여기서 $\dagger$ 는 켤레(conjugate)를 취하는 것을 의미한다. ($a+bi -> a-bi$)</center>
+<center font-size:150%><b> $<a,b> = a^T b^{\dagger}$ 여기서 $\dagger$ 는 켤레(conjugate)를 취하는 것을 의미한다. ($a+bi -> a-bi$)</b> </center>
+
 위에서 말했듯이, 오일러 함수는 벡터이기도 하다. 그리고 **내적 공간(Inner product space)** 에 속한다. 내적 공간의 정의는 각자 찾아보도록 하자. 내적 공간에 속한다는게 뜻하는 것은, 내적 공간안에 속하는 벡터들 끼리는 내적이 모두 성립한다는 것이다. 내적이 정의 되면, **벡터의 길이 및 벡터 사이의 각도에 대해서 논할 수 있게 된다.** 결론은, 오일러 함수는 내적이 가능한 벡터라는 것이다.
 
 오일러 함수는 복소함수이다. 두 복소함수 f, g 의 내적은 다음과 같이 정의된다.
 
-<center> $<f(t), g(t)> = \int^{b}_{a}f(t)g(t)^\dagger dt$ </center>
+<center font-size:150%><b>$<f(t), g(t)> = \int^{b}_{a}f(t)g(t)^\dagger dt$</b></center>
+
 이 때, $f(t)=e^{jk\omega_0t}, g(t)=e^{jr\omega_0t}$인 주기가 서로 다른 변수를 가지는 오일러 함수라고 하자. 그렇다면, 두 함수의 내적은 다음과 같이 쓸 수 있다.
 
-<center> $ <f(t), g(t)> = \int^{T_0}_{0}(f(t)g(t)^\dagger = \int^{T_0}_{0}(e^{j(k-r)\omega_0t}dt$ ... 식1 </center>
-<center> $=\int^{T_0}_{0}(cos(k-r)\omega_0t) + jsin(k-r)\omega_0t)dt$ ...식2 </center>
-<center> $if$  $k\ne r, then$ $0$ </center>
-<center> $o.t$  $then$ $T_0$ </center>
+<center font-size:150%><b> $ <f(t), g(t)> = \int^{T_0}_{0}(f(t)g(t)^\dagger = \int^{T_0}_{0}(e^{j(k-r)\omega_0t}dt$ ... 식1 </b></center>
+<center font-size:150%><b> $=\int^{T_0}_{0}(cos(k-r)\omega_0t) + jsin(k-r)\omega_0t)dt$ ...식2</b></center>
+
+<center font-size:150%><b> $if$  $k\ne r, then$ $0$</b></center>
+<center font-size:150%><b> $o.t$  $then$ $T_0$</b></center>
+
 k와r이 같은 경우, 식1 에서 $e^0 = 1$ 이므로, 1을 해당 구간에서 적분하면 $T_0$라는 값을 간단하게 얻을 수 있다. k와r이 다른경우에는 적분을 한 번 해보면 된다. 주기가 f 인데 $f=1/T_0$이므로 T로 바꾸어서 적분을 해주면 된다. **이 때  f를 $1/T_0$로 바꾼것을 주목하자**  모든 적분 구간에서 Orthogonal한 성질을 만족하지 않는다는 점에 주의하자. 적분구간은 입력함수의 주기 혹은 그 주기의 배수가 되어야한다. 전에도 말했었지만, 푸리에급수는 주기가 Harmonics를 이룬다고 했다. 즉, 입력함수의 주기가 $2\pi$ 라면 그 입력함수를 이루는 함수들의 주기는 그의 배수인 $\pi$ , $(1/2)\pi$ , $(1/4)\pi$ ... 의 주기를 가진 함수들의 합으로 이루어진다는 것이다.  그렇기 때문에 **가장 긴 주기를 가지는 입력함수의 주기를 적분 구간으로** 설정한다면, 적분 결과가 0인 값을 얻어낼 수 있다. 푸리에 급수식을 다시 요약해보자.
 
-<center>$x(t) = \sum_{-\infty}^{\infty}{a_ke^{jk\omega_0t}}$ </center> 
-<center>단, k는 x(t)의 주기의 배수들로만 이루어 진다는 점을 기억하자.</center>
+<center font-size:150%><b>$x(t) = \sum_{-\infty}^{\infty}{a_ke^{jk\omega_0t}}$ </b></center> 
+<center font-size:150%><b>단, k는 x(t)의 주기의 배수들로만 이루어 진다는 점을 기억하자.</b></center>
+
 여기서 잠깐 선형대수의 지식을 기억해보자!  **기저(basis)**에 대해서 다시 기억을 떠올려 보자. 우리가 아는 2차원 유클리디안 좌표평면의 기저는 무엇일까? $\left[ \begin{array}{rr}1 \\ 0\end{array} \right]$, $\left[ \begin{array}{rr}0 \\ 1\end{array} \right]$ 이다 그리고 우리는 이 기저의 **선형결합(Linear combination)** 을 통해서 2차원 유클리디안 좌표계의 모든 좌표를 표시할 수 있다. 이런식으로 3차원이면 3개의 기저가 있으면 모든 3차원 좌표계를 표시할 수 있다. 즉, 이런식으로 n차원에 n개의 기저가 있다면 n차원의 모든 좌표를 표시할 수 있다. 여기서 가장 중요한 것이 있다. **푸리에 급수 식을 다시 보자.** 푸리에 급수를 구성하는 함수들은 모두 **수직 이며 이는 곧 독립이라는 것을 뜻한다.**  즉, 급수를 구성하는 **모든 함수가 기저**인 것이고, 앞의 상수를 곱하여 선형결합을 통하여 나타낸 것이다. **$n->\infty$** 이라면, 푸리에 급수를 통하여 **무한차원 까지 표현이 가능하다.** 
 
 ### 푸리에 계수(Fourier Coefficient)
 
 마지막으로 푸리에 계수를 구하는 방법을 알아야 한다. 우리는 이때 내적을 이용하고 아까 배웠던 주기가 같으면 값이 나오고, 주기가 다르면 값이0이 나오는 성질을 이용하여 계수를 구할 것이다. 입력신호$x(t)$를 푸리에 급수를 이용하여 표현하면 아래와 같았다.
 
-<center>$x(t) = \sum_{-\infty}^{\infty}{a_ke^{jk\omega_0t}}$ </center> 
+<center font-size:150%><b>$x(t) = \sum_{-\infty}^{\infty}{a_ke^{jk\omega_0t}}$</b></center> 
+
 이때, 우리는 $a_k$의 값을 구해야하는 것이다.
 
 첫 번째, 양변에 $e^{-jr\omega_0t}$를 곱하자.
 
-<center>$x(t)e^{-jr\omega_0t} = \sum_{-\infty}^{\infty}{a_ke^{j(k-r)\omega_0t}}$</center>
+<center font-size:150%><b>$x(t)e^{-jr\omega_0t} = \sum_{-\infty}^{\infty}{a_ke^{j(k-r)\omega_0t}}$</b></center>
+
 두 번째, 양변에 $x(t)$의 주기( $T_0$ )까지의 구간으로 적분을 하자.
 
-<center>$\int_{0}^{T_0}{x(t)e^{-jr\omega_0t}}dt = \int_{0}^{T_0}{\sum_{-\infty}^{\infty}{a_ke^{j(k-r)\omega_0t}}}dt$</center>
+<center font-size:150%><b>$\int_{0}^{T_0}{x(t)e^{-jr\omega_0t}}dt = \int_{0}^{T_0}{\sum_{-\infty}^{\infty}{a_ke^{j(k-r)\omega_0t}}}dt$</b></center>
+
 **이 때, $k==r$인 경우를 제외하고는 모두 0이 되므로**, 결론적으로 $k==r$일 때,  **$a_r$** 만 남게 된다.
 
-<center>$=\int_{0}^{T_0}{a_r}dt=[a_r]^{T0}_{0}=a_rT_0$</center>
+<center font-size:150%><b>$=\int_{0}^{T_0}{a_r}dt=[a_r]^{T0}_{0}=a_rT_0$</b></center>
+
 이므로, 좌변 우변을 항을 잘 조절하면
 
-<center>$a_r=\frac{1}{T_0}\int_{0}^{T_0}{x(t)e^{-jr\omega_0t}}dt$</center>
+<center font-size:150%><b>$a_r=\frac{1}{T_0}\int_{0}^{T_0}{x(t)e^{-jr\omega_0t}}dt$</b></center>
+
 그런데, $k==r$인 경우의 결과이므로, r을 k로 치환 가능하다.
 
-<center>$a_k=\frac{1}{T_0}\int_{0}^{T_0}{x(t)e^{-jk\omega_0t}}dt$</center>
+<center font-size:150%><b>$a_k=\frac{1}{T_0}\int_{0}^{T_0}{x(t)e^{-jk\omega_0t}}dt$</b></center>
+
 이 식을 외우는게 아니고, 내적에 따른 결과로 기억하면 더 좋을것 같다. 이 식을 풀어쓰면 우리가 흔히 아는 cos, sin의 형태에서의 두 계수 역시 구할 수 있다.
 
 마지막에 하나만 더 챙기고 가보자. 그렇다면 이 푸리에계수가 의미하는 것이 무엇일까? 조금 전에, 푸리에급수를 이루는 항들은 모두 독립적인 **기저**라고 하였고, 푸리에 급수는 이런 기저들의 선형결합(Linear Combination)이라고 하였다. 그런데, 조금전에 구한 푸리에 계수의 일반식을 보면, **입력신호 x  기저의켤레(conjugated basis)** 의 적분인 것을 볼수 있다. 이것은 **입력신호와 기저간의 내적**을 의미한다. 즉, **푸리에 계수는 입력신호와 기저와 내적의 결과값인 것이다.**
 
-<center>$ \frac{1}{T_0}<x_{T0}(t),e^{-jk\omega_0t}> = \frac{1}{T_0}\int_{0}^{T_0}{x(t)e^{-jk\omega_0t}}dt $</center>
+<center font-size:150%><b>$ \frac{1}{T_0}<x_{T0}(t),e^{-jk\omega_0t}> = \frac{1}{T_0}\int_{0}^{T_0}{x(t)e^{-jk\omega_0t}}dt $</b></center>
+
 내적의 값은 벡터끼리의 각도차이가 작을수록 값이 크게 나온다.  이 말은 즉, 입력신호와 비슷할 수록 내적값이 크게 나온다는 것이다. 결론적으로 **푸리에 계수는 기저함수가 입력신호를 구성하는데 얼만큼의 지분을 가지고 있는가를 나타내는 기여정도(contribution) 라고 볼 수 있다.**
