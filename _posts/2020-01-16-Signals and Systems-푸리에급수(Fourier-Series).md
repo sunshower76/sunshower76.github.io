@@ -18,7 +18,7 @@ tags: [Signals and Systems]
 <center>입력 신호(S$_in$) = $ ... + c_{-2}e^{j(-2\omega_0)t} + c_{-1}e^{j(-1\omega_0)t} + c_0 + c_{1}e^{j(1\omega_0)t} + c_{2}e^{j(2\omega_0)t} + ... + c_{k}e^{j(k\omega_0)t}$</center>
 여기서 다시 한 번 오일러 함수를 복습해보자.
 
-<center><img src="../public/img/Signals and Systems-푸리에급수(Fourier-Series)/img_1.png" width="50%"></center>
+<center><img src="/public/img/Signals and Systems-푸리에급수(Fourier-Series)/img_1.png" width="50%"></center>
 
 위 오일러 함수는 크기가 A인 오일러 함수이다. 그 때, 
 
@@ -34,7 +34,7 @@ tags: [Signals and Systems]
 
 갑자기 웬 벡터? 라는 생각이 들 것이다. 관련이 있으니 다음 내용을 같이 살펴보자. 우선 벡터공간(Vector space)란 무엇일까? 바로 아래의 8가지 공리를 만족시킨다면 무엇이든지 벡터공간이라고 할 수 있다.
 
-<center><img src="../public/img/Signals and Systems-푸리에급수(Fourier-Series)/img_2.png" width="80%"></center>
+<center><img src="/public/img/Signals and Systems-푸리에급수(Fourier-Series)/img_2.png" width="80%"></center>
 
 우리가 흔히 아는 벡터는 방향성을 가지고 화살표로 표현되는 애들, 혹은 매트릭스로 표현되는 것들 뿐만이 아니다. 벡터 공간에 속하는 모든 것은 벡터라고 할 수 있는 것이다.
 
@@ -61,23 +61,27 @@ tags: [Signals and Systems]
 <center> $o.t$  $then$ $T_0$ </center>
 k와r이 같은 경우, 식1 에서 $e^0 = 1$ 이므로, 1을 해당 구간에서 적분하면 $T_0$라는 값을 간단하게 얻을 수 있다. k와r이 다른경우에는 적분을 한 번 해보면 된다. 주기가 f 인데 $f=1/T_0$이므로 T로 바꾸어서 적분을 해주면 된다. **이 때  f를 $1/T_0$로 바꾼것을 주목하자**  모든 적분 구간에서 Orthogonal한 성질을 만족하지 않는다는 점에 주의하자. 적분구간은 입력함수의 주기 혹은 그 주기의 배수가 되어야한다. 전에도 말했었지만, 푸리에급수는 주기가 Harmonics를 이룬다고 했다. 즉, 입력함수의 주기가 $2\pi$ 라면 그 입력함수를 이루는 함수들의 주기는 그의 배수인 $\pi$ , $(1/2)\pi$ , $(1/4)\pi$ ... 의 주기를 가진 함수들의 합으로 이루어진다는 것이다.  그렇기 때문에 **가장 긴 주기를 가지는 입력함수의 주기를 적분 구간으로** 설정한다면, 적분 결과가 0인 값을 얻어낼 수 있다. 푸리에 급수식을 다시 요약해보자.
 
-<center>$x(t) = \sum_{-\infin}^{\infin}{a_ke^{jk\omega_0t}}$ </center> 
+<center>$x(t) = \sum_{-\infty}^{\infty}{a_ke^{jk\omega_0t}}$ </center> 
 <center>단, k는 x(t)의 주기의 배수들로만 이루어 진다는 점을 기억하자.</center>
-여기서 잠깐 선형대수의 지식을 기억해보자!  **기저(basis)**에 대해서 다시 기억을 떠올려 보자. 우리가 아는 2차원 유클리디안 좌표평면의 기저는 무엇일까? $\left[\begin{array}{rr}1\\0\end{array}\right]$, $\left[\begin{array}{rr}0\\1\end{array}\right]$ 이다 그리고 우리는 이 기저의 **선형결합(Linear combination)** 을 통해서 2차원 유클리디안 좌표계의 모든 좌표를 표시할 수 있다. 이런식으로 3차원이면 3개의 기저가 있으면 모든 3차원 좌표계를 표시할 수 있다. 즉, 이런식으로 n차원에 n개의 기저가 있다면 n차원의 모든 좌표를 표시할 수 있다. 여기서 가장 중요한 것이 있다. **푸리에 급수 식을 다시 보자.** 푸리에 급수를 구성하는 함수들은 모두 **수직 이며 이는 곧 독립이라는 것을 뜻한다.**  즉, 급수를 구성하는 **모든 함수가 기저**인 것이고, 앞의 상수를 곱하여 선형결합을 통하여 나타낸 것이다. **$n->\infin$** 이라면, 푸리에 급수를 통하여 **무한차원 까지 표현이 가능하다.** 
+
+여기서 잠깐 선형대수의 지식을 기억해보자!  **기저(basis)**에 대해서 다시 기억을 떠올려 보자. 우리가 아는 2차원 유클리디안 좌표평면의 기저는 무엇일까? $\left[ \begin{array}{rr}1\\0\end{array} \right]$, $\left[ \begin{array}{rr}0\\1\end{array} \right]$ 이다 그리고 우리는 이 기저의 **선형결합(Linear combination)** 을 통해서 2차원 유클리디안 좌표계의 모든 좌표를 표시할 수 있다. 이런식으로 3차원이면 3개의 기저가 있으면 모든 3차원 좌표계를 표시할 수 있다. 즉, 이런식으로 n차원에 n개의 기저가 있다면 n차원의 모든 좌표를 표시할 수 있다. 여기서 가장 중요한 것이 있다. **푸리에 급수 식을 다시 보자.** 푸리에 급수를 구성하는 함수들은 모두 **수직 이며 이는 곧 독립이라는 것을 뜻한다.**  즉, 급수를 구성하는 **모든 함수가 기저**인 것이고, 앞의 상수를 곱하여 선형결합을 통하여 나타낸 것이다. **$n->\infin$** 이라면, 푸리에 급수를 통하여 **무한차원 까지 표현이 가능하다.** 
 
 ### 푸리에 계수(Fourier Coefficient)
 
 마지막으로 푸리에 계수를 구하는 방법을 알아야 한다. 우리는 이때 내적을 이용하고 아까 배웠던 주기가 같으면 값이 나오고, 주기가 다르면 값이0이 나오는 성질을 이용하여 계수를 구할 것이다. 입력신호$x(t)$를 푸리에 급수를 이용하여 표현하면 아래와 같았다.
 
-<center>$x(t) = \sum_{-\infin}^{\infin}{a_ke^{jk\omega_0t}}$ </center> 
+<center>$x(t) = \sum_{-\infty}^{\infty}{a_ke^{jk\omega_0t}}$ </center> 
+
 이때, 우리는 $a_k$의 값을 구해야하는 것이다.
 
 첫 번째, 양변에 $e^{-jr\omega_0t}$를 곱하자.
 
-<center>$x(t)e^{-jr\omega_0t} = \sum_{-\infin}^{\infin}{a_ke^{j(k-r)\omega_0t}}$</center>
+<center>$x(t)e^{-jr\omega_0t} = \sum_{-\infty}^{\infty}{a_ke^{j(k-r)\omega_0t}}$</center>
+
 두 번째, 양변에 $x(t)$의 주기( $T_0$ )까지의 구간으로 적분을 하자.
 
-<center>$\int_{0}^{T_0}{x(t)e^{-jr\omega_0t}}dt = \int_{0}^{T_0}{\sum_{-\infin}^{\infin}{a_ke^{j(k-r)\omega_0t}}}dt$</center>
+<center>$\int_{0}^{T_0}{x(t)e^{-jr\omega_0t}}dt = \int_{0}^{T_0}{\sum_{-\infty}^{\infty}{a_ke^{j(k-r)\omega_0t}}}dt$</center>
+
 **이 때, $k==r$인 경우를 제외하고는 모두 0이 되므로**, 결론적으로 $k==r$일 때,  **$a_r$** 만 남게 된다.
 
 <center>$=\int_{0}^{T_0}{a_r}dt=[a_r]^{T0}_{0}=a_rT_0$</center>
