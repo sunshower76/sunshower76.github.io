@@ -1,9 +1,9 @@
+---
 layout: post
-title: Keras-Batch 생성하기 (Sequence & fit_generator)
+title: Keras-Batch생성하기1-(Seuquence&fit_generator)
 author: Sunwoo Kim
 categories: Frameworks
 tags: [Keras]
-
 ---
 
 논문을 보고 모델을 구현할 때 가장 시간이 많이 드는 것은 아무래도 레이어를 쌓아서 모델구조를 만드는것 보다 데이터를 로드하여 배치를 짜는 부분을 만들고, backward하는 부분과 evaluation하는 부분이라고 생각이 듭니다. 여태까지 이미지를 다룰 때 Numpy 라이브러리만을 이용해서 데이터를 다루었었는데요,  Keras를 이용할 때, keras에 존재하는 기능을 이용하여 데이터 로드하는 부분을 구현하니 매우 간편한거 같습니다. 인터넷에서도 많은 분들이 다루어 주셨기 때문에 공부하는데 그 글들을 많이 참고하였습니다. 이번에는 제가 구현한 부분에 대해서 말씀 드리고자 합니다.
