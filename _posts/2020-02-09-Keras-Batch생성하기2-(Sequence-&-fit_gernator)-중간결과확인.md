@@ -14,19 +14,17 @@ fit_generator를 이용하다가 불편한점이 하나 있었는데 그것은 �
 
 364번째 줄에 **while steps_done < steps** 부분이 보이실 겁니다. 이 부분이 이하가 바로 step만큼 validation을 진행하는 부분입니다.  그래서 x,y 값을 부르고, 399번째 줄에서 test_on_batch가 실행되면서 validation batch에 대한 evaluation을 진행하게 됩니다.  그리고 그 부분을 아래와 같이 바꿔줍니다. (Segmentation 작업을 수행하여서 다음과 같이 결과를 plotting 했습니다.) 그리고 파일 상단에 import matplotlib.pyplot as plt코드를 넣어서 matplotlib을 import 해줍니다.
 
-<center><img src="/public/img/keras/02.png" width="90%"></center>
+<center><img src="/public/img/keras/02.png" width="60%"></center>
 
 실제 적용하려면 현제 로컬에 저장된 경로에서 찾아야 되는데요 다음과 같은 경로에서 찾아보시면 됩니다.
 
-<center><img src="/public/img/keras/01.png" width="90%"></center>
-
+<center><img src="/public/img/keras/01.png" width="100%"></center>
 이 때, 적용해도 안 바뀔수가 있는데, 코드에서 작동되는 keras및 tensorflow가 진짜로 참조한는 py파일이 어떤 파일인지 잘 찾아보셔야 합니다. 가상환경을 사용하시는데, pubilc한 부분의 파일을 바꾸면 가상환경안에 있는 파일이 아니기 때문에 작동하지 않습니다.
 
 이렇게 바꾸고, **Spyder**를 이용하여 코드를 돌리면 다음과 같이 결과를 출력할 수 있습니다.
 
-<center><img src="/public/img/keras/03.png" width="90%"></center>
-
-<center><img src="/public/img/keras/04.png" width="90%"></center>
+<center><img src="/public/img/keras/03.png" width="50%"></center>
+<center><img src="/public/img/keras/04.png" width="100%"></center>
 
 왼쪽부터 차례대로, 원본이미지, Ground Truth, Predicted Mask 입니다.
 
