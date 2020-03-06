@@ -1,0 +1,18 @@
+---
+layout: post
+title: Signals and Systems-푸리에 복소정현파 왜 배울까
+author: Sunwoo Kim
+categories: Signals&Systems
+tags: [Signals and Systems]
+---
+
+<center><img src="/public/img/Signals and Systems-푸리에 복소정현파 왜 배울까/img_1.png" width="90%"></center>
+
+<center><img src="/public/img/Signals and Systems-푸리에 복소정현파 왜 배울까/img_2.png" width="90%"></center>
+
+<center><img src="/public/img/Signals and Systems-푸리에 복소정현파 왜 배울까/img_3.png" width="90%"></center>
+
+<center><img src="/public/img/Signals and Systems-푸리에 복소정현파 왜 배울까/img_4.png" width="90%"></center>
+
+<center><img src="/public/img/Signals and Systems-푸리에 복소정현파 왜 배울까/img_5.png" width="90%"></center>
+

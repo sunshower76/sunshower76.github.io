@@ -1,0 +1,21 @@
+---
+layout: post
+title: Signals and Systems-이산 푸리에 변환(Discrete Fourier Transform) 및 변환행렬
+author: Sunwoo Kim
+categories: Signals&Systems
+tags: [Signals and Systems]
+---
+
+## 1. 이산 푸리에 변환(Discrete  Fourier  Transform)
+
+<center><img src="/public/img/Signals and Systems-이산 푸리에 변환(Discrete Fourier Transform) 및 변환행렬/img_1.png" width="90%"></center>
+
+<center><img src="/public/img/Signals and Systems-이산 푸리에 변환(Discrete Fourier Transform) 및 변환행렬/img_2.png" width="90%"></center>
+
+## 2. 이산 푸리에  변환행렬(Discrete Fourier Transform Matrix)
+
+<center><img src="/public/img/Signals and Systems-이산시간 푸리에 변환(Discrete Time Fourier Transform) & 역변환/img_3.png" width="90%"></center>
+
+<center><img src="/public/img/Signals and Systems-이산시간 푸리에 변환(Discrete Time Fourier Transform) & 역변환/img_4.png" width="90%"></center>
+
+<center><img src="/public/img/Signals and Systems-이산시간 푸리에 변환(Discrete Time Fourier Transform) & 역변환/img_5.png" width="90%"></center>

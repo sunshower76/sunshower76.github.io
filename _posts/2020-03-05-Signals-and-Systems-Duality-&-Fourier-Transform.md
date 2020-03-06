@@ -1,0 +1,38 @@
+---
+layout: post
+title: Signals and Systems-Duality & Fourier Transform
+author: Sunwoo Kim
+categories: Signals&Systems
+tags: [Signals and Systems]
+---
+
+## 1. 여러가지 함수의 푸리에 변환
+
+<center><img src="/public/img/Signals and Systems-Duality & Fourier Transform/img_0.png" width="90%"></center>
+
+1. $x(t-t_0)$
+
+   <center><img src="/public/img/Signals and Systems-Duality & Fourier Transform/img_1.png" width="90%"></center>
+
+2. 컨볼루션(Convolution)
+
+   <center><img src="/public/img/Signals and Systems-Duality & Fourier Transform/img_2.png" width="90%"></center>
+
+3. $x(-t)$
+
+   <center><img src="/public/img/Signals and Systems-Duality & Fourier Transform/img_3.png" width="90%"></center>
+
+4. $x^*(t)$
+
+   <center><img src="/public/img/Signals and Systems-Duality & Fourier Transform/img_4.png" width="90%"></center>
+
+
+
+## 2.  쌍대성(Duaility)
+
+<center><img src="/public/img/Signals and Systems-Duality & Fourier Transform/img_5.png" width="90%"></center>
+
+<center><img src="/public/img/Signals and Systems-Duality & Fourier Transform/img_6.png" width="90%"></center>
+
+<center><img src="/public/img/Signals and Systems-Duality & Fourier Transform/img_7.png" width="90%"></center>
+

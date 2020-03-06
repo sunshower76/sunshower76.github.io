@@ -1,0 +1,19 @@
+---
+layout: post
+title: Signals and Systems-Fourier Transform의 기하학적 해석
+author: Sunwoo Kim
+categories: Signals&Systems
+tags: [Signals and Systems]
+---
+
+<center><img src="/public/img/Signals and Systems-Fourier Transform의 기하학적 해석/img_1.png" width="90%"></center>
+
+<center><img src="/public/img/Signals and Systems-Fourier Transform의 기하학적 해석/img_2.png" width="90%"></center>
+
+<center><img src="/public/img/Signals and Systems-Fourier Transform의 기하학적 해석/img_3.png" width="90%"></center>
+
+<center><img src="/public/img/Signals and Systems-Fourier Transform의 기하학적 해석/img_4.png" width="90%"></center>
+
+<center><img src="/public/img/Signals and Systems-Fourier Transform의 기하학적 해석/img_5.png" width="90%"></center>
+
+<center><img src="/public/img/Signals and Systems-Fourier Transform의 기하학적 해석/img_6.png" width="90%"></center>

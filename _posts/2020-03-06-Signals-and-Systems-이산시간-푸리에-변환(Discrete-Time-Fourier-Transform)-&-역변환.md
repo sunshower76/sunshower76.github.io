@@ -1,0 +1,23 @@
+---
+layout: post
+title: Signals and Systems-이산시간 푸리에 변환(Discrete Time Fourier Transform) & 역변환
+author: Sunwoo Kim
+categories: Signals&Systems
+tags: [Signals and Systems]
+---
+
+## 1. 이산시간 푸리에 급수(Discrete Time Fourier  Series)
+
+<center><img src="/public/img/Signals and Systems-이산시간 푸리에 변환(Discrete Time Fourier Transform) & 역변환/img_1.png" width="90%"></center>
+
+<center><img src="/public/img/Signals and Systems-이산시간 푸리에 변환(Discrete Time Fourier Transform) & 역변환/img_2.png" width="90%"></center>
+
+## 2. 이산시간 푸리에 변환(DTFT : Discrete Time Fourier Transform)
+
+<center><img src="/public/img/Signals and Systems-이산시간 푸리에 변환(Discrete Time Fourier Transform) & 역변환/img_3.png" width="90%"></center>
+
+## 3. 이산시간 푸리에 역변환(IDTFT)
+
+<center><img src="/public/img/Signals and Systems-이산시간 푸리에 변환(Discrete Time Fourier Transform) & 역변환/img_4.png" width="90%"></center>
+
+<center><img src="/public/img/Signals and Systems-이산시간 푸리에 변환(Discrete Time Fourier Transform) & 역변환/img_5.png" width="90%"></center>
