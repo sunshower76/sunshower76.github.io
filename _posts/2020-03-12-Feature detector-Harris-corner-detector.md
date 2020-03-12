@@ -24,10 +24,14 @@ tags: [SLAM, Digital Image Processing, Feature detector]
 $$
 E(\Delta{x},\Delta{y})=\Sigma_{(x_k, y_k\in W)}[I(x_k+\Delta{x}, y_k+\Delta{y})-I(x_k, y_k)]^2
 $$
+
+
 그렇다면 E의 1차 테일러 근사(테일러 급수를 1차 미분식 까지만 표현한 식)을 구해보자. 이 때, $\Delta{x},\Delta{y}$는 모두 매우 작은 값이라 가정하자. 그렇다면 아래와 같이 쓸 수 있다.
 $$
 I(x_k+\Delta{x}, y_k+\Delta{y}) \approx I(x_k, y_k) + [I_x(x_k,y_k)I_y(x_k,y_k)] \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix}
 $$
+
+
 라고 할 수 있다. $I(x_k, y_k)$부분은 테일러 급수의 0차항, 그리고 그 뒷부분이 일차항을 의미한다. 여기서 테일러 급수식은 윈도우를 기준으로 (0,0)에서의 근사식을 택했기 때문에, 매클로린 급수식이라고도 볼 수 있다. 
 
 f라는 **이변수**함수에 대해서 일차 미분은 다음과 같이 표현 가능하다.
@@ -39,6 +43,8 @@ $$
 $I_x(x_k,y_k)I_y(x_k,y_k)] \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix}$ 식은 위의 원리로부터 유도되었다.
 
 그렇다면 위에서 구한 두 식으로 다음과 같은 과정을 유도할 수 있다.
+
+
 $$
 I(x_k+\Delta{x}, y_k+\Delta{y}) \approx I(x_k, y_k) + [I_x(x_k,y_k)I_y(x_k,y_k)] \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix}
 
@@ -63,6 +69,8 @@ I(x_k+\Delta{x}, y_k+\Delta{y}) \approx I(x_k, y_k) + [I_x(x_k,y_k)I_y(x_k,y_k)]
 \end{bmatrix} \quad \quad \quad \quad \quad \quad \quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad
 $$
 
+
+
 ## 최대, 최소값
 
 그런데 행렬 M을 보면 **대칭행렬(symmetric matrix)**인 것을 알 수 있다. 그리고 E의 최종형태가 **이차형식(quadratic formation)**인 것을 알 수 있다. 이 두가지 성질을 이용하여 우리는 intensity변화가 가장 큰방향과 가장 작은방향을 알 수 있다.
@@ -80,11 +88,11 @@ $$
 이 때 X,Y는 각각 행렬식 값이 1이고, 행렬 M을 **대각화시키는 직교행렬**을 P라 할 때, **x=PX** 에 의해서 얻어진다. Y도 마찬가지이다.
 
 주축정리에 의하면 다음과 같은 사실을 알 수 있다.
-$$
-\lambda_1 \lambda_2 > 0 :타원
-\\ \lambda_1 \lambda_2 < 0:쌍곡선
-\\ \lambda_1 \lambda_2 == 0:포물선
-$$
+
+<center>$\lambda_1 \lambda_2 > 0 :타원$ </center>
+<center>$ \lambda_1 \lambda_2 < 0:쌍곡선$ </center>
+<center>$ \lambda_1 \lambda_2 == 0:포물선$</center>
+
 이차형식의 그래프 모양을 알 수 있게된다. 이 때, $\lambda_1 > 0, \lambda_2 > 0$ 이라고 생각해보자. 그렇다면 이 이차형식 그래프는 타원의 모양을 할 것이다.
 
 M을 대각화 시켜보자.
@@ -105,7 +113,6 @@ P^Tx=X
 $$
 라고 할 수 있다. 그런데 왜 이렇게 썻는지는 **고유벡터를 집어넣어 보면 알게 된다.** $e_1, e_2$는 각각 서로 **직교하는 다른 고유벡터**를 의미한다.
 $$
-
 \begin{bmatrix}
 -e_1 - \\
 -e_2-
@@ -181,3 +188,8 @@ $$
 이렇게 R값을 구해서 위 그래프를 참고하여 R값을 정한다. corner면 양방향으로 모두 크게 변하는 성질, edge이면 한 방향으로만 크게 변하는 성질, flat하면 양방향으로 모두 변하지않는 성질을 이용한 그래프이다.
 
 Harris코너 검출 방법은 영상의 평행이동, 회전변화 에는 불변(invariant)하고, affine transform, illumination변화에도 어느정도 강인성(robustness)를 가지고 있지만, **영상의 scale 변화**에 대해서는 약하다는 특징을 가지고 있다고 한다. (scale이 다른 이미지에 대해서는 다른 k 값을 정해줘야 한다는 뜻)
+
+Reference
+
+1. https://bskyvision.com/668
+2. https://darkpgmr.tistory.com/131
