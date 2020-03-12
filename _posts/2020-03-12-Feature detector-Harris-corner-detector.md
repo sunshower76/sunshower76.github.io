@@ -43,9 +43,7 @@ $I_x(x_k,y_k)I_y(x_k,y_k)] \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix}$ �
 
 그렇다면 위에서 구한 두 식으로 다음과 같은 과정을 유도할 수 있다.
 
-<center> $I(x_k+\Delta{x}, y_k+\Delta{y}) \approx I(x_k, y_k) + [I_x(x_k,y_k)I_y(x_k,y_k)] \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix}\\ \quad \\ \quad \\ E(\Delta{x},\Delta{y})=\Sigma_{(x_k, y_k\in W)}[I(x_k+\Delta{x}, y_k+\Delta{y})-I(x_k, y_k)]^2 \quad\quad
-
-\\ \approx \Sigma_{(x_k, y_k\in W)}[I(x_k, y_k) + [I_x(x_k,y_k)I_y(x_k,y_k)] \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix}-I(x_k, y_k)]^2
+<center> $I(x_k+\Delta{x}, y_k+\Delta{y}) \approx I(x_k, y_k) + [I_x(x_k,y_k)I_y(x_k,y_k)] \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix}\\ \quad \\ \quad \\ E(\Delta{x},\Delta{y})=\Sigma_{(x_k, y_k\in W)}[I(x_k+\Delta{x}, y_k+\Delta{y})-I(x_k, y_k)]^2 \quad\quad\\ \approx \Sigma_{(x_k, y_k\in W)}[I(x_k, y_k) + [I_x(x_k,y_k)I_y(x_k,y_k)] \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix}-I(x_k, y_k)]^2
 
 \\ = [\Delta{x} \Delta{y}]
 
@@ -62,6 +60,7 @@ $I_x(x_k,y_k)I_y(x_k,y_k)] \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix}$ �
 \Delta{x} \\
 \Delta{y}
 \end{bmatrix} \quad \quad \quad \quad \quad \quad \quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad$ </center>
+
 
 ## 최대, 최소값
 
@@ -109,9 +108,7 @@ P^Tx=X$ </center>
 -e_1 - \\
 -e_2-
 \end{bmatrix} 
-x = X
-
-\\ \quad \\ \quad \\
+x = X\\ \quad \\ \quad \\
 x = e_1\ 일\ 때, \\
 X = \begin{bmatrix}
 -e_1 - \\
