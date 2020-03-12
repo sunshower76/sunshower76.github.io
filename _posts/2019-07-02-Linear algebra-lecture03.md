@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 03)
+title: Linear Algebra - 3. Matrix multiplication, inverse&Gauss-jordan
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 02)
+title: Linear Algebra - 2. Elimination&Backsubstitution, permutation matrix
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

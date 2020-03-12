@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 06)
+title: Linear Algebra - 6. Nullspace & solving Ax=b(column space)
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

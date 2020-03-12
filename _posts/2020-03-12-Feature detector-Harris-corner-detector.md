@@ -14,7 +14,7 @@ tags: [SLAM, Digital Image Processing, Feature detector]
 
 아래 그림과 같이 이미지에서 평탄한 부분, 엣지(경게선), 코너부분이 어떻게 생겼는지 볼 수 있다. 평탄한 부분은 모든 방향으로 **강도(intensity)**변화가 없는 부분, 엣지는 한 방향에서 intensity변화가 있는 경우 그리고 코너는 모든 방향에서 intensity변화가 있는 경우를 의미한다.
 
-<center><img src="/public/img/Feature detector-Harris corner detector/img_1.png" width="70%"></center>
+<center><img src="/public/img/Feature detector-Harris corner detector/img_1.png" width="90%"></center>
 
 <center> <그림 1> 출처: Matching with Invariant Features Lecture Notes 2004</center>
 
@@ -98,9 +98,7 @@ M을 대각화 시켜보자.
 
 그렇다면 이차형식의 좌표계를 변환했던 것을 다시 생각해보자.
 
-<center> $x=PX \\
-P^{-1}x=X \\
-P^Tx=X$ </center>
+<center> $x=PX \\ P^{-1}x=X \\ P^Tx=X$  </center>
 
 라고 할 수 있다. 그런데 왜 이렇게 썻는지는 **고유벡터를 집어넣어 보면 알게 된다.** $e_1, e_2$는 각각 서로 **직교하는 다른 고유벡터**를 의미한다.
 

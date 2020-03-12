@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 07)
+title: Linear Algebra - 7. Nullspace, piviot&free variables, special solutions
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

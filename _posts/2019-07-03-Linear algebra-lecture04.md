@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 04)
+title: Linear Algebra - 4. LU decomposition, Properties of inverse and transpose
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

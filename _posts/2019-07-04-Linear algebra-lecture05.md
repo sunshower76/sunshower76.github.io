@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 05)
+title: Linear Algebra -5. Vector spaces, LU분해, 대칭행렬
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 01)
+title: Linear Algebra - 1. Row & Column pictures
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]
