@@ -26,15 +26,16 @@ tags: [Linear Algebra]
 
 그렇다면, 위 과정을 어떻게 수식으로 표현할지 살펴보자. 앞 으로의 수식 설명에 다음 그림을 참고하자.
 <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img04.png" width="50%"></center>
-  
-  
+
+
 **1. 벡터a와 벡터e는 수직, *x*를 계산하자!**
 
 $a^T(e)=0$
 
-$a^T(b-*a)=0 ...(1)$ 이다. 왜냐하면,  벡터a 와 벡터e 는 수직이기 때문이다.
+$a^T(b-xa)=0 ...(1)$ 이다. 왜냐하면,  벡터a 와 벡터e 는 수직이기 때문이다.
 
 그리고 식(1)을 전개하면 다음과같다.
+
 $a^T(b-xa)=0$
 
 $a^Tb-xa^Ta=0$
@@ -45,11 +46,10 @@ $x=\frac{a^Tb}{a^Ta}$ 이라는 사실을 알 수 있다.
 
 **2. 그림의 p=a*x*와, 위에서 계산한 *x*를 이용하여, p를 계산하자!**
 
-위의 그림에서 p=ax 였고, 1번 과정에서$*x*=\frac{a^Tb}{a^Ta}$을 계산했다.
+위의 그림에서 p=x$\vec{a}$ 였고, 1번 과정에서$x=\frac{a^Tb}{a^Ta}$을 계산했다.
 
 위의 두 식으로부터, $p=a\frac{a^Tb}{a^Ta}$ 을 도출해낼수 있다. $...(3)$
-  
-  
+
 **3. Projection Matrix를 구하자!**
 
 벡터b 를 벡터a에 대해서 정사영시키는 행렬을 **P**라고 하자. 그리고 정사영된 벡터를 p라고 하자.
@@ -72,8 +72,8 @@ $p=a\frac{a^Tb}{a^Ta}$ 식을,  $p=\frac{aa^T}{a^Ta}b$라고 할 수 있다.
 $P^T=P$라고 할 수 있다.
 
 또한, 한번 투영후 다시 똑같은 벡터에 투영하면 변화는 없을 것이므로, $P^2=P$라고 할 수 있을 것이다.
-  
-  
+
+
 **정사영행렬 성질 정리**
 
 1. $Rank(P) = 1$, **Column space = linear combinations of matrix A**
@@ -81,7 +81,7 @@ $P^T=P$라고 할 수 있다.
 2. $P^T=P$
 
 3. $P^2=P$
-  
+
 ---
 ## Least squares(최소자승법)
 
@@ -114,41 +114,41 @@ $Ax=b$를 만족하는 $x$는 존재하지 않는다. 그러면 완벽히는 아
 
 즉, $p=A\hat{x}$와 행렬 A의 기저인 $a_1, a_2$가 각각 수직이라고 볼 수 있다. 왜냐하면, 평면에 수직인
  벡터는, 평면에 존재하는 모든 벡터와 수직이기 때문이다.
- 
+
  그렇게 되면 아래와 같은 식이 나온다.
- 
+
  $a_1^T(b-A\hat{x})=0 , a_2^T(b-A\hat{x})=0$
- 
+
  그리고 위 식은 다음과 같이 표현이 가능하다.
- 
+
 <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img08.png" width="30%"></center>
- 
+
  또한 $A^T(b-A\hat{x})=0$식을 보면,  $A$의 left null space는 $(b-A\hat{x})$라는 것을 알 수 있다.
  즉, **$(b-A\hat{x})$는 A의 열공간과 수직인 공간**이라고 볼 수 있다.
- 
+
  최종적으로,
- 
+
  $\hat{x} = (A^TA)^{-1}A^Tb$ 이며,
- 
+
  $Pro_{\vec{b}}$ = $\vec{p}=A\hat{x}=A(A^TA)^{-1}A^Tb$이고,
- 
+
  $Pro_{Mat(P)}$ = $A(A^TA)^{-1}A^T$이다.
+
  
- 
- 
- 
+
+
 **예제**
- 
+
  <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img09.png" width="80%"></center>
- 
- ---
-  
+
+---
+
  <center><img src="/public/img/2019-07-30-linear algebra-lecture15/img10.png" width="80%"></center>
+
  
+
  
- 
- 
- 
+
 
 
 

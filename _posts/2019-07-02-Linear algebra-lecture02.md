@@ -36,8 +36,7 @@ tags: [Linear Algebra]
 ### Elimination
 이 과정을 선형대수적 관점에서 살펴보자.
 위에서 우리가 계산했던 Row picture을 다시 가져오자.
-<center><img src="/public/img/2019-07-02-linear algebra-
-  /img4.png" width="50%"></center>
+<center><img src="/public/img/2019-07-02-linear algebra-lecture02/img4.png" width="50%"></center>
 그림을 보면 First pivot이란게 추가 되어있다.
 **n'th Pivot(n번째 피벗)**이란 행렬의 n번 째 행에서 최초로 0이 아닌 원소를 의미한다.
 
