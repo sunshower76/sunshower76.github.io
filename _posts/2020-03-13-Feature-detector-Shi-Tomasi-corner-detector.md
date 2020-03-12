@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Feature detector-Shi-Tomasi corner detector
+title: Feature detector-3. Shi-Tomasi corner detector
 author: Sunwoo Kim
 categories: CV(ComputerVision)
 tags: [SLAM, Digital Image Processing, Feature detector]

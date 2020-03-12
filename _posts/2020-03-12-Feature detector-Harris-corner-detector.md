@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Feature detector-Harris corner detector
+title: Feature detector-2. Harris corner detector
 author: Sunwoo Kim
 categories: CV(ComputerVision)
 tags: [SLAM, Digital Image Processing, Feature detector]

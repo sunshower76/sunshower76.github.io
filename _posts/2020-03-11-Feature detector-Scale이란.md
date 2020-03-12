@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scale이란?
+title: Feature detector-1. Scale이란?
 author: Sunwoo Kim
 categories: CV(ComputerVision)
 tags: [SLAM, Digital Image Processing, Feature detector]
