@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Feature detector-4. SIFT(Scale Invariant Feature Transform)
+title: Feature detector-5. SIFT(Scale Invariant Feature Transform)
 author: Sunwoo Kim
 categories: CV(ComputerVision)
 tags: [SLAM, Digital Image Processing, Feature detector]
@@ -16,4 +16,10 @@ tags: [SLAM, Digital Image Processing, Feature detector]
   3. Keypoints 찾기
   4. Bad keypoints 제거
   5. 최종적인 SIFT 특징 산출
+
+[Scale에 대해서]([https://sunshower76.github.io/cv(computervision)/2020/03/11/Feature-detector-Scale%EC%9D%B4%EB%9E%80/](https://sunshower76.github.io/cv(computervision)/2020/03/11/Feature-detector-Scale이란/)의 글을 읽고 scale에 대해서 안다고 하고, 바로 첫 번째 과정부터 설명을 하겠다.
+
+1. Scale space 만들기
+
+   scale space는 여러 스케일이 존재하는 공간이라는 것이다. 한 이미지에 대해서 여러 스케일을 갖게하기 위해서 점차적으로 이미지를 줄인다. 만약에 **원본 이미지의 크기를 1**이라고 했을 때, 4, 1, 1/4, 1/16크기의 이미지가 있다면 scale space는 4개의 scale로 구성이 된다고 할 수 있을 것이다.
 

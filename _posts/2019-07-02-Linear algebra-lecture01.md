@@ -32,8 +32,8 @@ Row picture는 matrix=A, unkonwns=X, constant=b 라고 하여, AX=b로 표현할
 Row picture에 대해서 감을 잡았다면, Column picture도 금방 이해할 수 있다.
 Row picture가 행을 보는 거였다면, Column picture는 열을 보면 된다.
 
-<center><img src="/public/img/2019-07-02-linear algebra-lecture1/img4.gif" width="50%"></center>
-<center><img src="/public/img/2019-07-02-linear algebra-lecture1/img5.gif" width="70%"></center>
+<center><img src="/public/img/2019-07-02-linear algebra-lecture01/img4.gif" width="50%"></center>
+<center><img src="/public/img/2019-07-02-linear algebra-lecture01/img5.gif" width="70%"></center>
 
 Column picture을 그림으로 표현하면 위와 같다. 말 그대로 **열(Columns)**을 참고하여, 벡터로 표현한 것이 눈에 띌 것이다.
 그리고 그것을 상수x벡터 의 합(au+bv+cw+...=n, 위 예제 에서는 xu+yv=n)의 형태로 표현했다.
