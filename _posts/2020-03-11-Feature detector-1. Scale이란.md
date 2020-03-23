@@ -81,7 +81,7 @@ Outer scale은 위에서 설명한 scale의 개념하고 맞아 떨어진다. �
 
 그렇다면, inner scale을 더 고려해야 할 때가 있는데 어느 때일까? 바로 **Gaussian blurring**을 수행할 때이다. 이것은 scale space에서도 다루는 개념인데, scale space를 만들 때, 같은 이미지에 대해서 계속해서 blurring을 수행한다.이 때, scale값이 높아진다고 하는데, 이 때 바로 높아지는게 inner scale이 증가하는 것이다. 3x3 gaussian kernel을 가지고 convolution을 한다고 생각해보자. convolution후 이미지에서 똑같이 3x3 영역은 그 전의 3x3영역보다 더 많은 영역의 정보를 담고 있을 것이다(전 이미지의 5x5의 영역이다.) 이것은 간단하게 생각해 볼 수 있는데, convolution후 3x3영역이 이전 이미지로부터 어떻게 나오는지 생각해보면 된다. 이전 이미지의 5x5영역이 convolution 후 3x3영역이 된다. 즉 똑같인 3x3 크기의 윈도우로 convolution후 더 많은 영역을 보게 된 것이므로, inner scale이 증가하게 된다. 
 
-<center><img src="/public/img/Feature detector-Scale이란/img_9.png" width="70%"></center>
+<center><img src="/public/img/Feature detector-Scale이란/img_9.png" width="100%"></center>
 
 <center> [그림8] scale space 구성</center>
 
