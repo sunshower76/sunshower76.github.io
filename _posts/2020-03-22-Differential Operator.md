@@ -12,9 +12,11 @@ tags: [Mathematics]
 
 Gradient 저는 그라디언트 혹은 그레디언트라고 읽습니다. 그라디언트는 **스칼라장의 편도함수벡터** 로써, **벡터**의 일종입니다. 그라디언트는 다음과 같이 정의됩니다.
 
-<center><img src="/public/img/Differential Operator/img_1.png" width="70%"></center>
+<center><img src="/public/img/Differential Operator/img_1.png" width="50%"></center>
 
 <center> <그림1> Gradient </center>
+
+
 
 그라디언트는 한 점에서 어느 방향으로 함수가 **가장 급격하게 값이 변하는지** 나타내어주는 **벡터**입니다. 단, 그 방향으로 함수의 값이 줄어들고 있는 방향이라면 그라디언트는 180도 회전한 방향을 가리킨다.
 
@@ -28,7 +30,7 @@ Gradient 저는 그라디언트 혹은 그레디언트라고 읽습니다. 그�
 
 자코비언이라 읽기도하고, 야코비언이라 읽기도 합니다. 그라디언트가 스칼라장의 편도함수 벡터라면, 자코비언은 다변수 벡터함수의 편도함수 행렬 입니다. 정의는 밑에 그림과 같습니다.
 
-<center><img src="/public/img/Differential Operator/img_2.png" width="80%"></center>
+<center><img src="/public/img/Differential Operator/img_2.png" width="50%"></center>
 
 <center> <그림2> Jacobian </center>
 
@@ -51,7 +53,7 @@ Gradient 저는 그라디언트 혹은 그레디언트라고 읽습니다. 그�
 
 ### divergence(발산)
 
-<center><img src="/public/img/Differential Operator/img_4.png" width="80%"></center>
+<center><img src="/public/img/Differential Operator/img_4.png" width="100%"></center>
 
 <center> <그림4> Divergence </center>
 
@@ -63,7 +65,7 @@ Gradient 저는 그라디언트 혹은 그레디언트라고 읽습니다. 그�
 
 ## Hessian
 
-<center><img src="/public/img/Differential Operator/img_5.png" width="80%"></center>
+<center><img src="/public/img/Differential Operator/img_5.png" width="60%"></center>
 
 <center> <그림4> Hessian </center>
 
@@ -75,20 +77,3 @@ Gradient 저는 그라디언트 혹은 그레디언트라고 읽습니다. 그�
 - $A=S\Lambda S^-1$ 이때, S는 고유벡터의 행렬, $\Lambda$는 고유값의 대각행렬이다. 그럴 때, 행렬 A가 대칭행렬이라면, **대칭행렬의 서로다른 고유벡터는 서로 직교 하므로**, 직교행렬의 성질 $Q^T = Q^-1$을 이용하자. S는 직교행렬 이므로, 최종적으로 $A = S\Lambda S^T$라고 할 수 있다.
 
 Hessian은 이차미분의 행렬이므로 계산량이 많아서 되도록 다른 방법이 있다면 다른 방법이 많이 이용된다고 한다.
-
-
-
--------------------
-
-Sampling Theory
-
-------
-
-Fourier Tansform(spatial domain to frequency domain)
-
--------------------------
-
-SIFT
-
----
-

@@ -14,9 +14,9 @@ tags: [Mathematics]
 
 1. Column picture and Row picture
 
-   <center><img src="/public/img/Matrix Operation/img_1.png" width="80%"></center>
+   <center><img src="/public/img/Matrix Operation/img_1.png" width="50%"></center>
 
-<center> <식1> Row & Column picture</center>
+<center> <식1> Row & Column picture </center>
 
 행렬을 보다보면 위 두개의 관점에서 보는게 자유로워 져야 읽기가 편해진다. 선형성을 다룰 때 행렬식을 보통 column picture로 나타낸다.
 
@@ -25,6 +25,8 @@ tags: [Mathematics]
    <center><img src="/public/img/Matrix Operation/img_2.png" width="80%"></center>
 
    <center> <식2> Quadratic form, x는 벡터, A는 행렬이다. </center>
+
+
 
 여기서 **A는 대칭행렬**임을 잠깐 짚고 넘어가자. 다른 곳에서 또 쓰일지 모른다. 이러한 Quadratic form형태는 다변수 함수에 대한 연산을 행렬식으로 나타낼 때, 많이 보인다. 예를들어, 테일러 급수를 표현한다고 하면, 테일러급수의 이차미분항이 Quadratic form으로 표현된다.
 
@@ -40,28 +42,40 @@ tags: [Mathematics]
 
    <center><img src="/public/img/Matrix Operation/img_4.png" width="80%"></center>
 
-   그라디언트의 경우와 동일합니다.
+   그라디언트의 경우와 동일합니다.  
+
+   
 
 2. 벡터 혹은 다변수 벡터함수의 스칼라 미분
 
-   <center><img src="/public/img/Matrix Operation/img_5.png" width="80%"></center>
+   
+
+   <center><img src="/public/img/Matrix Operation/img_5.png" width="40%"></center>
 
 3. 벡터 혹은 다변수 벡터함수의 벡터미분
 
-   <center><img src="/public/img/Matrix Operation/img_6.png" width="80%"></center>
+   
+
+   <center><img src="/public/img/Matrix Operation/img_6.png" width="50%"></center>
 
 4. 행렬의 스칼라 미분
 
-   <center><img src="/public/img/Matrix Operation/img_7.png" width="80%"></center>
+   
+
+   <center><img src="/public/img/Matrix Operation/img_7.png" width="50%"></center>
 
 5. 스칼라의 행렬 미분
 
-   <center><img src="/public/img/Matrix Operation/img_8.png" width="80%"></center>
+   
+
+   <center><img src="/public/img/Matrix Operation/img_8.png" width="50%"></center>
 
 
 
 <center><img src="/public/img/Matrix Operation/img_9.png" width="80%"></center>
 
 <center> <표2> 행렬, 벡터 미분공식  </center>
+
+
 
 위의 표는 [다크 프로그래머님의 블로그]((https://darkpgmr.tistory.com/141))를 참고하였습니다. [위키피디아](https://en.wikipedia.org/wiki/Matrix_calculus)에 더 많은 공식들을 정리해 놨으니, 행렬식을 이용한 증명이 이해가 안갈때에는 위키피디아를 참고하면 좋을것 같습니다.
