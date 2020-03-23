@@ -24,21 +24,21 @@ Laplacian of Gaussian은 이름에서도 알 수 있듯이,Laplacian + Gaussian 
 
 <center> [그림2] LoG convolutions </center>
 
-<그림2>는 LoG를 컨볼루션한 결과를 나타냅니다. (a)의 경우에는 Gaussian커널의 1차미분, 2차미분 커널로 edge detection을한 결과를 나타냅니다. (b),(c)는 blob에 대한 LoG kernel 과의 convolution 결과 입니다.  여기서 blob은 extrema로써 순간적으로 밝아지거나 어두워지는 것을 의미합니다. (b)의 경우에는 여러 신호에 대한 LoG커널의 결과를 보여줍니다. 이 때, $\sigma=1로$ 일정합니다. (c)의 경우에는 한 신호에 대해서 $\sigma$값이 다른 LoG kernel과의 convolution 결과를 나타냅니다.
+[그림2]는 LoG를 컨볼루션한 결과를 나타냅니다. (a)의 경우에는 Gaussian커널의 1차미분, 2차미분 커널로 edge detection을한 결과를 나타냅니다. (b),(c)는 blob에 대한 LoG kernel 과의 convolution 결과 입니다.  여기서 blob은 extrema로써 순간적으로 밝아지거나 어두워지는 것을 의미합니다. (b)의 경우에는 여러 신호에 대한 LoG커널의 결과를 보여줍니다. 이 때, $\sigma=1로$ 일정합니다. (c)의 경우에는 한 신호에 대해서 $\sigma$ 값이 다른 LoG kernel과의 convolution 결과를 나타냅니다.
 
-여기서 주목해야 할 점은, **신호에 따라서 극대 극소값을 가지는 대응하는 ** $\sigma$값이 있다는 것입니다.
+여기서 주목해야 할 점은, **신호에 따라서 극대 극소값을 가지는 대응하는 ** $\sigma$ 값이 있다는 것입니다.
 
 <center><img src="/public/img/LOG_DOG/img_3.png" width="90%"></center> 
 
 <center> [그림3] LoG normalization </center>
 
-normalization을 위해서는 LoG에 $\sigma$를 곱해주면 됩니다. 
+normalization을 위해서는 LoG에 $\sigma$ 를 곱해주면 됩니다. 
 
 
 
 ### DoG(Difference of Gaussian)
 
-DoG는 scale space구성과 관련이 깊다. [scale space](https://sunshower76.github.io/cv(computervision)/2020/03/16/Feature-detector-4.-Scale-space/)글과 같이 보는 것을 추천한다. DoG는 한국말로 번역하면 가우시안 차이 입니다. 즉, 서로다른 $\sigma$값을 가지는 가우시안 커널의 차를 이용하는 것입니다. 그렇다면 가우시안 커널의 차를 이용해서 무엇을 할까요? 바로 **LoG에 대한 근사**입니다. ~~계산량 때문에 LoG를 근사하는 DoG를 사용한다고 하는데, 사실 위에 말한것처럼 LoG커널을 미리 만들어두고 사용하면, 굳이 DoG를 사용하지 않아도 될것같다고 생각이 듭니다.~~ 
+DoG는 scale space구성과 관련이 깊다. [scale space](https://sunshower76.github.io/cv(computervision)/2020/03/16/Feature-detector-4.-Scale-space/)글과 같이 보는 것을 추천한다. DoG는 한국말로 번역하면 가우시안 차이 입니다. 즉, 서로다른 $\sigma$ 값을 가지는 가우시안 커널의 차를 이용하는 것입니다. 그렇다면 가우시안 커널의 차를 이용해서 무엇을 할까요? 바로 **LoG에 대한 근사**입니다. ~~계산량 때문에 LoG를 근사하는 DoG를 사용한다고 하는데, 사실 위에 말한것처럼 LoG커널을 미리 만들어두고 사용하면, 굳이 DoG를 사용하지 않아도 될것같다고 생각이 듭니다.~~ 
 
 그렇다면 어떻게, DoG과 LoG를 근사할 수 있을까를 살펴보면, [1994, Lindeberg의 Scale-space theory in computer vision, 11-15p](http://www.diva-portal.org/smash/get/diva2:440615/FULLTEXT01.pdf)에 언급이 되어있으니 살펴보시기 바랍니다. 또한, [Causality in Scale Space](https://staff.fnwi.uva.nl/r.vandenboomgaard/IPCV20172018/LectureNotes/IP/ScaleSpace/scalespaceCausality.html)에도 언급이 되어 있습니다.  Causality in scale space의 글에 따르면, small sacle에서 large scale로 증가할 때, 새로운 디테일이나 구조가 나타나면 안된다고 합니다. 이것을 **Causality**라고 한다고 나와 있습니다. 
 
