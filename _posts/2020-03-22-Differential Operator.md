@@ -12,9 +12,9 @@ tags: [Mathematics]
 
 Gradient 저는 그라디언트 혹은 그레디언트라고 읽습니다. 그라디언트는 **스칼라장의 편도함수벡터** 로써, **벡터**의 일종입니다. 그라디언트는 다음과 같이 정의됩니다.
 
-<center><img src="/public/img/Differential Operator/img_1.png" width="50%"></center>
+<center><img src="/public/img/Differential Operator/img_1.png" width="30%"></center>
 
-<center> <그림1> Gradient </center>
+<center> [식1] Gradient </center>
 
 
 
@@ -30,9 +30,9 @@ Gradient 저는 그라디언트 혹은 그레디언트라고 읽습니다. 그�
 
 자코비언이라 읽기도하고, 야코비언이라 읽기도 합니다. 그라디언트가 스칼라장의 편도함수 벡터라면, 자코비언은 다변수 벡터함수의 편도함수 행렬 입니다. 정의는 밑에 그림과 같습니다.
 
-<center><img src="/public/img/Differential Operator/img_2.png" width="50%"></center>
+<center><img src="/public/img/Differential Operator/img_2.png" width="40%"></center>
 
-<center> <그림2> Jacobian </center>
+<center> [식2] Jacobian </center>
 
 벡터함수는 위에 나왔던 그라디언트가 벡터함수의 일종이라고 할 수 있습니다. 간단한 예로 스칼라함수와 벡터함수를 예를 들어보겠습니다.
 
@@ -47,7 +47,7 @@ Gradient 저는 그라디언트 혹은 그레디언트라고 읽습니다. 그�
 
 <center><img src="/public/img/Differential Operator/img_3.png" width="80%"></center>
 
-<center> <그림3> Laplacian </center>
+<center> [식3] Laplacian </center>
 
 즉, 스칼라함수 f에 대한 이계편도함수들의 합으로 나타내어 집니다. 그런데, 위에서 라플라시안은 그라디언트의 발산이라고 하였습니다. 그라디언트에 대해서는 위에서 말했었습니다. 그렇다면 발산(Divergence)에 대해서도 무엇인지 알아봐야 하겠습니다.
 
@@ -55,7 +55,7 @@ Gradient 저는 그라디언트 혹은 그레디언트라고 읽습니다. 그�
 
 <center><img src="/public/img/Differential Operator/img_4.png" width="100%"></center>
 
-<center> <그림4> Divergence </center>
+<center> [식4] Divergence </center>
 
 발산은 단위면적으로부터 벡터의 유입정도와 유출정도의 양을 나타내어주는 지표입니다. 그래서 divergence가 0이면 유출정도와 유입정도가 동일하다는 뜻이므로, 그라디언트의 변화가 없는것을 뜻합니다. 그리고 0보다 크다면 유출량이 더 많은 발산, 0보다 작으면 유입량이 더 많은 수렴을 의미하게 됩니다. 
 
@@ -65,9 +65,9 @@ Gradient 저는 그라디언트 혹은 그레디언트라고 읽습니다. 그�
 
 ## Hessian
 
-<center><img src="/public/img/Differential Operator/img_5.png" width="60%"></center>
+<center><img src="/public/img/Differential Operator/img_5.png" width="45%"></center>
 
-<center> <그림4> Hessian </center>
+<center> [식5] Hessian </center>
 
 저는 헤이시안 이라고 읽습니다. 헤이시안은 자코비언과 형태가 비슷한데 다른점은, 자코비언이 일차미분값이라면 헤이시안은 이차미분 값입니다. 헤이시안은 많은 부분에서 이용되기 때문에 알아두면 좋습니다. 
 
@@ -77,3 +77,7 @@ Gradient 저는 그라디언트 혹은 그레디언트라고 읽습니다. 그�
 - $A=S\Lambda S^-1$ 이때, S는 고유벡터의 행렬, $\Lambda$는 고유값의 대각행렬이다. 그럴 때, 행렬 A가 대칭행렬이라면, **대칭행렬의 서로다른 고유벡터는 서로 직교 하므로**, 직교행렬의 성질 $Q^T = Q^-1$을 이용하자. S는 직교행렬 이므로, 최종적으로 $A = S\Lambda S^T$라고 할 수 있다.
 
 Hessian은 이차미분의 행렬이므로 계산량이 많아서 되도록 다른 방법이 있다면 다른 방법이 많이 이용된다고 한다.
+
+## References
+
+- wikipedia
