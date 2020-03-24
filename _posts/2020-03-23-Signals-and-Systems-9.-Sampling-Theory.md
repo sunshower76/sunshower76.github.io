@@ -48,7 +48,7 @@ time domain과 frequency domain에서의 sampling모습을 나타낸 것이다. 
 
 <center> [그림4] Gaussain distribution in spatial&frequency domain </center>
 
-또한 <그림4>에서 알 수 있듯이,  spatial domain과 frequency domain의 $\sigma$값은 **반비례**관계를 갖는다. 이것이 의미하는 바는 공간 도메인의 $\sigma_s$값이 높다면, 주파수 도메인의 $\sigma_f$값은 낮으므로, sampling frequency가 낮아도 된다는 것을 의미하며, 반대로 $\sigma_s$가 낮다면, 주파수 도메인의 $\sigma_f$값은 높으므로, sampling frequency가 높아야 된다는 것이다.  즉, 후에 scale space를 구축할 때 다시 한번 나오겠지만, down sampling을 할수록 이미지의 크기가 작아지는데, 그에 따라 $\sigma_s$가 같이 커지기 때문에 aliasing을 방지할 수 있게 된다. 
+또한 [그림4]에서 알 수 있듯이,  spatial domain과 frequency domain의 $\sigma$값은 **반비례**관계를 갖는다. 이것이 의미하는 바는 공간 도메인의 $\sigma_s$값이 높다면, 주파수 도메인의 $\sigma_f$값은 낮으므로, sampling frequency가 낮아도 된다는 것을 의미하며, 반대로 $\sigma_s$가 낮다면, 주파수 도메인의 $\sigma_f$값은 높으므로, sampling frequency가 높아야 된다는 것이다.  즉, 후에 scale space를 구축할 때 다시 한번 나오겠지만, down sampling을 할수록 이미지의 크기가 작아지는데, 그에 따라 $\sigma_s$가 같이 커지기 때문에 aliasing을 방지할 수 있게 된다. 
 
  <center><img src="/public/img/Signals and Systems-Sampling Theory/img_5.png" width="100%"></center>
 
