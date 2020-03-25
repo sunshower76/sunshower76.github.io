@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 15-16)
+title: Linear Algebra - 15,16 Projection, Least squares
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 11)
+title: Linear Algebra - 11. Bases of new vector spaces, rank one matrix
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 10)
+title: Linear Algebra - 10. Four fundamental subspace(row,comlumn space and null spaces)
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

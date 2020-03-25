@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 22)
+title: Linear Algebra - 22. Diagonalization, Difference equation
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

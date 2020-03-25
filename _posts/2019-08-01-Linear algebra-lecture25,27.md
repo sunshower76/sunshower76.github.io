@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 25,27)
+title: Linear Algebra - 25,27 Symmetric matrix(diagonalization, projection), spectral theorem, definite matrix
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 29)
+title: Linear Algebra - 29. Singular Value Decomposition(SVD)
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

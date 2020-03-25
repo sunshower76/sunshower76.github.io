@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 19)
+title: Linear Algebra - 19. Determinant Formulas(split, cofactor)
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

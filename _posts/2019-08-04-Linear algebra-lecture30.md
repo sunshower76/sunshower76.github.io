@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 30)
+title: Linear Algebra - 30. Linear transformation
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 09)
+title: Linear Algebra - 9. Independence, span, basis, dimension
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

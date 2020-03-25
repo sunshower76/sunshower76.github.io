@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 08)
+title: Linear Algebra - 8. Complete Solution, Rank about solution types 
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

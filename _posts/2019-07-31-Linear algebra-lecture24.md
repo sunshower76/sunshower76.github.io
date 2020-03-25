@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 24)
+title: Linear Algebra - 24. Marcov matrix
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]
@@ -76,7 +76,7 @@ $det(A-\lambda I)=0$ 을 만족하면 되는것이다. 이는 곧 $A-\lambda I$�
 $\lambda$는 어떤 조건을 만족해야 할까?
 
 <center>$|\lambda|<=1$</center>
-  
+
 위와 같은 조건을 만족하면, 해당 일반해가 존재하게 된다.
 
 

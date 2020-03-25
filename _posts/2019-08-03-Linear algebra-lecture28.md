@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 28)
+title: Linear Algebra - 28. Similar matrix, Jordan form
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

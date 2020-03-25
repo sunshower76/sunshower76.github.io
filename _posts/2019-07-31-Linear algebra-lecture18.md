@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 18)
+title: Linear Algebra -18. Determinant
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]
@@ -15,7 +15,7 @@ $det I = 1$
 ### Property 2
 두개의 행이나 열을 서로 바꾸는 연산을 한 번 수행하면, 행렬식의 부호는 바뀐다. 즉, 행혹은 열끼리 바꾸는 연산을
  홀수번 수행하면 부호는 원래 행렬식의 반대, 짝수번 수행하면 부호는 그대로이다.
- 
+
 ### Property 3
 랭크연산(다른 행이나 열끼리 빼고 더하는 연산)을 수행해도 행렬식은 변하지 않는다.
 

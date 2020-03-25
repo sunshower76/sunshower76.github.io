@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 17)
+title: Linear Algebra - 17. Orthogonal basis, Gram-Schmidt Process, QR decomposition
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]

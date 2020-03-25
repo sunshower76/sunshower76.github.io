@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 20)
-author: Sunwoo Kim
+title: Linear Algebra - 20. Inverse matrix, Cramer's Rule
 categories: Mathematics
 tags: [Linear Algebra]
 ---

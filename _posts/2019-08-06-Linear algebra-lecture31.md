@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 33)
+title: Linear Algebra - 31. Inverse matrices(two sided, right, pseudo)
 author: Sunwoo Kim
 categories: Mathematics
 tags: [Linear Algebra]
@@ -47,7 +47,7 @@ row space에 존재하는 벡터x에 대하여, $Ax$는 column space에 존재�
 
 <center> $AA^T(AA^T)^{-1}=I$ 이때, $A^{-1}_{right} =A^T(AA^T)^{-1}$ </center>
 
-  
+
 column space에 존재하는 벡터x에 대하여, $x^TA$는 row space에 존재하고, $x^TA A_{right}^{-1}$ 는 row space에 존재하는 $x^TA$를 원래의 $x$로 되돌려 놓는다. ($x^TA=b$라는 연산이 있을 때, b는 무조건 A의 row space에 존재해야한다., b는 x_1A_{row1}+x_2A_{row2}+...+x_nA_{row_n}으로 표현되기 때문이다.)
 
 또한, 위에서 left inverse matrix는 column space로 투영시키는 행렬이라고 했다. 똑같은 과정을 거치면, right inverse matrix는 row space로 투영시키는 행렬이라는 것을 알 수 있다.

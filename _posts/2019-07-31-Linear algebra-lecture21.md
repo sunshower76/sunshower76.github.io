@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Linear Algebra - Gilbert Strang (Lecture 21)
-author: Sunwoo Kim
+title: Linear Algebra - 21. Eigenvalue and Eigenvector
 categories: Mathematics
 tags: [Linear Algebra]
 ---
