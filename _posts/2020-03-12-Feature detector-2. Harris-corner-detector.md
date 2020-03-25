@@ -27,23 +27,23 @@ tags: [SLAM, Digital Image Processing, Feature detector]
 
 그렇다면 E의 1차 테일러 근사(테일러 급수를 1차 미분식 까지만 표현한 식)을 구해보자. 이 때, $\Delta{x},\Delta{y}$는 모두 매우 작은 값이라 가정하자. 그렇다면 아래와 같이 쓸 수 있다.
 
-<center>$I(x_k+\Delta{x}, y_k+\Delta{y}) \approx I(x_k, y_k) + [I_x(x_k,y_k)I_y(x_k,y_k)] \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix}$</center>
-
-
+$I(x_k+\Delta{x}, y_k+\Delta{y}) \approx I(x_k, y_k) + [I_x(x_k,y_k)I_y(x_k,y_k)] \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix}$ 
 
 라고 할 수 있다. $I(x_k, y_k)$부분은 테일러 급수의 0차항, 그리고 그 뒷부분이 일차항을 의미한다. 여기서 테일러 급수식은 윈도우를 기준으로 (0,0)에서의 근사식을 택했기 때문에, 매클로린 급수식이라고도 볼 수 있다. 
 
 f라는 **이변수**함수에 대해서 일차 미분은 다음과 같이 표현 가능하다.
 
-<center> $df = \frac{\partial f}{\partial x}dx + \frac{\partial f}{\partial y}dx \\
+ $df = \frac{\partial f}{\partial x}dx + \frac{\partial f}{\partial y}dy \\
 df = [\frac{\partial f}{\partial x} \ \frac{\partial f}{\partial y}]
-\begin{bmatrix} dx \\ dy \end{bmatrix}$ </center>
+\begin{bmatrix} dx \\ dy \end{bmatrix}$ 
+
 
 $I_x(x_k,y_k)I_y(x_k,y_k)] \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix}$ 식은 위의 원리로부터 유도되었다.
 
 그렇다면 위에서 구한 두 식으로 다음과 같은 과정을 유도할 수 있다.
 
 <center> $I(x_k+\Delta{x}, y_k+\Delta{y}) \approx I(x_k, y_k) + [I_x(x_k,y_k)I_y(x_k,y_k)] \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix}\\ \quad \\ \quad \\ E(\Delta{x},\Delta{y})=\Sigma_{(x_k, y_k\in W)}[I(x_k+\Delta{x}, y_k+\Delta{y})-I(x_k, y_k)]^2 \quad\quad\\ \approx \Sigma_{(x_k, y_k\in W)}[I(x_k, y_k) + [I_x(x_k,y_k)I_y(x_k,y_k)] \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix}-I(x_k, y_k)]^2
+
 
 \\ = [\Delta{x} \Delta{y}]
 
@@ -59,24 +59,30 @@ $I_x(x_k,y_k)I_y(x_k,y_k)] \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix}$ �
 \begin{bmatrix}
 \Delta{x} \\
 \Delta{y}
-\end{bmatrix} \quad \quad \quad \quad \quad \quad \quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad$ </center>
+\end{bmatrix}
+
+\\ =\Sigma_{(x_k, y_k\in W)} ( [\Delta{x} \Delta{y}]H
+\begin{bmatrix}
+\Delta{x} \\
+\Delta{y}
+\end{bmatrix})  \quad \quad \quad \quad \quad \quad \quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad$ </center>
 
 
 ## 최대, 최소값
 
-그런데 행렬 M을 보면 **대칭행렬(symmetric matrix)**인 것을 알 수 있다. 그리고 E의 최종형태가 **이차형식(quadratic formation)**인 것을 알 수 있다. 이 두가지 성질을 이용하여 우리는 intensity변화가 가장 큰방향과 가장 작은방향을 알 수 있다.
+위에서 H는 Hessian Matrix를 의미한다.  H는 **대칭행렬(symmetric matrix)**인 것을 알 수 있다. 그리고 E의 최종형태가 **이차형식(quadratic formation)**인 것을 알 수 있다. 이 두가지 성질을 이용하여 우리는 intensity변화가 가장 큰방향과 가장 작은방향을 알 수 있다.
 
-이차형식에 대한 행렬 M에 대해서, 새로운 좌표계로변환 하여 다음과 같은 식을 만족하게 만들 수 있다.
+이차형식에 대한 행렬 H에 대해서, 새로운 좌표계로변환 하여 다음과 같은 식을 만족하게 만들 수 있다.
 
-<center> $[\Delta{x} \Delta{y}]M
+$[\Delta{x} \Delta{y}]H
 \begin{bmatrix}
 \Delta{x} \\
 \Delta{y}
 \end{bmatrix} 
 -> 
-\lambda_1 X^2 + \lambda_2Y^2$ </center>
+\lambda_1 X^2 + \lambda_2Y^2$ \
 
-이 때 X,Y는 각각 행렬식 값이 1이고, 행렬 M을 **대각화시키는 직교행렬**을 P라 할 때, **x=PX** 에 의해서 얻어진다. Y도 마찬가지이다.
+이 때 X,Y는 각각 행렬식 값이 1이고, 행렬 H을 **대각화시키는 직교행렬**을 P라 할 때, **x=PX** 에 의해서 얻어진다. Y도 마찬가지이다.
 
 주축정리에 의하면 다음과 같은 사실을 알 수 있다.
 
@@ -88,9 +94,9 @@ $I_x(x_k,y_k)I_y(x_k,y_k)] \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix}$ �
 
 M을 대각화 시켜보자.
 
-<center> $M = P\Lambda P^-1$ </center>
+<center> $H = P\Lambda P^-1$ </center>
 
-이 때, **행렬M은 대칭행렬 이므로, P는 행렬M의 서로 직교하는 고유벡터**로 구성되게 된다.
+이 때, **행렬H은 대칭행렬 이므로, P는 행렬H의 서로 직교하는 고유벡터**로 구성되게 된다.
 
 그리고 직교행렬의 성질중에 이러한 성질이 있었다.
 
@@ -170,7 +176,7 @@ Harris방법에 의하면 행렬 M의 고유값을 직접 구하지 않고 deter
 
 <center><img src="/public/img/Feature detector-Harris corner detector/img_2.png" width="70%"></center>
 
-<center><그림 2> 출처: Matching with Invariant Features(http://www.wisdom.weizmann.ac.il/~daryaf/InvariantFeatures.ppt), Lecture Notes 2004</center>
+<center> [그림 2] 출처: Matching with Invariant Features(http://www.wisdom.weizmann.ac.il/~daryaf/InvariantFeatures.ppt), Lecture Notes 2004</center>
 
 이렇게 R값을 구해서 위 그래프를 참고하여 R값을 정한다. corner면 양방향으로 모두 크게 변하는 성질, edge이면 한 방향으로만 크게 변하는 성질, flat하면 양방향으로 모두 변하지않는 성질을 이용한 그래프이다.
 

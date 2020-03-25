@@ -14,9 +14,9 @@ tags: [Mathematics]
 
 1. Column picture and Row picture
 
-   <center><img src="/public/img/Matrix Operation/img_1.png" width="50%"></center>
+   <center><img src="/public/img/Matrix Operation/img_1.png" width="40%"></center>
 
-<center> <식1> Row & Column picture </center>
+<center> [식1] Row & Column picture </center>
 
 행렬을 보다보면 위 두개의 관점에서 보는게 자유로워 져야 읽기가 편해진다. 선형성을 다룰 때 행렬식을 보통 column picture로 나타낸다.
 
@@ -24,7 +24,7 @@ tags: [Mathematics]
 
    <center><img src="/public/img/Matrix Operation/img_2.png" width="80%"></center>
 
-   <center> <식2> Quadratic form, x는 벡터, A는 행렬이다. </center>
+   <center> [식2] Quadratic form, x는 벡터, A는 행렬이다. </center>
 
 
 
@@ -36,13 +36,13 @@ tags: [Mathematics]
 
 <center><img src="/public/img/Matrix Operation/img_2.png" width="80%"></center>
 
-<center> <표1> 행렬, 벡터 미분의 형태의 종류 </center>
+<center> [표1] 행렬, 벡터 미분의 형태의 종류 </center>
 
 1. 스칼라 함수의 벡터미분
 
-   <center><img src="/public/img/Matrix Operation/img_4.png" width="80%"></center>
+   <center><img src="/public/img/Matrix Operation/img_4.png" width="50%"></center>
 
-   그라디언트의 경우와 동일합니다.  
+   그라디언트의 경우와 동일합니다.    
 
    
 
@@ -50,7 +50,7 @@ tags: [Mathematics]
 
    
 
-   <center><img src="/public/img/Matrix Operation/img_5.png" width="40%"></center>
+   <center><img src="/public/img/Matrix Operation/img_5.png" width="20%"></center>
 
 3. 벡터 혹은 다변수 벡터함수의 벡터미분
 
@@ -74,7 +74,7 @@ tags: [Mathematics]
 
 <center><img src="/public/img/Matrix Operation/img_9.png" width="80%"></center>
 
-<center> <표2> 행렬, 벡터 미분공식  </center>
+<center> [표2] 행렬, 벡터 미분공식  </center>
 
 
 
