@@ -19,11 +19,11 @@ tags: [SLAM, Digital Image Processing, Feature detector]
   6. Key point descriptor
   7. Key matching
 
-[Scale에 대해서](https://sunshower76.github.io/cv(computervision)/2020/03/11/Feature-detector-Scale%EC%9D%B4%EB%9E%80/](https://sunshower76.github.io/cv(computervision)/2020/03/11/Feature-detector-Scale이란/)의 글을 읽고 scale에 대해서 안다고 하고, 바로 첫 번째 과정부터 설명을 하겠다.
+[Scale에 대해서](https://sunshower76.github.io/cv(computervision)/2020/03/11/Feature-detector-Scale이란/)의 글을 읽고 scale에 대해서 안다고 하고, 바로 첫 번째 과정부터 설명을 하겠다.
 
 ### 1. Scale space 만들기
 
-<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_1.png" width="90%"></center>
+<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_1.png" width="60%"></center>
 
 <center> [그림1] Scale space in SIFT</center>
 
@@ -38,15 +38,15 @@ Scale space에 대해서 배울 때, DoG로 LoG를 근사한다고 하였다([Lo
 
 <center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_2.png" width="90%"></center>
 
-<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_3.png" width="60%"></center>
+<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_3.png" width="100%"></center>
 
 <center> [그림2] DoG in SIFT</center>
 
 ### 3. Key candidates 찾기
 
-<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_4.png" width="80%"></center>
+<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_4.png" width="50%"></center>
 
-<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_5.png" width="60%"></center>
+<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_5.png" width="90%"></center>
 
 <center> [그림3] Key candidates 찾기</center>
 
@@ -64,7 +64,7 @@ DoG 연산 후, 한 octave에서 5개의 이미지가 4개의 DoG 결과로 줄�
 
 논문에서는 low contrast문제를 해결하기 위해서, 테일러 급수를 통해서 interpolation된 극값의 위치를  잡아내어 해당 위치($\hat{X}$)에서, $D(\hat{X})$의 값이 일정 값 이하이면 keypoint의 후보에서 reject하는 방법을 사용하기로 하였다. 실제로 이 방법은 효과적이었다고 하였다. 해당 과정의 식은 다음과 같다.
 
-<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_22.png" width="80%"></center>
+<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_22.png" width="50%"></center>
 
 <center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_6.png" width="60%"></center>
 
@@ -72,7 +72,7 @@ DoG 연산 후, 한 octave에서 5개의 이미지가 4개의 DoG 결과로 줄�
 
 DoG를 테일러 급수를 이용하여 전개한 것은 [식1]과 같다.  위 식이 이해가 안가는 분은 [Khan academy의 강의](https://www.youtube.com/watch?v=ClFrIg0PpnM)를 보고 오면 좋을것 같다. 우리는 이제 테일러 급수의 극값의 위치를 구해야 한다. 그렇기 때문에, 테일러 급수의 미분식을 구한 후, 미분식=0 을 만족시키는 X값을 찾아야 한다.
 
-<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_7.png" width="60%"></center>
+<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_7.png" width="35%"></center>
 
 <center> [식2] [식1]의 미분 = 0 을 만족시키는 X값 </center>
 
@@ -94,7 +94,7 @@ Paper에는 위와같이 결과값만 나와있는데, 풀어서 전개를 해�
 
 그 다음으로는, edge에서 민감하게 반응하여 잘못 선출된 key후보를 제거해야 한다. 논문에서는 **poorly defined peak in DoG function will have a large principal curvature across the edge but a small one in the perpendicular direction.** 즉, 잘못 검출된 지점은 엣지에서는 큰 주곡률을 가지지만, 수직방향으로는 작은주곡률은 가진다고 번역이된다. 주곡률이 무엇인지는 잘 모르겠지만,  고유값이 주곡률을 의미한다고 한다. 그래서 위와같은 성질을 이용해서 논문에서는 고유값의 비율을 체크해서 일정값 이하면, 작은주곡률 혹은 균일한 주곡률을 가졌다 판단하고, 비율이 일정값 이상이면, 큰 주곡률과, 작은 주곡률을 가졌다고 판단하여 reject한다. 식은 아래와 같다.
 
-<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_11.png" width="60%"></center>
+<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_11.png" width="45%"></center>
 
 <center> [식4] DoG의 Hessian matrix (2차미분)  </center>
 
@@ -110,7 +110,7 @@ Hessian matrix의 고유값을 각각 $\alpha, \beta$라고 하자. 선형대수
 
 <center> [식6] 논문에서 제안된 두 주곡률 사이의 비율  </center>
 
-<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_14.png" width="60%"></center>
+<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_14.png" width="45%"></center>
 
 <center> [식7] 두 주곡률 사이의 비율과 thresholding  </center>
 
@@ -124,13 +124,13 @@ Hessian matrix의 고유값을 각각 $\alpha, \beta$라고 하자. 선형대수
 
 이제 key point들을 추려냈으니,  rotation invariant를 위해서 keypoint에 방향을 할당할 차례다.  **key 를 중앙으로 하여** 주변으로 16X16의 윈도우를 설정한 뒤, 그 윈도우 안의 이미지를 Gaussian blurring을 수행한다. 그 후 gradient의 방향과 크기를 정해준다. 
 
-<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_16.png" width="70%"></center>
+<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_16.png" width="80%"></center>
 
 <center> [식8] L(blur된 window)에 대한 gradient의 크기 및 방향 계산식 </center>
 
 이 때, Gaussian blurring을 할 때 논문에서는 다음과 같이 말하고 있다. **The scale of the keypoint is used to select the Gaussian smoothed image, L, with the closet scale, so that all computations are performed in a scale-invaraiant manner** 즉 keypoint의 scale에 따라 smoothing 하는 gaussian kernel의 분산값이 달라지는 말로 해석된다. 어떻게 달라지는 지는 코드를 참고해봐야 알 것 같다.
 
-<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_17.png" width="70%"></center>
+<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_17.png" width="55%"></center>
 
 <center> [그림6] Gradient 크기, 방향 계산 결과 이미지 </center>
 
@@ -149,7 +149,7 @@ Hessian matrix의 고유값을 각각 $\alpha, \beta$라고 하자. 선형대수
 
 0~360도를 기준으로, 36개의 bin을 설정하자. 즉 구간을 0~9, 10~19, ... , 350~359로 나누자는 뜻이다. 위에서 계산한 gradient 의 방향을 나타내는 이미지와 weighted gradient magnitude map에서 gradient크기 값을 사용해야한다. 만약에 (1,1) pixel의 gradient 방향이 15도 이고, weighted gradient크기가 20 이었다면, 10~10의 bin에 20만큼 채우는 것이다. 이렇게 모든 픽셀에 대해서 똑같은 과정을 반복하여 히스토그램을 형성한다. **만약에 최고점의 80%이상 되는 bin들이 더 존재한다면, 그 방향도 keypoint의 방향으로 취급한다.** 즉, 복수의 방향이 할당될 수 있다는 뜻이다. 히스토그램 형성 결과는 아래와 같다.
 
-<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_19.png" width="70%"></center>
+<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_19.png" width="90%"></center>
 
 <center> [그림8] Keypoint 중심 윈도우들의 그레디언트 방향 히스토그램</center>
 
@@ -157,7 +157,7 @@ Hessian matrix의 고유값을 각각 $\alpha, \beta$라고 하자. 선형대수
 
 이제 keypoint에 descriptor를 만들어줄 차레다. decriptor를 번역해보자면 '설명자'정도로 할 수 있겠다. 그런데 생각해보면 이미 keypoint의 방향,크기 까지 구했는데 이걸로 keypoint를 설명할 수 있는거 아닌가? 이미 keypoint의 특징을 구했는데 이걸로 비교를 하면 되지 않을까? 라고 생각이 들것이다. [그림9]를 보고 얘기해보자.
 
-<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_20.png" width="70%"></center>
+<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_20.png" width="80%"></center>
 
 <center> [그림9] 왼: 원본그림의 keypoint, 오: 회전된 그림의 keypoint </center>
 
@@ -169,7 +169,7 @@ Hessian matrix의 고유값을 각각 $\alpha, \beta$라고 하자. 선형대수
 
 그리고 가장 중요한 과정이 남았다. **16X16 윈도우의 중심이 되는 keypoint가 있었단는 것을 다시 기억해내자.** 우리는 그 keypoint를 중심으로 16X16윈도우를 만들고 4X4 윈도우로 나누었다. 그 중5번 과정에서 keypoint의 방향과 크기를 구했었다. **이제 마지막으로 4X4윈도우에서 구한 vector들에서 중심이 되는 keypoint의 orientation vector를 빼주자.** 이렇게 한다면 rotation invariant한 성질이 완성된다. 
 
-<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_21.png" width="70%"></center>
+<center><img src="/public/img/Feature detector-SIFT(Scale Invariant Feature Transform)/img_21.png" width="90%"></center>
 
 <center> [그림10] Descriptor 생성 결과 </center>
 
