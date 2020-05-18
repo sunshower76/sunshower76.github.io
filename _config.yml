@@ -4,7 +4,7 @@ tagline: "Sunwoo Kim's Computer Vision, Machine & Deep Learning Blog"
 description: "sunwoo Kim's blog, powered by first jekyll theme, second YW & YY's ML blog"
 baseurl: ""
 url: https://sunshower76.github.io
-logo: '/public/img/icon-144x144.png'
+logo: '/public/img/cat-144x144.png'
 
 # Site configurations
 gems:
