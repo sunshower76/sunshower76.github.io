@@ -54,7 +54,7 @@ category_page: '/blog/categories/'
 
 hero:
   image: /public/img/Andre_Derain_Fishing_Boats_Collioure.jpg
-  caption: Andre Derain, Fishing Boats Collioure, 1905. France.
+  #caption: Andre Derain, Fishing Boats Collioure, 1905. France.
 
 # Plugins
 mathjax: true # whether support mathjax
