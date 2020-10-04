@@ -124,7 +124,7 @@ y=1인 데이터에 대해서 살펴보자. 라벨링이 y=1이라고 되있는 
 
 ### 방법2. n-1개의 classifier
 
-<center><img src="/public/img/LogisticRegression/img13.png" width="70%"></center>
+<center><img src="/public/img/LogisticRegression/img13.png" width="100%"></center>
 
 다음은 n-1개의 classifier를 이용하는 방법이다. 이 부분을 작성하는데 ratsgo 님의 블로그의 글이 설명이 잘 나와있어 그 부분을 인용하고자 한다. n-1개의 classifier라고 하지만 사실 한개의 neural network에서 가중치 행렬의 차원을 늘리는 식으로 하여, 한 개의 뉴럴 네트워크에 모두 구성하거나, n-1개의 뉴럴 네트워크를 만든 후, 그 출력들을 모두 loss term에 묶어넣어 backpropagation하여 엮을 수도 있다. 이 방식은 복잡하기 때문에 우린는 보통 하나의 뉴럴 네트워크에서 해결을 하는 편이다.
 
@@ -138,7 +138,7 @@ y=1인 데이터에 대해서 살펴보자. 라벨링이 y=1이라고 되있는 
 
 이것은 **P(Y=3) = 1-P(Y=1)-P(Y=2)**라는 점을 이용하여 유도하였다. 직접 집어넣어 식을 계산해보면 위와같은 식이 나오게된다. 마지막에 Y=3부분에 분자가 1인 이유는 **1=P(Y=1)+P(Y=2)P(Y=3)을 만족시켜야하기 때문이다.
 
-<center><img src="/public/img/LogisticRegression/img16.png" width="50%"></center>
+<center><img src="/public/img/LogisticRegression/img16.png" width="70%"></center>
 
 이를 K개의 클래스에 대해서 일반화하면 위와 같은 식이나오게된다.
 
@@ -168,11 +168,11 @@ y=1인 데이터에 대해서 살펴보자. 라벨링이 y=1이라고 되있는 
 
 그리고 **확률의 합=1**이라는 점을 이용하여 Z의 값을 이끌어낸다.
 
-<center><img src="/public/img/LogisticRegression/img20.png" width="50%"></center>
+<center><img src="/public/img/LogisticRegression/img20.png" width="40%"></center>
 
 그래서 여태까지 유도했던걸 합쳐 정리하면 우리가 알고있는 소프트맥스를 이끌어낼 수 있다.
 
-<center><img src="/public/img/LogisticRegression/img21.png" width="70%"></center>
+<center><img src="/public/img/LogisticRegression/img21.png" width="80%"></center>
 
 
 
